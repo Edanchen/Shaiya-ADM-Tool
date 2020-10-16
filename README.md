@@ -1,8 +1,8 @@
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Edanchen/ADM-Tool.svg)](http://isitmaintained.com/project/Edanchen/ADM-Tool "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/Edanchen/ADM-Tool.svg)](http://isitmaintained.com/project/Edanchen/ADM-Tool "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Edanchen/Shaiya-ADM-Tool.svg)](http://isitmaintained.com/project/Edanchen/Shaiya-ADM-Tool "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/Edanchen/Shaiya-ADM-Tool.svg)](http://isitmaintained.com/project/Edanchen/Shaiya-ADM-Tool "Percentage of issues still open")
 
 # Build-Status
 
-[![Build status](https://ci.appveyor.com/api/projects/status/tl0g8dpq86c5uo58?svg=true)](https://ci.appveyor.com/project/Edanchen/adm-tool)
+[![Build status](https://ci.appveyor.com/api/projects/status/6pjb4l8gmagi0mq1?svg=true)](https://ci.appveyor.com/project/Edanchen/shaiya-adm-tool)
 
 
 # ADM-Tool
