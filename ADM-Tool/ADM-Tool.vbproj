@@ -1,0 +1,2016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85DB2824-B8C4-424A-B58F-1DD7788A8962}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>ADM-Tool</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\GitHub\ADM\ADM-Tool\Application Files\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://heftis-tools.square7.ch/tool/</UpdateUrl>
+    <TargetCulture>de</TargetCulture>
+    <ProductName>ADM-Tool</ProductName>
+    <PublisherName>Edan</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ADM-Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ADM-Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1BBBFD02098A8223D8BAD65244D4315989E67FFE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ADM-Tool_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>shaiya_icon_126x107.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.SqlServer.Server" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSeite\AccBan.Designer.vb">
+      <DependentUpon>AccBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\AccBan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\Accentban.Designer.vb">
+      <DependentUpon>Accentban.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\Accentban.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\Accentbannen.Designer.vb">
+      <DependentUpon>Accentbannen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\Accentbannen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis.Designer.vb">
+      <DependentUpon>WLLapis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis1.Designer.vb">
+      <DependentUpon>WLLapis1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis2.Designer.vb">
+      <DependentUpon>WLLapis2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis3.Designer.vb">
+      <DependentUpon>WLLapis3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis4.Designer.vb">
+      <DependentUpon>WLLapis4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis5.Designer.vb">
+      <DependentUpon>WLLapis5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\WLLapis5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen.Designer.vb">
+      <DependentUpon>LapisAuswaehlen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen1.Designer.vb">
+      <DependentUpon>LapisAuswaehlen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen2.Designer.vb">
+      <DependentUpon>LapisAuswaehlen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen3.Designer.vb">
+      <DependentUpon>LapisAuswaehlen3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen4.Designer.vb">
+      <DependentUpon>LapisAuswaehlen4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen5.Designer.vb">
+      <DependentUpon>LapisAuswaehlen5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\LapisAuswaehlen5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis.Designer.vb">
+      <DependentUpon>GWLLapis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis1.Designer.vb">
+      <DependentUpon>GWLLapis1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis2.Designer.vb">
+      <DependentUpon>GWLLapis2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis3.Designer.vb">
+      <DependentUpon>GWLLapis3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis4.Designer.vb">
+      <DependentUpon>GWLLapis4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis5.Designer.vb">
+      <DependentUpon>GWLLapis5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLLapis5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\AccListelöschen.Designer.vb">
+      <DependentUpon>AccListelöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\AccListelöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\Acclöschen.Designer.vb">
+      <DependentUpon>Acclöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\Acclöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Registierung\Accountreg.Designer.vb">
+      <DependentUpon>Accountreg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Account Registierung\Accountreg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Accbana.Designer.vb">
+      <DependentUpon>Accbana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Accbana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Accentbana.Designer.vb">
+      <DependentUpon>Accentbana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Accentbana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\AccWLgelöschta.Designer.vb">
+      <DependentUpon>AccWLgelöschta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\AccWLgelöschta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\AccWLända.Designer.vb">
+      <DependentUpon>AccWLända.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\AccWLända.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\APaba.Designer.vb">
+      <DependentUpon>APaba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\APaba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\APhina.Designer.vb">
+      <DependentUpon>APhina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\APhina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\GMenta.Designer.vb">
+      <DependentUpon>GMenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\GMenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\GMgeba.Designer.vb">
+      <DependentUpon>GMgeba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\GMgeba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Passa.Designer.vb">
+      <DependentUpon>Passa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Passa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Accbani.Designer.vb">
+      <DependentUpon>Accbani.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Accbani.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Accentbani.Designer.vb">
+      <DependentUpon>Accentbani.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Accentbani.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\AccWLgelöschti.Designer.vb">
+      <DependentUpon>AccWLgelöschti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\AccWLgelöschti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\AccWLändi.Designer.vb">
+      <DependentUpon>AccWLändi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\AccWLändi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\APabi.Designer.vb">
+      <DependentUpon>APabi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\APabi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Aphini.Designer.vb">
+      <DependentUpon>Aphini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Aphini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\GMenti.Designer.vb">
+      <DependentUpon>GMenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\GMenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\GMgebi.Designer.vb">
+      <DependentUpon>GMgebi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\GMgebi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Passi.Designer.vb">
+      <DependentUpon>Passi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Passi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Accbanr.Designer.vb">
+      <DependentUpon>Accbanr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Accbanr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Accentbanr.Designer.vb">
+      <DependentUpon>Accentbanr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Accentbanr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\AccWLgelöschtr.Designer.vb">
+      <DependentUpon>AccWLgelöschtr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\AccWLgelöschtr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\AccWLändr.Designer.vb">
+      <DependentUpon>AccWLändr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\AccWLändr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\APabr.Designer.vb">
+      <DependentUpon>APabr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\APabr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\APhinr.Designer.vb">
+      <DependentUpon>APhinr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\APhinr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\GMentr.Designer.vb">
+      <DependentUpon>GMentr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\GMentr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\GMgebr.Designer.vb">
+      <DependentUpon>GMgebr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\GMgebr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Passr.Designer.vb">
+      <DependentUpon>Passr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Passr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\AccPasswort.Designer.vb">
+      <DependentUpon>AccPasswort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\AccPasswort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\AccWLbearbeiten.Designer.vb">
+      <DependentUpon>AccWLbearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\AccWLbearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\AccWLlöschen.Designer.vb">
+      <DependentUpon>AccWLlöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\AccWLlöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\AcczurLöschung.Designer.vb">
+      <DependentUpon>AcczurLöschung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\AcczurLöschung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMLogs.Designer.vb">
+      <DependentUpon>ADMLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\AlleAuktionen.Designer.vb">
+      <DependentUpon>AlleAuktionen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\AlleAuktionen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\AlleGVS.Designer.vb">
+      <DependentUpon>AlleGVS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\AlleGVS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\APabziehen.Designer.vb">
+      <DependentUpon>APabziehen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\APabziehen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\APhinzufügen.Designer.vb">
+      <DependentUpon>APhinzufügen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\APhinzufügen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\Auktionlöschen.Designer.vb">
+      <DependentUpon>Auktionlöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Auktionlöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\BannStatpadder.Designer.vb">
+      <DependentUpon>BannStatpadder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\BannStatpadder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Abwehrändern.Designer.vb">
+      <DependentUpon>Abwehrändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Abwehrändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Bank.Designer.vb">
+      <DependentUpon>Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\CharActionLog.Designer.vb">
+      <DependentUpon>CharActionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\CharActionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\CharAuktionen.Designer.vb">
+      <DependentUpon>CharAuktionen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\CharAuktionen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\CharItembearbeiten.Designer.vb">
+      <DependentUpon>CharItembearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\CharItembearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\CharItemlöschen.Designer.vb">
+      <DependentUpon>CharItemlöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\CharItemlöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\CharLoginStatus.Designer.vb">
+      <DependentUpon>CharLoginStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\CharLoginStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\CharName.Designer.vb">
+      <DependentUpon>CharName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\CharName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\FestChar.Designer.vb">
+      <DependentUpon>FestChar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\FestChar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Geschickändern.Designer.vb">
+      <DependentUpon>Geschickändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Geschickändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Glückändern.Designer.vb">
+      <DependentUpon>Glückändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Glückändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Intelligenzändern.Designer.vb">
+      <DependentUpon>Intelligenzändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Intelligenzändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Inventar.Designer.vb">
+      <DependentUpon>Inventar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Inventar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Itemwiederherstellen.Designer.vb">
+      <DependentUpon>Itemwiederherstellen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Itemwiederherstellen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\ItemWiederherstellung.Designer.vb">
+      <DependentUpon>ItemWiederherstellung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\ItemWiederherstellung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\KaputteItemsActionLog.Designer.vb">
+      <DependentUpon>KaputteItemsActionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\KaputteItemsActionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\KillsActionLog.Designer.vb">
+      <DependentUpon>KillsActionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\KillsActionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Killsändern.Designer.vb">
+      <DependentUpon>Killsändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Killsändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\KäufeInGameMall.Designer.vb">
+      <DependentUpon>KäufeInGameMall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\KäufeInGameMall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\KäufeWebMall.Designer.vb">
+      <DependentUpon>KäufeWebMall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\KäufeWebMall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Leveländern.Designer.vb">
+      <DependentUpon>Leveländern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Leveländern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\SkillPoints.Designer.vb">
+      <DependentUpon>SkillPoints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\SkillPoints.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\StatPoints.Designer.vb">
+      <DependentUpon>StatPoints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\StatPoints.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Stärkeändern.Designer.vb">
+      <DependentUpon>Stärkeändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Stärkeändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\TeamGilde.Designer.vb">
+      <DependentUpon>TeamGilde.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\TeamGilde.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\TeamGildeentfernen.Designer.vb">
+      <DependentUpon>TeamGildeentfernen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\TeamGildeentfernen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\TeamGildehinzufügen.Designer.vb">
+      <DependentUpon>TeamGildehinzufügen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\TeamGildehinzufügen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\ToteActionLog.Designer.vb">
+      <DependentUpon>ToteActionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\ToteActionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Toteändern.Designer.vb">
+      <DependentUpon>Toteändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Toteändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Weisheitändern.Designer.vb">
+      <DependentUpon>Weisheitändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Weisheitändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSeite\Wiederbelebung.Designer.vb">
+      <DependentUpon>Wiederbelebung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharSeite\Wiederbelebung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\CWa.Designer.vb">
+      <DependentUpon>CWa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\CWa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Invbea.Designer.vb">
+      <DependentUpon>Invbea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Invbea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\InvIta.Designer.vb">
+      <DependentUpon>InvIta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\InvIta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\ItWia.Designer.vb">
+      <DependentUpon>ItWia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\ItWia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Kila.Designer.vb">
+      <DependentUpon>Kila.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Kila.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Leva.Designer.vb">
+      <DependentUpon>Leva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Leva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\NameChange.Designer.vb">
+      <DependentUpon>NameCa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\NameCa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\SKPa.Designer.vb">
+      <DependentUpon>SKPa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\SKPa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Staa.Designer.vb">
+      <DependentUpon>Staa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Staa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\STPa.Designer.vb">
+      <DependentUpon>STPa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\STPa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\CWi.Designer.vb">
+      <DependentUpon>CWi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\CWi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Invbei.Designer.vb">
+      <DependentUpon>Invbei.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Invbei.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\InvIti.Designer.vb">
+      <DependentUpon>InvIti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\InvIti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\ItWii.Designer.vb">
+      <DependentUpon>ItWii.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\ItWii.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Kili.Designer.vb">
+      <DependentUpon>Kili.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Kili.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Levi.Designer.vb">
+      <DependentUpon>Levi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Levi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\NameCi.Designer.vb">
+      <DependentUpon>NameCi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\NameCi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\SKPi.Designer.vb">
+      <DependentUpon>SKPi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\SKPi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Stai.Designer.vb">
+      <DependentUpon>Stai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Stai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\STPi.Designer.vb">
+      <DependentUpon>STPi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\STPi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\CWr.Designer.vb">
+      <DependentUpon>CWr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\CWr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Invber.Designer.vb">
+      <DependentUpon>Invber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Invber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\InvItr.Designer.vb">
+      <DependentUpon>InvItr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\InvItr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\ItWir.Designer.vb">
+      <DependentUpon>ItWir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\ItWir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Kilr.Designer.vb">
+      <DependentUpon>Kilr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Kilr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Levr.Designer.vb">
+      <DependentUpon>Levr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Levr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\NameCr.Designer.vb">
+      <DependentUpon>NameCr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\NameCr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\SKPr.Designer.vb">
+      <DependentUpon>SKPr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\SKPr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Star.Designer.vb">
+      <DependentUpon>Star.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Star.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\STPr.Designer.vb">
+      <DependentUpon>STPr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\STPr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\Chatloglöschen.Designer.vb">
+      <DependentUpon>Chatloglöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Chatloglöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\ChatLog.Designer.vb">
+      <DependentUpon>ChatLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\ChatLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\CozuLeader.Designer.vb">
+      <DependentUpon>CozuLeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\CozuLeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\DBItembearbeiten.Designer.vb">
+      <DependentUpon>DBItembearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\DBItembearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\DBMonsterbearbeiten.Designer.vb">
+      <DependentUpon>DBMonsterbearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\DBMonsterbearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\Etin.Designer.vb">
+      <DependentUpon>Etin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\Etin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\Globalreset.Designer.vb">
+      <DependentUpon>Globalreset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Globalreset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\MopDropändern.Designer.vb">
+      <DependentUpon>MopDropändern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\MopDropändern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\MonsterDrop.Designer.vb">
+      <DependentUpon>MonsterDrop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\MonsterDrop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\Freigabezurücknehmen.Designer.vb">
+      <DependentUpon>Freigabezurücknehmen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Freigabezurücknehmen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\GameLoglöschen.Designer.vb">
+      <DependentUpon>GameLoglöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\GameLoglöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\GebannteAcc.Designer.vb">
+      <DependentUpon>GebannteAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\GebannteAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\GelöschteCharsentfernen.Designer.vb">
+      <DependentUpon>GelöschteCharsentfernen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\GelöschteCharsentfernen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\GesamterActionLog.Designer.vb">
+      <DependentUpon>GesamterActionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\GesamterActionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\EHa.Designer.vb">
+      <DependentUpon>EHa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\EHa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\Ggea.Designer.vb">
+      <DependentUpon>Ggea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\Ggea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GHga.Designer.vb">
+      <DependentUpon>GHga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GHga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GLga.Designer.vb">
+      <DependentUpon>GLga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GLga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GNaa.Designer.vb">
+      <DependentUpon>GNaa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GNaa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GNacha.Designer.vb">
+      <DependentUpon>GNacha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GNacha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GRBPa.Designer.vb">
+      <DependentUpon>GRBPa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GRBPa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\Gwia.Designer.vb">
+      <DependentUpon>Gwia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\Gwia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GWLbea.Designer.vb">
+      <DependentUpon>GWLbea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GWLbea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GWLIga.Designer.vb">
+      <DependentUpon>GWLIga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\GWLIga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\EHi.Designer.vb">
+      <DependentUpon>EHi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\EHi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\Ggei.Designer.vb">
+      <DependentUpon>Ggei.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\Ggei.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GHgi.Designer.vb">
+      <DependentUpon>GHgi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GHgi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GLgi.Designer.vb">
+      <DependentUpon>GLgi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GLgi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GNachi.Designer.vb">
+      <DependentUpon>GNachi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GNachi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GNai.Designer.vb">
+      <DependentUpon>GNai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GNai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GRBPi.Designer.vb">
+      <DependentUpon>GRBPi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GRBPi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\Gwii.Designer.vb">
+      <DependentUpon>Gwii.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\Gwii.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GWLbei.Designer.vb">
+      <DependentUpon>GWLbei.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GWLbei.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GWLIgi.Designer.vb">
+      <DependentUpon>GWLIgi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\GWLIgi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\EHr.Designer.vb">
+      <DependentUpon>EHr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\EHr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\Gger.Designer.vb">
+      <DependentUpon>Gger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\Gger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GHgr.Designer.vb">
+      <DependentUpon>GHgr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GHgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GLgr.Designer.vb">
+      <DependentUpon>GLgr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GLgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GNachr.Designer.vb">
+      <DependentUpon>GNachr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GNachr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GNar.Designer.vb">
+      <DependentUpon>GNar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GNar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GRBPr.Designer.vb">
+      <DependentUpon>GRBPr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GRBPr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\Gwir.Designer.vb">
+      <DependentUpon>Gwir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\Gwir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GWLber.Designer.vb">
+      <DependentUpon>GWLber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GWLber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GWLIgr.Designer.vb">
+      <DependentUpon>GWLIgr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\GWLIgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\GMListe.Designer.vb">
+      <DependentUpon>GMListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\GMListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\GMnehmen.Designer.vb">
+      <DependentUpon>GMnehmen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\GMnehmen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\GMRechtegeben.Designer.vb">
+      <DependentUpon>GMRechtegeben.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\GMRechtegeben.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSeite\GMRechtenehmen.Designer.vb">
+      <DependentUpon>GMRechtenehmen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSeite\GMRechtenehmen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLbearbeiten.Designer.vb">
+      <DependentUpon>GWLbearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLbearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\Gildelöschen.Designer.vb">
+      <DependentUpon>Gildelöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\Gildelöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\Gildenhaus.Designer.vb">
+      <DependentUpon>Gildenhaus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\Gildenhaus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GildenNachricht.Designer.vb">
+      <DependentUpon>GildenNachricht.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GildenNachricht.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GildenName.Designer.vb">
+      <DependentUpon>GildenName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GildenName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\Gildewiederherstellen.Designer.vb">
+      <DependentUpon>Gildewiederherstellen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\Gildewiederherstellen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GRBPunkte.Designer.vb">
+      <DependentUpon>GRBPunkte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GRBPunkte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\GVbearbeiten.Designer.vb">
+      <DependentUpon>GVbearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\GVbearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\GVBearbeitung.Designer.vb">
+      <DependentUpon>GVBearbeitung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\GVBearbeitung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\GVSinBearbeitung.Designer.vb">
+      <DependentUpon>GVSinBearbeitung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\GVSinBearbeitung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\GWLlöschen.Designer.vb">
+      <DependentUpon>GWLlöschen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\GWLlöschen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\InGameMall.Designer.vb">
+      <DependentUpon>InGameMall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\InGameMall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\ItemDB.Designer.vb">
+      <DependentUpon>ItemDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\ItemDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\LoginStatus.Designer.vb">
+      <DependentUpon>LoginStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\LoginStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\LoginStatuszurücksetzen.Designer.vb">
+      <DependentUpon>LoginStatuszurücksetzen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\LoginStatuszurücksetzen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADM.Designer.vb">
+      <DependentUpon>ADM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.Designer.vb">
+      <DependentUpon>7Tagea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Permaa.Designer.vb">
+      <DependentUpon>Permaa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Permaa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Vora.Designer.vb">
+      <DependentUpon>Vora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Vora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\7Tagei.Designer.vb">
+      <DependentUpon>7Tagei.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\7Tagei.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\Permai.Designer.vb">
+      <DependentUpon>Permai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\Permai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\Vori.Designer.vb">
+      <DependentUpon>Vori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\Vori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\7Tager.Designer.vb">
+      <DependentUpon>7Tager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\7Tager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Permar.Designer.vb">
+      <DependentUpon>Permar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Permar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Vorr.Designer.vb">
+      <DependentUpon>Vorr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Vorr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GildenSeite\MemberzuLeader.Designer.vb">
+      <DependentUpon>MemberzuLeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GildenSeite\MemberzuLeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\MonsterDB.Designer.vb">
+      <DependentUpon>MonsterDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\MonsterDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServerTools\Passwort.Designer.vb">
+      <DependentUpon>Passwort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Passwort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\ServerAPgeben.Designer.vb">
+      <DependentUpon>ServerAPgeben.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\ServerAPgeben.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sparache\Resource.en.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\AlleKills.Designer.vb">
+      <DependentUpon>AlleKills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\AlleKills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\AlleTote.Designer.vb">
+      <DependentUpon>AlleTote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\AlleTote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\BossKills.Designer.vb">
+      <DependentUpon>BossKills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\BossKills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\CharRank.Designer.vb">
+      <DependentUpon>CharRank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\CharRank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\StatPadder.Designer.vb">
+      <DependentUpon>StatPadder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\StatPadder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\offenetickets.Designer.vb">
+      <DependentUpon>offenetickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\offenetickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\ticketbeabeiten.Designer.vb">
+      <DependentUpon>ticketbeabeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\ticketbeabeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticketerstellung.Designer.vb">
+      <DependentUpon>Ticketerstellung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Ticketerstellung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticketsgeschlossen.Designer.vb">
+      <DependentUpon>Ticketsgeschlossen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Ticketsgeschlossen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticketsinbearbeitung.Designer.vb">
+      <DependentUpon>Ticketsinbearbeitung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Ticketsinbearbeitung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticketsuche.Designer.vb">
+      <DependentUpon>Ticketsuche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Ticketsuche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Ticketsystem.Designer.vb">
+      <DependentUpon>Ticketsystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Ticketsystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\Wartungsmodusaus.Designer.vb">
+      <DependentUpon>Wartungsmodusaus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Wartungsmodusaus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTools\Wartungsmodusein.Designer.vb">
+      <DependentUpon>Wartungsmodusein.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Wartungsmodusein.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\ZugewieseneGVS.Designer.vb">
+      <DependentUpon>ZugewieseneGVS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\ZugewieseneGVS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\ZurueckgewieseneGVS.Designer.vb">
+      <DependentUpon>ZurueckgewieseneGVS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\ZurueckgewieseneGVS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccountSeite\AccBan.resx">
+      <DependentUpon>AccBan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\Accentban.resx">
+      <DependentUpon>Accentban.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\Accentbannen.resx">
+      <DependentUpon>Accentbannen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\WLLapis.resx">
+      <DependentUpon>WLLapis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\WLLapis1.resx">
+      <DependentUpon>WLLapis1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\WLLapis2.resx">
+      <DependentUpon>WLLapis2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\WLLapis3.resx">
+      <DependentUpon>WLLapis3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\WLLapis4.resx">
+      <DependentUpon>WLLapis4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\WLLapis5.resx">
+      <DependentUpon>WLLapis5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\LapisAuswaehlen.resx">
+      <DependentUpon>LapisAuswaehlen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\LapisAuswaehlen1.resx">
+      <DependentUpon>LapisAuswaehlen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\LapisAuswaehlen2.resx">
+      <DependentUpon>LapisAuswaehlen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\LapisAuswaehlen3.resx">
+      <DependentUpon>LapisAuswaehlen3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\LapisAuswaehlen4.resx">
+      <DependentUpon>LapisAuswaehlen4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\LapisAuswaehlen5.resx">
+      <DependentUpon>LapisAuswaehlen5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Informationen\CWi.resx">
+      <DependentUpon>CWi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Informationen\Invbei.resx">
+      <DependentUpon>Invbei.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.resx">
+      <DependentUpon>7Tagea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Maßnahmen\Reklamation\7Tager.resx">
+      <DependentUpon>7Tager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLLapis.resx">
+      <DependentUpon>GWLLapis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLLapis1.resx">
+      <DependentUpon>GWLLapis1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLLapis2.resx">
+      <DependentUpon>GWLLapis2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLLapis3.resx">
+      <DependentUpon>GWLLapis3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLLapis4.resx">
+      <DependentUpon>GWLLapis4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLLapis5.resx">
+      <DependentUpon>GWLLapis5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\AccListelöschen.resx">
+      <DependentUpon>AccListelöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\Acclöschen.resx">
+      <DependentUpon>Acclöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Registierung\Accountreg.resx">
+      <DependentUpon>Accountreg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Accbana.resx">
+      <DependentUpon>Accbana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Accentbana.resx">
+      <DependentUpon>Accentbana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\AccWLgelöschta.resx">
+      <DependentUpon>AccWLgelöschta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\AccWLända.resx">
+      <DependentUpon>AccWLända.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\APaba.resx">
+      <DependentUpon>APaba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\APhina.resx">
+      <DependentUpon>APhina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\GMenta.resx">
+      <DependentUpon>GMenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\GMgeba.resx">
+      <DependentUpon>GMgeba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Passa.resx">
+      <DependentUpon>Passa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\Accbani.resx">
+      <DependentUpon>Accbani.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\Accentbani.resx">
+      <DependentUpon>Accentbani.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\AccWLgelöschti.resx">
+      <DependentUpon>AccWLgelöschti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\AccWLändi.resx">
+      <DependentUpon>AccWLändi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\APabi.resx">
+      <DependentUpon>APabi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\Aphini.resx">
+      <DependentUpon>Aphini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\GMenti.resx">
+      <DependentUpon>GMenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\GMgebi.resx">
+      <DependentUpon>GMgebi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\Passi.resx">
+      <DependentUpon>Passi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Accbanr.resx">
+      <DependentUpon>Accbanr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Accentbanr.resx">
+      <DependentUpon>Accentbanr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\AccWLgelöschtr.resx">
+      <DependentUpon>AccWLgelöschtr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\AccWLändr.resx">
+      <DependentUpon>AccWLändr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\APabr.resx">
+      <DependentUpon>APabr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\APhinr.resx">
+      <DependentUpon>APhinr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\GMentr.resx">
+      <DependentUpon>GMentr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\GMgebr.resx">
+      <DependentUpon>GMgebr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Passr.resx">
+      <DependentUpon>Passr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\AccPasswort.resx">
+      <DependentUpon>AccPasswort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\AccWLbearbeiten.resx">
+      <DependentUpon>AccWLbearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\AccWLlöschen.resx">
+      <DependentUpon>AccWLlöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\AcczurLöschung.resx">
+      <DependentUpon>AcczurLöschung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADM.de.resx">
+      <DependentUpon>ADM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADM.en.resx">
+      <DependentUpon>ADM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMLogs.resx">
+      <DependentUpon>ADMLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\AlleAuktionen.resx">
+      <DependentUpon>AlleAuktionen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\AlleGVS.resx">
+      <DependentUpon>AlleGVS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\APabziehen.resx">
+      <DependentUpon>APabziehen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\APhinzufügen.resx">
+      <DependentUpon>APhinzufügen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Auktionlöschen.resx">
+      <DependentUpon>Auktionlöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\BannStatpadder.resx">
+      <DependentUpon>BannStatpadder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Abwehrändern.resx">
+      <DependentUpon>Abwehrändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Bank.resx">
+      <DependentUpon>Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\CharActionLog.resx">
+      <DependentUpon>CharActionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\CharAuktionen.resx">
+      <DependentUpon>CharAuktionen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\CharItembearbeiten.resx">
+      <DependentUpon>CharItembearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\CharItemlöschen.resx">
+      <DependentUpon>CharItemlöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\CharLoginStatus.resx">
+      <DependentUpon>CharLoginStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\CharName.resx">
+      <DependentUpon>CharName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\FestChar.resx">
+      <DependentUpon>FestChar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Geschickändern.resx">
+      <DependentUpon>Geschickändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Glückändern.resx">
+      <DependentUpon>Glückändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Intelligenzändern.resx">
+      <DependentUpon>Intelligenzändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Inventar.resx">
+      <DependentUpon>Inventar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Itemwiederherstellen.resx">
+      <DependentUpon>Itemwiederherstellen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\ItemWiederherstellung.resx">
+      <DependentUpon>ItemWiederherstellung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\KaputteItemsActionLog.resx">
+      <DependentUpon>KaputteItemsActionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\KillsActionLog.resx">
+      <DependentUpon>KillsActionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Killsändern.resx">
+      <DependentUpon>Killsändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\KäufeInGameMall.resx">
+      <DependentUpon>KäufeInGameMall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\KäufeWebMall.resx">
+      <DependentUpon>KäufeWebMall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Leveländern.resx">
+      <DependentUpon>Leveländern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\SkillPoints.resx">
+      <DependentUpon>SkillPoints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\StatPoints.resx">
+      <DependentUpon>StatPoints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Stärkeändern.resx">
+      <DependentUpon>Stärkeändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\TeamGilde.resx">
+      <DependentUpon>TeamGilde.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\TeamGildeentfernen.resx">
+      <DependentUpon>TeamGildeentfernen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\TeamGildehinzufügen.resx">
+      <DependentUpon>TeamGildehinzufügen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\ToteActionLog.resx">
+      <DependentUpon>ToteActionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Toteändern.resx">
+      <DependentUpon>Toteändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Weisheitändern.resx">
+      <DependentUpon>Weisheitändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSeite\Wiederbelebung.resx">
+      <DependentUpon>Wiederbelebung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\CWa.resx">
+      <DependentUpon>CWa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Invbea.resx">
+      <DependentUpon>Invbea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\InvIta.resx">
+      <DependentUpon>InvIta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\ItWia.resx">
+      <DependentUpon>ItWia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Kila.resx">
+      <DependentUpon>Kila.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Leva.resx">
+      <DependentUpon>Leva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\NameCa.resx">
+      <DependentUpon>NameCa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\SKPa.resx">
+      <DependentUpon>SKPa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Staa.resx">
+      <DependentUpon>Staa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\STPa.resx">
+      <DependentUpon>STPa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Chatloglöschen.resx">
+      <DependentUpon>Chatloglöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\ChatLog.resx">
+      <DependentUpon>ChatLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\CozuLeader.resx">
+      <DependentUpon>CozuLeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\DBItembearbeiten.resx">
+      <DependentUpon>DBItembearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\DBMonsterbearbeiten.resx">
+      <DependentUpon>DBMonsterbearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\Etin.resx">
+      <DependentUpon>Etin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Globalreset.resx">
+      <DependentUpon>Globalreset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.en.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\MonsterDrop.resx">
+      <DependentUpon>MonsterDrop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Freigabezurücknehmen.resx">
+      <DependentUpon>Freigabezurücknehmen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\GameLoglöschen.resx">
+      <DependentUpon>GameLoglöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\GebannteAcc.resx">
+      <DependentUpon>GebannteAcc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\GelöschteCharsentfernen.resx">
+      <DependentUpon>GelöschteCharsentfernen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\GesamterActionLog.resx">
+      <DependentUpon>GesamterActionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\Gildelöschen.resx">
+      <DependentUpon>Gildelöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\Gildenhaus.resx">
+      <DependentUpon>Gildenhaus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GildenNachricht.resx">
+      <DependentUpon>GildenNachricht.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GildenName.resx">
+      <DependentUpon>GildenName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\Gildewiederherstellen.resx">
+      <DependentUpon>Gildewiederherstellen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\GMListe.resx">
+      <DependentUpon>GMListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\GMnehmen.resx">
+      <DependentUpon>GMnehmen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\GMRechtegeben.resx">
+      <DependentUpon>GMRechtegeben.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSeite\GMRechtenehmen.resx">
+      <DependentUpon>GMRechtenehmen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GRBPunkte.resx">
+      <DependentUpon>GRBPunkte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\GVbearbeiten.resx">
+      <DependentUpon>GVbearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\GVBearbeitung.resx">
+      <DependentUpon>GVBearbeitung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\GVSinBearbeitung.resx">
+      <DependentUpon>GVSinBearbeitung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLbearbeiten.resx">
+      <DependentUpon>GWLbearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\GWLlöschen.resx">
+      <DependentUpon>GWLlöschen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\InGameMall.resx">
+      <DependentUpon>InGameMall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\ItemDB.resx">
+      <DependentUpon>ItemDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\LoginStatus.resx">
+      <DependentUpon>LoginStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\LoginStatuszurücksetzen.resx">
+      <DependentUpon>LoginStatuszurücksetzen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADM.resx">
+      <DependentUpon>ADM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GildenSeite\MemberzuLeader.resx">
+      <DependentUpon>MemberzuLeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\MonsterDB.resx">
+      <DependentUpon>MonsterDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\MopDropändern.resx">
+      <DependentUpon>MopDropändern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Passwort.resx">
+      <DependentUpon>Passwort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\ServerAPgeben.resx">
+      <DependentUpon>ServerAPgeben.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sparache\Resource.de.resx" />
+    <EmbeddedResource Include="Sparache\Resource.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.en.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\AlleKills.resx">
+      <DependentUpon>AlleKills.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\AlleTote.resx">
+      <DependentUpon>AlleTote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\BossKills.resx">
+      <DependentUpon>BossKills.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\CharRank.resx">
+      <DependentUpon>CharRank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\StatPadder.resx">
+      <DependentUpon>StatPadder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\offenetickets.resx">
+      <DependentUpon>offenetickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\ticketbeabeiten.resx">
+      <DependentUpon>ticketbeabeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Ticketerstellung.resx">
+      <DependentUpon>Ticketerstellung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Ticketsgeschlossen.resx">
+      <DependentUpon>Ticketsgeschlossen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Ticketsinbearbeitung.resx">
+      <DependentUpon>Ticketsinbearbeitung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Ticketsuche.resx">
+      <DependentUpon>Ticketsuche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Ticketsystem.resx">
+      <DependentUpon>Ticketsystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Wartungsmodusaus.resx">
+      <DependentUpon>Wartungsmodusaus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTools\Wartungsmodusein.resx">
+      <DependentUpon>Wartungsmodusein.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\ZugewieseneGVS.resx">
+      <DependentUpon>ZugewieseneGVS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\ZurueckgewieseneGVS.resx">
+      <DependentUpon>ZurueckgewieseneGVS.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ADM-Tool_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="shaiya_icon_126x107.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
