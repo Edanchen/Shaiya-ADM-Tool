@@ -6571,54 +6571,6 @@
   <data name="MenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
-  <data name="DateiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 20</value>
-  </data>
-  <data name="DateiToolStripMenuItem.Text" xml:space="preserve">
-    <value>Datei</value>
-  </data>
-  <data name="ServerToolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 20</value>
-  </data>
-  <data name="ServerToolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>ServerTools</value>
-  </data>
-  <data name="AllePvPKillsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="AllePvPKillsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Alle PvP Kills</value>
-  </data>
-  <data name="AllePvPToteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="AllePvPToteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Alle PvP Tote</value>
-  </data>
-  <data name="BossKillsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="BossKillsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Boss Kills</value>
-  </data>
-  <data name="CharakterStatistikToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="CharakterStatistikToolStripMenuItem.Text" xml:space="preserve">
-    <value>Charakter Statistik</value>
-  </data>
-  <data name="StatistikToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="StatistikToolStripMenuItem.Text" xml:space="preserve">
-    <value>Statistik</value>
-  </data>
-  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 20</value>
-  </data>
-  <data name="ToolStripMenuItem1.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -6643,6 +6595,12 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="DateiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="DateiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Datei</value>
+  </data>
   <data name="AbmeldenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 22</value>
   </data>
@@ -6655,8 +6613,14 @@
   <data name="BeendenToolStripMenuItem.Text" xml:space="preserve">
     <value>Beenden</value>
   </data>
+  <data name="ServerToolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="ServerToolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>ServerTools</value>
+  </data>
   <data name="AccountToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>165, 22</value>
   </data>
   <data name="AccountToolStripMenuItem.Text" xml:space="preserve">
     <value>Account</value>
@@ -6680,7 +6644,7 @@
     <value>Alle GM-Accounts</value>
   </data>
   <data name="ServerToolsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>165, 22</value>
   </data>
   <data name="ServerToolsToolStripMenuItem1.Text" xml:space="preserve">
     <value>Server Tools</value>
@@ -6733,8 +6697,14 @@
   <data name="GlobalStatResetToolStripMenuItem.Text" xml:space="preserve">
     <value>Global Stat-Reset</value>
   </data>
+  <data name="ServerAPVerteilenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 22</value>
+  </data>
+  <data name="ServerAPVerteilenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Server AP verteilen</value>
+  </data>
   <data name="WartungsmodusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>165, 22</value>
   </data>
   <data name="WartungsmodusToolStripMenuItem.Text" xml:space="preserve">
     <value>Wartungsmodus</value>
@@ -6750,6 +6720,42 @@
   </data>
   <data name="WartungsmodusAusschaltenToolStripMenuItem.Text" xml:space="preserve">
     <value>Wartungsmodus ausschalten</value>
+  </data>
+  <data name="StatistikToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="StatistikToolStripMenuItem.Text" xml:space="preserve">
+    <value>Statistik</value>
+  </data>
+  <data name="AllePvPKillsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="AllePvPKillsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Alle PvP Kills</value>
+  </data>
+  <data name="AllePvPToteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="AllePvPToteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Alle PvP Tote</value>
+  </data>
+  <data name="BossKillsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="BossKillsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Boss Kills</value>
+  </data>
+  <data name="CharakterStatistikToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="CharakterStatistikToolStripMenuItem.Text" xml:space="preserve">
+    <value>Charakter Statistik</value>
+  </data>
+  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>?</value>
   </data>
   <data name="HilfeZumToolToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -6808,15 +6814,6 @@
   <data name="ContextMenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
-  <data name="ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 92</value>
-  </data>
-  <data name="&gt;&gt;ContextMenuStrip1.Name" xml:space="preserve">
-    <value>ContextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;ContextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="AccountToolStripMenuItem1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -6826,65 +6823,38 @@
   <data name="AccountToolStripMenuItem1.Text" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="CharToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="CharToolStripMenuItem.Text" xml:space="preserve">
+    <value>Char</value>
+  </data>
+  <data name="GildeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="GildeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gilde</value>
+  </data>
+  <data name="MaßnahmeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="MaßnahmeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Maßnahme</value>
+  </data>
+  <data name="ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 92</value>
+  </data>
+  <data name="&gt;&gt;ContextMenuStrip1.Name" xml:space="preserve">
+    <value>ContextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;ContextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="AuftragToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 22</value>
   </data>
   <data name="AuftragToolStripMenuItem.Text" xml:space="preserve">
     <value>Auftrag</value>
-  </data>
-  <data name="APHinzufügenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="APHinzufügenToolStripMenuItem.Text" xml:space="preserve">
-    <value>AP hinzufügen</value>
-  </data>
-  <data name="APAbziehenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="APAbziehenToolStripMenuItem.Text" xml:space="preserve">
-    <value>AP abziehen</value>
-  </data>
-  <data name="AccountBannToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="AccountBannToolStripMenuItem.Text" xml:space="preserve">
-    <value>Account bannen</value>
-  </data>
-  <data name="AccountEntbannenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="AccountEntbannenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Account entbannen</value>
-  </data>
-  <data name="GMRechteGegebenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="GMRechteGegebenToolStripMenuItem.Text" xml:space="preserve">
-    <value>GM Rechte gegeben</value>
-  </data>
-  <data name="GMRechteEntzogenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="GMRechteEntzogenToolStripMenuItem.Text" xml:space="preserve">
-    <value>GM Rechte entzogen</value>
-  </data>
-  <data name="PasswortGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="PasswortGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Passwort geändert</value>
-  </data>
-  <data name="WarenlagerItemGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="WarenlagerItemGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Warenlager Item geändert</value>
-  </data>
-  <data name="WarenlagerItemGelöschtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="WarenlagerItemGelöschtToolStripMenuItem.Text" xml:space="preserve">
-    <value>Warenlager Item gelöscht</value>
   </data>
   <data name="InformationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 22</value>
@@ -6892,323 +6862,29 @@
   <data name="InformationToolStripMenuItem.Text" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="APHinzufügenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="APHinzufügenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>AP hinzufügen</value>
-  </data>
-  <data name="APToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="APToolStripMenuItem.Text" xml:space="preserve">
-    <value>AP abziehen</value>
-  </data>
-  <data name="AccountBannenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="AccountBannenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Account bannen</value>
-  </data>
-  <data name="AccountEntbannenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="AccountEntbannenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Account entbannen</value>
-  </data>
-  <data name="GMRechteGebenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="GMRechteGebenToolStripMenuItem.Text" xml:space="preserve">
-    <value>GM Rechte geben</value>
-  </data>
-  <data name="GMRechteEntziehenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="GMRechteEntziehenToolStripMenuItem.Text" xml:space="preserve">
-    <value>GM Rechte entziehen</value>
-  </data>
-  <data name="PasswortÄndernToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="PasswortÄndernToolStripMenuItem.Text" xml:space="preserve">
-    <value>Passwort ändern</value>
-  </data>
-  <data name="WarenlagerItemÄndernToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="WarenlagerItemÄndernToolStripMenuItem.Text" xml:space="preserve">
-    <value>Warenlager Item ändern</value>
-  </data>
-  <data name="WarenlagerItemGelöschtToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 22</value>
-  </data>
-  <data name="WarenlagerItemGelöschtToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Warenlager Item gelöscht</value>
-  </data>
   <data name="RaklamationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 22</value>
   </data>
   <data name="RaklamationToolStripMenuItem.Text" xml:space="preserve">
     <value>Raklamation</value>
   </data>
-  <data name="APHinzufügenToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="APHinzufügenToolStripMenuItem2.Text" xml:space="preserve">
-    <value>AP hinzufügen</value>
-  </data>
-  <data name="ApAbziehenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="ApAbziehenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Ap abziehen</value>
-  </data>
-  <data name="AccountBannenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="AccountBannenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Account bannen</value>
-  </data>
-  <data name="AccountEntbannenToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="AccountEntbannenToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Account entbannen</value>
-  </data>
-  <data name="GMRechteGebenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="GMRechteGebenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>GM Rechte geben</value>
-  </data>
-  <data name="GMRechteEntziehenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="GMRechteEntziehenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>GM Rechte entziehen</value>
-  </data>
-  <data name="PasswortÄnderungToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="PasswortÄnderungToolStripMenuItem.Text" xml:space="preserve">
-    <value>Passwort Änderung</value>
-  </data>
-  <data name="WarenlagerItemÄnderungToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="WarenlagerItemÄnderungToolStripMenuItem.Text" xml:space="preserve">
-    <value>Warenlager Item Änderung</value>
-  </data>
-  <data name="WarenlagerItemGelöschtToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 22</value>
-  </data>
-  <data name="WarenlagerItemGelöschtToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Warenlager Item gelöscht</value>
-  </data>
-  <data name="CharToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="CharToolStripMenuItem.Text" xml:space="preserve">
-    <value>Char</value>
-  </data>
   <data name="AuftragToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="AuftragToolStripMenuItem1.Text" xml:space="preserve">
     <value>Auftrag</value>
   </data>
-  <data name="NameChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="NameChangeToolStripMenuItem.Text" xml:space="preserve">
-    <value>NameChange</value>
-  </data>
-  <data name="LevelGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="LevelGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Level geändert</value>
-  </data>
-  <data name="KillsBzwToteGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="KillsBzwToteGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Kills bzw. Tote geändert</value>
-  </data>
-  <data name="CharWiederbelebungToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="CharWiederbelebungToolStripMenuItem.Text" xml:space="preserve">
-    <value>Char Wiederbelebung</value>
-  </data>
-  <data name="StatpointsGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="StatpointsGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Statpoints geändert</value>
-  </data>
-  <data name="SkillpointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="SkillpointsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Skillpoints geändert</value>
-  </data>
-  <data name="StatsGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="StatsGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Stats geändert</value>
-  </data>
-  <data name="InventarBearbeitetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="InventarBearbeitetToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inventar bearbeitet</value>
-  </data>
-  <data name="InventarItemGelöschtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="InventarItemGelöschtToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inventar Item gelöscht</value>
-  </data>
-  <data name="ItemWiederherstellungToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="ItemWiederherstellungToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item-Wiederherstellung</value>
-  </data>
   <data name="InformationToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="InformationToolStripMenuItem1.Text" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="NameChanceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="NameChanceToolStripMenuItem.Text" xml:space="preserve">
-    <value>NameChance</value>
-  </data>
-  <data name="LevelGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="LevelGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Level geändert</value>
-  </data>
-  <data name="KillsBzwToteGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="KillsBzwToteGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Kills bzw, Tote geändert</value>
-  </data>
-  <data name="CharWiederbelebungToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="CharWiederbelebungToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Char Wiederbelebung</value>
-  </data>
-  <data name="StatpointsGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="StatpointsGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Statpoints geändert</value>
-  </data>
-  <data name="SkillpointsGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="SkillpointsGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Skillpoints geändert</value>
-  </data>
-  <data name="StatsGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="StatsGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Stats geändert</value>
-  </data>
-  <data name="InventarBearbeitetToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="InventarBearbeitetToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Inventar bearbeitet</value>
-  </data>
-  <data name="InventarItemGelöschtToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="InventarItemGelöschtToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Inventar Item gelöscht</value>
-  </data>
-  <data name="ItemWiederherstellungToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="ItemWiederherstellungToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Item-Wiederherstellung</value>
-  </data>
   <data name="ReklamationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ReklamationToolStripMenuItem.Text" xml:space="preserve">
     <value>Reklamation</value>
-  </data>
-  <data name="NameChanceToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="NameChanceToolStripMenuItem1.Text" xml:space="preserve">
-    <value>NameChance</value>
-  </data>
-  <data name="LevelGeändertToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="LevelGeändertToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Level geändert</value>
-  </data>
-  <data name="KillsBzwToteGeändertToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="KillsBzwToteGeändertToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Kills bzw. Tote geändert</value>
-  </data>
-  <data name="CharWiederbelebungToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="CharWiederbelebungToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Char Wiederbelebung</value>
-  </data>
-  <data name="StatpointsGeändertToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="StatpointsGeändertToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Statpoints geändert</value>
-  </data>
-  <data name="StatspointsGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="StatspointsGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Statspoints geändert</value>
-  </data>
-  <data name="InventarBearbeitetToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="InventarBearbeitetToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Inventar bearbeitet</value>
-  </data>
-  <data name="InventarItemGelöschtToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="InventarItemGelöschtToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Inventar Item gelöscht</value>
-  </data>
-  <data name="ItemWiederherstellungToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 22</value>
-  </data>
-  <data name="ItemWiederherstellungToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Item-Wiederherstellung</value>
-  </data>
-  <data name="GildeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="GildeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gilde</value>
   </data>
   <data name="AuftragToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
@@ -7408,12 +7084,6 @@
   <data name="GildenWarenlagerItemGelöschtToolStripMenuItem2.Text" xml:space="preserve">
     <value>Gilden-Warenlager Item gelöscht</value>
   </data>
-  <data name="MaßnahmeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="MaßnahmeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Maßnahme</value>
-  </data>
   <data name="AuftragToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
   </data>
@@ -7569,12 +7239,6 @@
   </data>
   <data name="&gt;&gt;Button65.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="ServerAPVerteilenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
-  </data>
-  <data name="ServerAPVerteilenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Server AP verteilen</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -8713,6 +8377,12 @@
   <data name="&gt;&gt;GlobalStatResetToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;ServerAPVerteilenToolStripMenuItem.Name" xml:space="preserve">
+    <value>ServerAPVerteilenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ServerAPVerteilenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;WartungsmodusToolStripMenuItem.Name" xml:space="preserve">
     <value>WartungsmodusToolStripMenuItem</value>
   </data>
@@ -8797,178 +8467,16 @@
   <data name="&gt;&gt;AuftragToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;APHinzufügenToolStripMenuItem.Name" xml:space="preserve">
-    <value>APHinzufügenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;APHinzufügenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;APAbziehenToolStripMenuItem.Name" xml:space="preserve">
-    <value>APAbziehenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;APAbziehenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AccountBannToolStripMenuItem.Name" xml:space="preserve">
-    <value>AccountBannToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;AccountBannToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AccountEntbannenToolStripMenuItem.Name" xml:space="preserve">
-    <value>AccountEntbannenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;AccountEntbannenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GMRechteGegebenToolStripMenuItem.Name" xml:space="preserve">
-    <value>GMRechteGegebenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GMRechteGegebenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GMRechteEntzogenToolStripMenuItem.Name" xml:space="preserve">
-    <value>GMRechteEntzogenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GMRechteEntzogenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PasswortGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>PasswortGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PasswortGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>WarenlagerItemGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGelöschtToolStripMenuItem.Name" xml:space="preserve">
-    <value>WarenlagerItemGelöschtToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGelöschtToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;InformationToolStripMenuItem.Name" xml:space="preserve">
     <value>InformationToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;InformationToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;APHinzufügenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>APHinzufügenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;APHinzufügenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;APToolStripMenuItem.Name" xml:space="preserve">
-    <value>APToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;APToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AccountBannenToolStripMenuItem.Name" xml:space="preserve">
-    <value>AccountBannenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;AccountBannenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AccountEntbannenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>AccountEntbannenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;AccountEntbannenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GMRechteGebenToolStripMenuItem.Name" xml:space="preserve">
-    <value>GMRechteGebenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GMRechteGebenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GMRechteEntziehenToolStripMenuItem.Name" xml:space="preserve">
-    <value>GMRechteEntziehenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GMRechteEntziehenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PasswortÄndernToolStripMenuItem.Name" xml:space="preserve">
-    <value>PasswortÄndernToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PasswortÄndernToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemÄndernToolStripMenuItem.Name" xml:space="preserve">
-    <value>WarenlagerItemÄndernToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemÄndernToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGelöschtToolStripMenuItem1.Name" xml:space="preserve">
-    <value>WarenlagerItemGelöschtToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGelöschtToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;RaklamationToolStripMenuItem.Name" xml:space="preserve">
     <value>RaklamationToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;RaklamationToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;APHinzufügenToolStripMenuItem2.Name" xml:space="preserve">
-    <value>APHinzufügenToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;APHinzufügenToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ApAbziehenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>ApAbziehenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;ApAbziehenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AccountBannenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>AccountBannenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;AccountBannenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AccountEntbannenToolStripMenuItem2.Name" xml:space="preserve">
-    <value>AccountEntbannenToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;AccountEntbannenToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GMRechteGebenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GMRechteGebenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GMRechteGebenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GMRechteEntziehenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GMRechteEntziehenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GMRechteEntziehenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PasswortÄnderungToolStripMenuItem.Name" xml:space="preserve">
-    <value>PasswortÄnderungToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PasswortÄnderungToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemÄnderungToolStripMenuItem.Name" xml:space="preserve">
-    <value>WarenlagerItemÄnderungToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemÄnderungToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGelöschtToolStripMenuItem2.Name" xml:space="preserve">
-    <value>WarenlagerItemGelöschtToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;WarenlagerItemGelöschtToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CharToolStripMenuItem.Name" xml:space="preserve">
@@ -8983,190 +8491,16 @@
   <data name="&gt;&gt;AuftragToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NameChangeToolStripMenuItem.Name" xml:space="preserve">
-    <value>NameChangeToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;NameChangeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LevelGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>LevelGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;LevelGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KillsBzwToteGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>KillsBzwToteGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;KillsBzwToteGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CharWiederbelebungToolStripMenuItem.Name" xml:space="preserve">
-    <value>CharWiederbelebungToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;CharWiederbelebungToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatpointsGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>StatpointsGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;StatpointsGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SkillpointsToolStripMenuItem.Name" xml:space="preserve">
-    <value>SkillpointsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;SkillpointsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatsGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>StatsGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;StatsGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InventarBearbeitetToolStripMenuItem.Name" xml:space="preserve">
-    <value>InventarBearbeitetToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;InventarBearbeitetToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InventarItemGelöschtToolStripMenuItem.Name" xml:space="preserve">
-    <value>InventarItemGelöschtToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;InventarItemGelöschtToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ItemWiederherstellungToolStripMenuItem.Name" xml:space="preserve">
-    <value>ItemWiederherstellungToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ItemWiederherstellungToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;InformationToolStripMenuItem1.Name" xml:space="preserve">
     <value>InformationToolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;InformationToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NameChanceToolStripMenuItem.Name" xml:space="preserve">
-    <value>NameChanceToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;NameChanceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LevelGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>LevelGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;LevelGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KillsBzwToteGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>KillsBzwToteGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;KillsBzwToteGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CharWiederbelebungToolStripMenuItem1.Name" xml:space="preserve">
-    <value>CharWiederbelebungToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;CharWiederbelebungToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatpointsGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>StatpointsGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;StatpointsGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SkillpointsGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>SkillpointsGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;SkillpointsGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatsGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>StatsGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;StatsGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InventarBearbeitetToolStripMenuItem1.Name" xml:space="preserve">
-    <value>InventarBearbeitetToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;InventarBearbeitetToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InventarItemGelöschtToolStripMenuItem1.Name" xml:space="preserve">
-    <value>InventarItemGelöschtToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;InventarItemGelöschtToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ItemWiederherstellungToolStripMenuItem1.Name" xml:space="preserve">
-    <value>ItemWiederherstellungToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;ItemWiederherstellungToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;ReklamationToolStripMenuItem.Name" xml:space="preserve">
     <value>ReklamationToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;ReklamationToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameChanceToolStripMenuItem1.Name" xml:space="preserve">
-    <value>NameChanceToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;NameChanceToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LevelGeändertToolStripMenuItem2.Name" xml:space="preserve">
-    <value>LevelGeändertToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;LevelGeändertToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KillsBzwToteGeändertToolStripMenuItem2.Name" xml:space="preserve">
-    <value>KillsBzwToteGeändertToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;KillsBzwToteGeändertToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CharWiederbelebungToolStripMenuItem2.Name" xml:space="preserve">
-    <value>CharWiederbelebungToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;CharWiederbelebungToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatpointsGeändertToolStripMenuItem2.Name" xml:space="preserve">
-    <value>StatpointsGeändertToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;StatpointsGeändertToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatspointsGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>StatspointsGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;StatspointsGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InventarBearbeitetToolStripMenuItem2.Name" xml:space="preserve">
-    <value>InventarBearbeitetToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;InventarBearbeitetToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InventarItemGelöschtToolStripMenuItem2.Name" xml:space="preserve">
-    <value>InventarItemGelöschtToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;InventarItemGelöschtToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ItemWiederherstellungToolStripMenuItem2.Name" xml:space="preserve">
-    <value>ItemWiederherstellungToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;ItemWiederherstellungToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GildeToolStripMenuItem.Name" xml:space="preserve">
@@ -9449,12 +8783,6 @@
     <value>VorfallToolStripMenuItem2</value>
   </data>
   <data name="&gt;&gt;VorfallToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ServerAPVerteilenToolStripMenuItem.Name" xml:space="preserve">
-    <value>ServerAPVerteilenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ServerAPVerteilenToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

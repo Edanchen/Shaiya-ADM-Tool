@@ -2019,286 +2019,6 @@
     Private Sub Button50_Click(sender As System.Object, e As System.EventArgs) Handles Button50.Click
         TeamGilde.Show()
     End Sub
-
-    Private Sub APHinzufügenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles APHinzufügenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                APhina.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        APhina.Show()
-        APhina.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub APAbziehenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles APAbziehenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                APaba.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        APaba.Show()
-        APaba.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub AccountBannToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AccountBannToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Accbana.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Accbana.Show()
-        Accbana.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub AccountEntbannenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AccountEntbannenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Accentbana.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Accentbana.Show()
-        Accentbana.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub GMRechteGegebenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GMRechteGegebenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                GMgeba.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        GMgeba.Show()
-        GMgeba.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub GMRechteEntzogenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GMRechteEntzogenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                GMenta.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        GMenta.Show()
-        GMenta.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub PasswortGeändertToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PasswortGeändertToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Passa.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Passa.Show()
-        Passa.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub WarenlagerItemGeändertToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles WarenlagerItemGeändertToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                AccWLända.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        AccWLända.Show()
-        AccWLända.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub WarenlagerItemGelöschtToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles WarenlagerItemGelöschtToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                AccWLgelöschta.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        AccWLgelöschta.Show()
-        AccWLgelöschta.TextBox1.Text = TextBox18.Text
-    End Sub
-
     Private Sub Button54_Click(sender As System.Object, e As System.EventArgs) Handles Button54.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_GameData;Integrated Security = SSPI")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, UserID, Text, Status, Type, Zugewiesenan FROM ADM_Tool.dbo.Vorgaenge WHERE GV='" & ListView2.SelectedItems(0).SubItems(0).Text & "'", con)
@@ -2334,286 +2054,6 @@
             End If
         End Try
     End Sub
-
-    Private Sub APHinzufügenToolStripMenuItem1_Click(sender As System.Object, e As System.EventArgs) Handles APHinzufügenToolStripMenuItem1.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Aphini.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Aphini.Show()
-        Aphini.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub APToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles APToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                APabi.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        APabi.Show()
-        APabi.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub AccountBannenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AccountBannenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Accbani.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Accbani.Show()
-        Accbani.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub AccountEntbannenToolStripMenuItem1_Click(sender As System.Object, e As System.EventArgs) Handles AccountEntbannenToolStripMenuItem1.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Accentbani.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Accentbani.Show()
-        Accentbani.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub GMRechteGebenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GMRechteGebenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                GMgebi.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        GMgebi.Show()
-        GMgebi.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub GMRechteEntziehenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GMRechteEntziehenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Gmenti.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Gmenti.Show()
-        Gmenti.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub PasswortÄndernToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PasswortÄndernToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                Passi.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        Passi.Show()
-        Passi.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub WarenlagerItemÄndernToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles WarenlagerItemÄndernToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                ACCWLändi.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        ACCWLändi.Show()
-        ACCWLändi.TextBox1.Text = TextBox18.Text
-    End Sub
-
-    Private Sub WarenlagerItemGelöschtToolStripMenuItem1_Click(sender As System.Object, e As System.EventArgs) Handles WarenlagerItemGelöschtToolStripMenuItem1.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                AccWLgelöschti.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        AccWLgelöschti.Show()
-        AccWLgelöschti.TextBox1.Text = TextBox18.Text
-    End Sub
-
     Private Sub Button68_Click(sender As System.Object, e As System.EventArgs) Handles Button68.Click
         Dim con As New Data.SqlClient.SqlConnection
         Dim cmd As New Data.SqlClient.SqlCommand
@@ -3005,36 +2445,6 @@
     End Sub
 
 
-    Private Sub APHinzufügenToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles APHinzufügenToolStripMenuItem2.Click
-        Dim con As New Data.SqlClient.SqlConnection
-        Dim cmd As New Data.SqlClient.SqlCommand
-        Dim reader As SqlDataReader
-
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
-        cmd.Connection = con
-        cmd.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
-        Try
-            con.Open()
-            reader = cmd.ExecuteReader()
-            Do While reader.Read()
-                APhinr.ComboBox2.Items.Add(reader("Benutzer")
-                )
-            Loop
-
-            reader.Close()
-            con.Close()
-        Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
-        End Try
-        APhinr.Show()
-        APhinr.TextBox1.Text = TextBox18.Text
-    End Sub
 
     Private Sub GlobalStatResetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GlobalStatResetToolStripMenuItem.Click
         Globalreset.Show()
@@ -3274,5 +2684,329 @@ ORDER BY TotalStat DESC;", con)
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub AuftragToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AuftragToolStripMenuItem.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Account_Auftrag.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Account' AND Art='Auftrag'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Account_Auftrag.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Account_Auftrag.Show()
+        Account_Auftrag.TextBox3.Text = TextBox18.Text
+        Account_Auftrag.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub InformationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InformationToolStripMenuItem.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Account_Information.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Account' AND Art='Information'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Account_Information.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Account_Information.Show()
+        Account_Information.TextBox3.Text = TextBox18.Text
+        Account_Information.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub RaklamationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RaklamationToolStripMenuItem.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Account_Reklamation.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Account' AND Art='Reklamation'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Account_Reklamation.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Account_Reklamation.Show()
+        Account_Reklamation.TextBox3.Text = TextBox18.Text
+        Account_Reklamation.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub AuftragToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AuftragToolStripMenuItem1.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Char_Auftrag.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Char' AND Art='Auftrag'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Char_Auftrag.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Char_Auftrag.Show()
+        Char_Auftrag.TextBox3.Text = TextBox18.Text
+        Char_Auftrag.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub InformationToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles InformationToolStripMenuItem1.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Char_Information.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Char' AND Art='Information'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Char_Information.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Char_Information.Show()
+        Char_Information.TextBox3.Text = TextBox18.Text
+        Char_Information.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub ReklamationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReklamationToolStripMenuItem.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Char_Reklamation.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Char' AND Art='Reklamation'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Char_Reklamation.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Char_Reklamation.Show()
+        Char_Reklamation.TextBox3.Text = TextBox18.Text
+        Char_Reklamation.TextBox4.Text = Main.TextBox1.Text
     End Sub
 End Class

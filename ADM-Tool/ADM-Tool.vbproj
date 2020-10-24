@@ -212,6 +212,42 @@
     <Compile Include="CharSeite\LapisAuswaehlen5.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Account_Auftrag.Designer.vb">
+      <DependentUpon>Account_Auftrag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Auftrag\Account_Auftrag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Account_Information.Designer.vb">
+      <DependentUpon>Account_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Informationen\Account_Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Account_Reklamation.Designer.vb">
+      <DependentUpon>Account_Reklamation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Account\Reklamationen\Account_Reklamation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Char_Auftrag.Designer.vb">
+      <DependentUpon>Char_Auftrag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Auftrag\Char_Auftrag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Char_Information.Designer.vb">
+      <DependentUpon>Char_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Informationen\Char_Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Char_Reklamation.Designer.vb">
+      <DependentUpon>Char_Reklamation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Char\Reklamation\Char_Reklamation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GildenSeite\GWLLapis.Designer.vb">
       <DependentUpon>GWLLapis.vb</DependentUpon>
     </Compile>
@@ -264,168 +300,6 @@
       <DependentUpon>Accountreg.vb</DependentUpon>
     </Compile>
     <Compile Include="Account Registierung\Accountreg.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\Accbana.Designer.vb">
-      <DependentUpon>Accbana.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\Accbana.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\Accentbana.Designer.vb">
-      <DependentUpon>Accentbana.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\Accentbana.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\AccWLgelöschta.Designer.vb">
-      <DependentUpon>AccWLgelöschta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\AccWLgelöschta.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\AccWLända.Designer.vb">
-      <DependentUpon>AccWLända.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\AccWLända.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\APaba.Designer.vb">
-      <DependentUpon>APaba.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\APaba.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\APhina.Designer.vb">
-      <DependentUpon>APhina.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\APhina.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\GMenta.Designer.vb">
-      <DependentUpon>GMenta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\GMenta.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\GMgeba.Designer.vb">
-      <DependentUpon>GMgeba.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\GMgeba.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\Passa.Designer.vb">
-      <DependentUpon>Passa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Auftrag\Passa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Accbani.Designer.vb">
-      <DependentUpon>Accbani.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Accbani.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Accentbani.Designer.vb">
-      <DependentUpon>Accentbani.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Accentbani.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\AccWLgelöschti.Designer.vb">
-      <DependentUpon>AccWLgelöschti.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\AccWLgelöschti.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\AccWLändi.Designer.vb">
-      <DependentUpon>AccWLändi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\AccWLändi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\APabi.Designer.vb">
-      <DependentUpon>APabi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\APabi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Aphini.Designer.vb">
-      <DependentUpon>Aphini.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Aphini.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\GMenti.Designer.vb">
-      <DependentUpon>GMenti.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\GMenti.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\GMgebi.Designer.vb">
-      <DependentUpon>GMgebi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\GMgebi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Passi.Designer.vb">
-      <DependentUpon>Passi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Informationen\Passi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\Accbanr.Designer.vb">
-      <DependentUpon>Accbanr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\Accbanr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\Accentbanr.Designer.vb">
-      <DependentUpon>Accentbanr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\Accentbanr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\AccWLgelöschtr.Designer.vb">
-      <DependentUpon>AccWLgelöschtr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\AccWLgelöschtr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\AccWLändr.Designer.vb">
-      <DependentUpon>AccWLändr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\AccWLändr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\APabr.Designer.vb">
-      <DependentUpon>APabr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\APabr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\APhinr.Designer.vb">
-      <DependentUpon>APhinr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\APhinr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\GMentr.Designer.vb">
-      <DependentUpon>GMentr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\GMentr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\GMgebr.Designer.vb">
-      <DependentUpon>GMgebr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\GMgebr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\Passr.Designer.vb">
-      <DependentUpon>Passr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Account\Reklamationen\Passr.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AccountSeite\AccPasswort.Designer.vb">
@@ -678,186 +552,6 @@
       <DependentUpon>Wiederbelebung.vb</DependentUpon>
     </Compile>
     <Compile Include="CharSeite\Wiederbelebung.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\CWa.Designer.vb">
-      <DependentUpon>CWa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\CWa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Invbea.Designer.vb">
-      <DependentUpon>Invbea.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Invbea.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\InvIta.Designer.vb">
-      <DependentUpon>InvIta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\InvIta.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\ItWia.Designer.vb">
-      <DependentUpon>ItWia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\ItWia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Kila.Designer.vb">
-      <DependentUpon>Kila.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Kila.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Leva.Designer.vb">
-      <DependentUpon>Leva.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Leva.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\NameChange.Designer.vb">
-      <DependentUpon>NameCa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\NameCa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\SKPa.Designer.vb">
-      <DependentUpon>SKPa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\SKPa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Staa.Designer.vb">
-      <DependentUpon>Staa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\Staa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\STPa.Designer.vb">
-      <DependentUpon>STPa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Auftrag\STPa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\CWi.Designer.vb">
-      <DependentUpon>CWi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\CWi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Invbei.Designer.vb">
-      <DependentUpon>Invbei.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Invbei.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\InvIti.Designer.vb">
-      <DependentUpon>InvIti.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\InvIti.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\ItWii.Designer.vb">
-      <DependentUpon>ItWii.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\ItWii.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Kili.Designer.vb">
-      <DependentUpon>Kili.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Kili.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Levi.Designer.vb">
-      <DependentUpon>Levi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Levi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\NameCi.Designer.vb">
-      <DependentUpon>NameCi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\NameCi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\SKPi.Designer.vb">
-      <DependentUpon>SKPi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\SKPi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Stai.Designer.vb">
-      <DependentUpon>Stai.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\Stai.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\STPi.Designer.vb">
-      <DependentUpon>STPi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Informationen\STPi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\CWr.Designer.vb">
-      <DependentUpon>CWr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\CWr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Invber.Designer.vb">
-      <DependentUpon>Invber.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Invber.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\InvItr.Designer.vb">
-      <DependentUpon>InvItr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\InvItr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\ItWir.Designer.vb">
-      <DependentUpon>ItWir.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\ItWir.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Kilr.Designer.vb">
-      <DependentUpon>Kilr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Kilr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Levr.Designer.vb">
-      <DependentUpon>Levr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Levr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\NameCr.Designer.vb">
-      <DependentUpon>NameCr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\NameCr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\SKPr.Designer.vb">
-      <DependentUpon>SKPr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\SKPr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Star.Designer.vb">
-      <DependentUpon>Star.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\Star.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\STPr.Designer.vb">
-      <DependentUpon>STPr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Char\Reklamation\STPr.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ServerTools\Chatloglöschen.Designer.vb">
@@ -1498,11 +1192,23 @@
     <EmbeddedResource Include="CharSeite\LapisAuswaehlen5.resx">
       <DependentUpon>LapisAuswaehlen5.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Informationen\CWi.resx">
-      <DependentUpon>CWi.vb</DependentUpon>
+    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Account_Auftrag.resx">
+      <DependentUpon>Account_Auftrag.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Informationen\Invbei.resx">
-      <DependentUpon>Invbei.vb</DependentUpon>
+    <EmbeddedResource Include="Dokumentation\Account\Informationen\Account_Information.resx">
+      <DependentUpon>Account_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Account_Reklamation.resx">
+      <DependentUpon>Account_Reklamation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Char_Auftrag.resx">
+      <DependentUpon>Char_Auftrag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Informationen\Char_Information.resx">
+      <DependentUpon>Char_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Char\Reklamation\Char_Reklamation.resx">
+      <DependentUpon>Char_Reklamation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.resx">
       <DependentUpon>7Tagea.vb</DependentUpon>
@@ -1536,87 +1242,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Account Registierung\Accountreg.resx">
       <DependentUpon>Accountreg.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Accbana.resx">
-      <DependentUpon>Accbana.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Accentbana.resx">
-      <DependentUpon>Accentbana.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\AccWLgelöschta.resx">
-      <DependentUpon>AccWLgelöschta.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\AccWLända.resx">
-      <DependentUpon>AccWLända.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\APaba.resx">
-      <DependentUpon>APaba.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\APhina.resx">
-      <DependentUpon>APhina.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\GMenta.resx">
-      <DependentUpon>GMenta.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\GMgeba.resx">
-      <DependentUpon>GMgeba.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Auftrag\Passa.resx">
-      <DependentUpon>Passa.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\Accbani.resx">
-      <DependentUpon>Accbani.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\Accentbani.resx">
-      <DependentUpon>Accentbani.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\AccWLgelöschti.resx">
-      <DependentUpon>AccWLgelöschti.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\AccWLändi.resx">
-      <DependentUpon>AccWLändi.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\APabi.resx">
-      <DependentUpon>APabi.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\Aphini.resx">
-      <DependentUpon>Aphini.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\GMenti.resx">
-      <DependentUpon>GMenti.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\GMgebi.resx">
-      <DependentUpon>GMgebi.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Informationen\Passi.resx">
-      <DependentUpon>Passi.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Accbanr.resx">
-      <DependentUpon>Accbanr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Accentbanr.resx">
-      <DependentUpon>Accentbanr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\AccWLgelöschtr.resx">
-      <DependentUpon>AccWLgelöschtr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\AccWLändr.resx">
-      <DependentUpon>AccWLändr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\APabr.resx">
-      <DependentUpon>APabr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\APhinr.resx">
-      <DependentUpon>APhinr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\GMentr.resx">
-      <DependentUpon>GMentr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\GMgebr.resx">
-      <DependentUpon>GMgebr.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Account\Reklamationen\Passr.resx">
-      <DependentUpon>Passr.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountSeite\AccPasswort.resx">
       <DependentUpon>AccPasswort.vb</DependentUpon>
@@ -1749,36 +1374,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CharSeite\Wiederbelebung.resx">
       <DependentUpon>Wiederbelebung.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\CWa.resx">
-      <DependentUpon>CWa.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Invbea.resx">
-      <DependentUpon>Invbea.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\InvIta.resx">
-      <DependentUpon>InvIta.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\ItWia.resx">
-      <DependentUpon>ItWia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Kila.resx">
-      <DependentUpon>Kila.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Leva.resx">
-      <DependentUpon>Leva.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\NameCa.resx">
-      <DependentUpon>NameCa.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\SKPa.resx">
-      <DependentUpon>SKPa.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\Staa.resx">
-      <DependentUpon>Staa.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Char\Auftrag\STPa.resx">
-      <DependentUpon>STPa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServerTools\Chatloglöschen.resx">
       <DependentUpon>Chatloglöschen.vb</DependentUpon>

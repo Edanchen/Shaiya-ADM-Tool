@@ -232,6 +232,7 @@ Partial Class ADM
         Me.ChatLogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImGameMallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GlobalStatResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServerAPVerteilenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WartungsmodusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WartungsmodusEinschaltenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WartungsmodusAusschaltenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -248,68 +249,12 @@ Partial Class ADM
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.AccountToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuftragToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.APHinzufügenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.APAbziehenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountBannToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountEntbannenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GMRechteGegebenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GMRechteEntzogenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PasswortGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WarenlagerItemGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WarenlagerItemGelöschtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.APHinzufügenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.APToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountBannenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountEntbannenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GMRechteGebenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GMRechteEntziehenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PasswortÄndernToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WarenlagerItemÄndernToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WarenlagerItemGelöschtToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.RaklamationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.APHinzufügenToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ApAbziehenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountBannenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountEntbannenToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GMRechteGebenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GMRechteEntziehenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PasswortÄnderungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WarenlagerItemÄnderungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WarenlagerItemGelöschtToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CharToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuftragToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NameChangeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LevelGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KillsBzwToteGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CharWiederbelebungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatpointsGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SkillpointsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatsGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarBearbeitetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarItemGelöschtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ItemWiederherstellungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NameChanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LevelGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KillsBzwToteGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CharWiederbelebungToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatpointsGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SkillpointsGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatsGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarBearbeitetToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarItemGelöschtToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ItemWiederherstellungToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReklamationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NameChanceToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LevelGeändertToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KillsBzwToteGeändertToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CharWiederbelebungToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatpointsGeändertToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatspointsGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarBearbeitetToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarItemGelöschtToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ItemWiederherstellungToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.GildeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuftragToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.GildennameGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -360,7 +305,6 @@ Partial Class ADM
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button65 = New System.Windows.Forms.Button()
-        Me.ServerAPVerteilenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -1712,6 +1656,11 @@ Partial Class ADM
         Me.GlobalStatResetToolStripMenuItem.Name = "GlobalStatResetToolStripMenuItem"
         resources.ApplyResources(Me.GlobalStatResetToolStripMenuItem, "GlobalStatResetToolStripMenuItem")
         '
+        'ServerAPVerteilenToolStripMenuItem
+        '
+        Me.ServerAPVerteilenToolStripMenuItem.Name = "ServerAPVerteilenToolStripMenuItem"
+        resources.ApplyResources(Me.ServerAPVerteilenToolStripMenuItem, "ServerAPVerteilenToolStripMenuItem")
+        '
         'WartungsmodusToolStripMenuItem
         '
         Me.WartungsmodusToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WartungsmodusEinschaltenToolStripMenuItem, Me.WartungsmodusAusschaltenToolStripMenuItem})
@@ -1796,156 +1745,18 @@ Partial Class ADM
         '
         'AuftragToolStripMenuItem
         '
-        Me.AuftragToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.APHinzufügenToolStripMenuItem, Me.APAbziehenToolStripMenuItem, Me.AccountBannToolStripMenuItem, Me.AccountEntbannenToolStripMenuItem, Me.GMRechteGegebenToolStripMenuItem, Me.GMRechteEntzogenToolStripMenuItem, Me.PasswortGeändertToolStripMenuItem, Me.WarenlagerItemGeändertToolStripMenuItem, Me.WarenlagerItemGelöschtToolStripMenuItem})
         Me.AuftragToolStripMenuItem.Name = "AuftragToolStripMenuItem"
         resources.ApplyResources(Me.AuftragToolStripMenuItem, "AuftragToolStripMenuItem")
         '
-        'APHinzufügenToolStripMenuItem
-        '
-        Me.APHinzufügenToolStripMenuItem.Name = "APHinzufügenToolStripMenuItem"
-        resources.ApplyResources(Me.APHinzufügenToolStripMenuItem, "APHinzufügenToolStripMenuItem")
-        '
-        'APAbziehenToolStripMenuItem
-        '
-        Me.APAbziehenToolStripMenuItem.Name = "APAbziehenToolStripMenuItem"
-        resources.ApplyResources(Me.APAbziehenToolStripMenuItem, "APAbziehenToolStripMenuItem")
-        '
-        'AccountBannToolStripMenuItem
-        '
-        Me.AccountBannToolStripMenuItem.Name = "AccountBannToolStripMenuItem"
-        resources.ApplyResources(Me.AccountBannToolStripMenuItem, "AccountBannToolStripMenuItem")
-        '
-        'AccountEntbannenToolStripMenuItem
-        '
-        Me.AccountEntbannenToolStripMenuItem.Name = "AccountEntbannenToolStripMenuItem"
-        resources.ApplyResources(Me.AccountEntbannenToolStripMenuItem, "AccountEntbannenToolStripMenuItem")
-        '
-        'GMRechteGegebenToolStripMenuItem
-        '
-        Me.GMRechteGegebenToolStripMenuItem.Name = "GMRechteGegebenToolStripMenuItem"
-        resources.ApplyResources(Me.GMRechteGegebenToolStripMenuItem, "GMRechteGegebenToolStripMenuItem")
-        '
-        'GMRechteEntzogenToolStripMenuItem
-        '
-        Me.GMRechteEntzogenToolStripMenuItem.Name = "GMRechteEntzogenToolStripMenuItem"
-        resources.ApplyResources(Me.GMRechteEntzogenToolStripMenuItem, "GMRechteEntzogenToolStripMenuItem")
-        '
-        'PasswortGeändertToolStripMenuItem
-        '
-        Me.PasswortGeändertToolStripMenuItem.Name = "PasswortGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.PasswortGeändertToolStripMenuItem, "PasswortGeändertToolStripMenuItem")
-        '
-        'WarenlagerItemGeändertToolStripMenuItem
-        '
-        Me.WarenlagerItemGeändertToolStripMenuItem.Name = "WarenlagerItemGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.WarenlagerItemGeändertToolStripMenuItem, "WarenlagerItemGeändertToolStripMenuItem")
-        '
-        'WarenlagerItemGelöschtToolStripMenuItem
-        '
-        Me.WarenlagerItemGelöschtToolStripMenuItem.Name = "WarenlagerItemGelöschtToolStripMenuItem"
-        resources.ApplyResources(Me.WarenlagerItemGelöschtToolStripMenuItem, "WarenlagerItemGelöschtToolStripMenuItem")
-        '
         'InformationToolStripMenuItem
         '
-        Me.InformationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.APHinzufügenToolStripMenuItem1, Me.APToolStripMenuItem, Me.AccountBannenToolStripMenuItem, Me.AccountEntbannenToolStripMenuItem1, Me.GMRechteGebenToolStripMenuItem, Me.GMRechteEntziehenToolStripMenuItem, Me.PasswortÄndernToolStripMenuItem, Me.WarenlagerItemÄndernToolStripMenuItem, Me.WarenlagerItemGelöschtToolStripMenuItem1})
         Me.InformationToolStripMenuItem.Name = "InformationToolStripMenuItem"
         resources.ApplyResources(Me.InformationToolStripMenuItem, "InformationToolStripMenuItem")
         '
-        'APHinzufügenToolStripMenuItem1
-        '
-        Me.APHinzufügenToolStripMenuItem1.Name = "APHinzufügenToolStripMenuItem1"
-        resources.ApplyResources(Me.APHinzufügenToolStripMenuItem1, "APHinzufügenToolStripMenuItem1")
-        '
-        'APToolStripMenuItem
-        '
-        Me.APToolStripMenuItem.Name = "APToolStripMenuItem"
-        resources.ApplyResources(Me.APToolStripMenuItem, "APToolStripMenuItem")
-        '
-        'AccountBannenToolStripMenuItem
-        '
-        Me.AccountBannenToolStripMenuItem.Name = "AccountBannenToolStripMenuItem"
-        resources.ApplyResources(Me.AccountBannenToolStripMenuItem, "AccountBannenToolStripMenuItem")
-        '
-        'AccountEntbannenToolStripMenuItem1
-        '
-        Me.AccountEntbannenToolStripMenuItem1.Name = "AccountEntbannenToolStripMenuItem1"
-        resources.ApplyResources(Me.AccountEntbannenToolStripMenuItem1, "AccountEntbannenToolStripMenuItem1")
-        '
-        'GMRechteGebenToolStripMenuItem
-        '
-        Me.GMRechteGebenToolStripMenuItem.Name = "GMRechteGebenToolStripMenuItem"
-        resources.ApplyResources(Me.GMRechteGebenToolStripMenuItem, "GMRechteGebenToolStripMenuItem")
-        '
-        'GMRechteEntziehenToolStripMenuItem
-        '
-        Me.GMRechteEntziehenToolStripMenuItem.Name = "GMRechteEntziehenToolStripMenuItem"
-        resources.ApplyResources(Me.GMRechteEntziehenToolStripMenuItem, "GMRechteEntziehenToolStripMenuItem")
-        '
-        'PasswortÄndernToolStripMenuItem
-        '
-        Me.PasswortÄndernToolStripMenuItem.Name = "PasswortÄndernToolStripMenuItem"
-        resources.ApplyResources(Me.PasswortÄndernToolStripMenuItem, "PasswortÄndernToolStripMenuItem")
-        '
-        'WarenlagerItemÄndernToolStripMenuItem
-        '
-        Me.WarenlagerItemÄndernToolStripMenuItem.Name = "WarenlagerItemÄndernToolStripMenuItem"
-        resources.ApplyResources(Me.WarenlagerItemÄndernToolStripMenuItem, "WarenlagerItemÄndernToolStripMenuItem")
-        '
-        'WarenlagerItemGelöschtToolStripMenuItem1
-        '
-        Me.WarenlagerItemGelöschtToolStripMenuItem1.Name = "WarenlagerItemGelöschtToolStripMenuItem1"
-        resources.ApplyResources(Me.WarenlagerItemGelöschtToolStripMenuItem1, "WarenlagerItemGelöschtToolStripMenuItem1")
-        '
         'RaklamationToolStripMenuItem
         '
-        Me.RaklamationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.APHinzufügenToolStripMenuItem2, Me.ApAbziehenToolStripMenuItem1, Me.AccountBannenToolStripMenuItem1, Me.AccountEntbannenToolStripMenuItem2, Me.GMRechteGebenToolStripMenuItem1, Me.GMRechteEntziehenToolStripMenuItem1, Me.PasswortÄnderungToolStripMenuItem, Me.WarenlagerItemÄnderungToolStripMenuItem, Me.WarenlagerItemGelöschtToolStripMenuItem2})
         Me.RaklamationToolStripMenuItem.Name = "RaklamationToolStripMenuItem"
         resources.ApplyResources(Me.RaklamationToolStripMenuItem, "RaklamationToolStripMenuItem")
-        '
-        'APHinzufügenToolStripMenuItem2
-        '
-        Me.APHinzufügenToolStripMenuItem2.Name = "APHinzufügenToolStripMenuItem2"
-        resources.ApplyResources(Me.APHinzufügenToolStripMenuItem2, "APHinzufügenToolStripMenuItem2")
-        '
-        'ApAbziehenToolStripMenuItem1
-        '
-        Me.ApAbziehenToolStripMenuItem1.Name = "ApAbziehenToolStripMenuItem1"
-        resources.ApplyResources(Me.ApAbziehenToolStripMenuItem1, "ApAbziehenToolStripMenuItem1")
-        '
-        'AccountBannenToolStripMenuItem1
-        '
-        Me.AccountBannenToolStripMenuItem1.Name = "AccountBannenToolStripMenuItem1"
-        resources.ApplyResources(Me.AccountBannenToolStripMenuItem1, "AccountBannenToolStripMenuItem1")
-        '
-        'AccountEntbannenToolStripMenuItem2
-        '
-        Me.AccountEntbannenToolStripMenuItem2.Name = "AccountEntbannenToolStripMenuItem2"
-        resources.ApplyResources(Me.AccountEntbannenToolStripMenuItem2, "AccountEntbannenToolStripMenuItem2")
-        '
-        'GMRechteGebenToolStripMenuItem1
-        '
-        Me.GMRechteGebenToolStripMenuItem1.Name = "GMRechteGebenToolStripMenuItem1"
-        resources.ApplyResources(Me.GMRechteGebenToolStripMenuItem1, "GMRechteGebenToolStripMenuItem1")
-        '
-        'GMRechteEntziehenToolStripMenuItem1
-        '
-        Me.GMRechteEntziehenToolStripMenuItem1.Name = "GMRechteEntziehenToolStripMenuItem1"
-        resources.ApplyResources(Me.GMRechteEntziehenToolStripMenuItem1, "GMRechteEntziehenToolStripMenuItem1")
-        '
-        'PasswortÄnderungToolStripMenuItem
-        '
-        Me.PasswortÄnderungToolStripMenuItem.Name = "PasswortÄnderungToolStripMenuItem"
-        resources.ApplyResources(Me.PasswortÄnderungToolStripMenuItem, "PasswortÄnderungToolStripMenuItem")
-        '
-        'WarenlagerItemÄnderungToolStripMenuItem
-        '
-        Me.WarenlagerItemÄnderungToolStripMenuItem.Name = "WarenlagerItemÄnderungToolStripMenuItem"
-        resources.ApplyResources(Me.WarenlagerItemÄnderungToolStripMenuItem, "WarenlagerItemÄnderungToolStripMenuItem")
-        '
-        'WarenlagerItemGelöschtToolStripMenuItem2
-        '
-        Me.WarenlagerItemGelöschtToolStripMenuItem2.Name = "WarenlagerItemGelöschtToolStripMenuItem2"
-        resources.ApplyResources(Me.WarenlagerItemGelöschtToolStripMenuItem2, "WarenlagerItemGelöschtToolStripMenuItem2")
         '
         'CharToolStripMenuItem
         '
@@ -1955,166 +1766,18 @@ Partial Class ADM
         '
         'AuftragToolStripMenuItem1
         '
-        Me.AuftragToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NameChangeToolStripMenuItem, Me.LevelGeändertToolStripMenuItem, Me.KillsBzwToteGeändertToolStripMenuItem, Me.CharWiederbelebungToolStripMenuItem, Me.StatpointsGeändertToolStripMenuItem, Me.SkillpointsToolStripMenuItem, Me.StatsGeändertToolStripMenuItem, Me.InventarBearbeitetToolStripMenuItem, Me.InventarItemGelöschtToolStripMenuItem, Me.ItemWiederherstellungToolStripMenuItem})
         Me.AuftragToolStripMenuItem1.Name = "AuftragToolStripMenuItem1"
         resources.ApplyResources(Me.AuftragToolStripMenuItem1, "AuftragToolStripMenuItem1")
         '
-        'NameChangeToolStripMenuItem
-        '
-        Me.NameChangeToolStripMenuItem.Name = "NameChangeToolStripMenuItem"
-        resources.ApplyResources(Me.NameChangeToolStripMenuItem, "NameChangeToolStripMenuItem")
-        '
-        'LevelGeändertToolStripMenuItem
-        '
-        Me.LevelGeändertToolStripMenuItem.Name = "LevelGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.LevelGeändertToolStripMenuItem, "LevelGeändertToolStripMenuItem")
-        '
-        'KillsBzwToteGeändertToolStripMenuItem
-        '
-        Me.KillsBzwToteGeändertToolStripMenuItem.Name = "KillsBzwToteGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.KillsBzwToteGeändertToolStripMenuItem, "KillsBzwToteGeändertToolStripMenuItem")
-        '
-        'CharWiederbelebungToolStripMenuItem
-        '
-        Me.CharWiederbelebungToolStripMenuItem.Name = "CharWiederbelebungToolStripMenuItem"
-        resources.ApplyResources(Me.CharWiederbelebungToolStripMenuItem, "CharWiederbelebungToolStripMenuItem")
-        '
-        'StatpointsGeändertToolStripMenuItem
-        '
-        Me.StatpointsGeändertToolStripMenuItem.Name = "StatpointsGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.StatpointsGeändertToolStripMenuItem, "StatpointsGeändertToolStripMenuItem")
-        '
-        'SkillpointsToolStripMenuItem
-        '
-        Me.SkillpointsToolStripMenuItem.Name = "SkillpointsToolStripMenuItem"
-        resources.ApplyResources(Me.SkillpointsToolStripMenuItem, "SkillpointsToolStripMenuItem")
-        '
-        'StatsGeändertToolStripMenuItem
-        '
-        Me.StatsGeändertToolStripMenuItem.Name = "StatsGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.StatsGeändertToolStripMenuItem, "StatsGeändertToolStripMenuItem")
-        '
-        'InventarBearbeitetToolStripMenuItem
-        '
-        Me.InventarBearbeitetToolStripMenuItem.Name = "InventarBearbeitetToolStripMenuItem"
-        resources.ApplyResources(Me.InventarBearbeitetToolStripMenuItem, "InventarBearbeitetToolStripMenuItem")
-        '
-        'InventarItemGelöschtToolStripMenuItem
-        '
-        Me.InventarItemGelöschtToolStripMenuItem.Name = "InventarItemGelöschtToolStripMenuItem"
-        resources.ApplyResources(Me.InventarItemGelöschtToolStripMenuItem, "InventarItemGelöschtToolStripMenuItem")
-        '
-        'ItemWiederherstellungToolStripMenuItem
-        '
-        Me.ItemWiederherstellungToolStripMenuItem.Name = "ItemWiederherstellungToolStripMenuItem"
-        resources.ApplyResources(Me.ItemWiederherstellungToolStripMenuItem, "ItemWiederherstellungToolStripMenuItem")
-        '
         'InformationToolStripMenuItem1
         '
-        Me.InformationToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NameChanceToolStripMenuItem, Me.LevelGeändertToolStripMenuItem1, Me.KillsBzwToteGeändertToolStripMenuItem1, Me.CharWiederbelebungToolStripMenuItem1, Me.StatpointsGeändertToolStripMenuItem1, Me.SkillpointsGeändertToolStripMenuItem, Me.StatsGeändertToolStripMenuItem1, Me.InventarBearbeitetToolStripMenuItem1, Me.InventarItemGelöschtToolStripMenuItem1, Me.ItemWiederherstellungToolStripMenuItem1})
         Me.InformationToolStripMenuItem1.Name = "InformationToolStripMenuItem1"
         resources.ApplyResources(Me.InformationToolStripMenuItem1, "InformationToolStripMenuItem1")
         '
-        'NameChanceToolStripMenuItem
-        '
-        Me.NameChanceToolStripMenuItem.Name = "NameChanceToolStripMenuItem"
-        resources.ApplyResources(Me.NameChanceToolStripMenuItem, "NameChanceToolStripMenuItem")
-        '
-        'LevelGeändertToolStripMenuItem1
-        '
-        Me.LevelGeändertToolStripMenuItem1.Name = "LevelGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.LevelGeändertToolStripMenuItem1, "LevelGeändertToolStripMenuItem1")
-        '
-        'KillsBzwToteGeändertToolStripMenuItem1
-        '
-        Me.KillsBzwToteGeändertToolStripMenuItem1.Name = "KillsBzwToteGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.KillsBzwToteGeändertToolStripMenuItem1, "KillsBzwToteGeändertToolStripMenuItem1")
-        '
-        'CharWiederbelebungToolStripMenuItem1
-        '
-        Me.CharWiederbelebungToolStripMenuItem1.Name = "CharWiederbelebungToolStripMenuItem1"
-        resources.ApplyResources(Me.CharWiederbelebungToolStripMenuItem1, "CharWiederbelebungToolStripMenuItem1")
-        '
-        'StatpointsGeändertToolStripMenuItem1
-        '
-        Me.StatpointsGeändertToolStripMenuItem1.Name = "StatpointsGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.StatpointsGeändertToolStripMenuItem1, "StatpointsGeändertToolStripMenuItem1")
-        '
-        'SkillpointsGeändertToolStripMenuItem
-        '
-        Me.SkillpointsGeändertToolStripMenuItem.Name = "SkillpointsGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.SkillpointsGeändertToolStripMenuItem, "SkillpointsGeändertToolStripMenuItem")
-        '
-        'StatsGeändertToolStripMenuItem1
-        '
-        Me.StatsGeändertToolStripMenuItem1.Name = "StatsGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.StatsGeändertToolStripMenuItem1, "StatsGeändertToolStripMenuItem1")
-        '
-        'InventarBearbeitetToolStripMenuItem1
-        '
-        Me.InventarBearbeitetToolStripMenuItem1.Name = "InventarBearbeitetToolStripMenuItem1"
-        resources.ApplyResources(Me.InventarBearbeitetToolStripMenuItem1, "InventarBearbeitetToolStripMenuItem1")
-        '
-        'InventarItemGelöschtToolStripMenuItem1
-        '
-        Me.InventarItemGelöschtToolStripMenuItem1.Name = "InventarItemGelöschtToolStripMenuItem1"
-        resources.ApplyResources(Me.InventarItemGelöschtToolStripMenuItem1, "InventarItemGelöschtToolStripMenuItem1")
-        '
-        'ItemWiederherstellungToolStripMenuItem1
-        '
-        Me.ItemWiederherstellungToolStripMenuItem1.Name = "ItemWiederherstellungToolStripMenuItem1"
-        resources.ApplyResources(Me.ItemWiederherstellungToolStripMenuItem1, "ItemWiederherstellungToolStripMenuItem1")
-        '
         'ReklamationToolStripMenuItem
         '
-        Me.ReklamationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NameChanceToolStripMenuItem1, Me.LevelGeändertToolStripMenuItem2, Me.KillsBzwToteGeändertToolStripMenuItem2, Me.CharWiederbelebungToolStripMenuItem2, Me.StatpointsGeändertToolStripMenuItem2, Me.StatspointsGeändertToolStripMenuItem, Me.InventarBearbeitetToolStripMenuItem2, Me.InventarItemGelöschtToolStripMenuItem2, Me.ItemWiederherstellungToolStripMenuItem2})
         Me.ReklamationToolStripMenuItem.Name = "ReklamationToolStripMenuItem"
         resources.ApplyResources(Me.ReklamationToolStripMenuItem, "ReklamationToolStripMenuItem")
-        '
-        'NameChanceToolStripMenuItem1
-        '
-        Me.NameChanceToolStripMenuItem1.Name = "NameChanceToolStripMenuItem1"
-        resources.ApplyResources(Me.NameChanceToolStripMenuItem1, "NameChanceToolStripMenuItem1")
-        '
-        'LevelGeändertToolStripMenuItem2
-        '
-        Me.LevelGeändertToolStripMenuItem2.Name = "LevelGeändertToolStripMenuItem2"
-        resources.ApplyResources(Me.LevelGeändertToolStripMenuItem2, "LevelGeändertToolStripMenuItem2")
-        '
-        'KillsBzwToteGeändertToolStripMenuItem2
-        '
-        Me.KillsBzwToteGeändertToolStripMenuItem2.Name = "KillsBzwToteGeändertToolStripMenuItem2"
-        resources.ApplyResources(Me.KillsBzwToteGeändertToolStripMenuItem2, "KillsBzwToteGeändertToolStripMenuItem2")
-        '
-        'CharWiederbelebungToolStripMenuItem2
-        '
-        Me.CharWiederbelebungToolStripMenuItem2.Name = "CharWiederbelebungToolStripMenuItem2"
-        resources.ApplyResources(Me.CharWiederbelebungToolStripMenuItem2, "CharWiederbelebungToolStripMenuItem2")
-        '
-        'StatpointsGeändertToolStripMenuItem2
-        '
-        Me.StatpointsGeändertToolStripMenuItem2.Name = "StatpointsGeändertToolStripMenuItem2"
-        resources.ApplyResources(Me.StatpointsGeändertToolStripMenuItem2, "StatpointsGeändertToolStripMenuItem2")
-        '
-        'StatspointsGeändertToolStripMenuItem
-        '
-        Me.StatspointsGeändertToolStripMenuItem.Name = "StatspointsGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.StatspointsGeändertToolStripMenuItem, "StatspointsGeändertToolStripMenuItem")
-        '
-        'InventarBearbeitetToolStripMenuItem2
-        '
-        Me.InventarBearbeitetToolStripMenuItem2.Name = "InventarBearbeitetToolStripMenuItem2"
-        resources.ApplyResources(Me.InventarBearbeitetToolStripMenuItem2, "InventarBearbeitetToolStripMenuItem2")
-        '
-        'InventarItemGelöschtToolStripMenuItem2
-        '
-        Me.InventarItemGelöschtToolStripMenuItem2.Name = "InventarItemGelöschtToolStripMenuItem2"
-        resources.ApplyResources(Me.InventarItemGelöschtToolStripMenuItem2, "InventarItemGelöschtToolStripMenuItem2")
-        '
-        'ItemWiederherstellungToolStripMenuItem2
-        '
-        Me.ItemWiederherstellungToolStripMenuItem2.Name = "ItemWiederherstellungToolStripMenuItem2"
-        resources.ApplyResources(Me.ItemWiederherstellungToolStripMenuItem2, "ItemWiederherstellungToolStripMenuItem2")
         '
         'GildeToolStripMenuItem
         '
@@ -2375,11 +2038,6 @@ Partial Class ADM
         Me.Button65.Name = "Button65"
         Me.Button65.UseVisualStyleBackColor = True
         '
-        'ServerAPVerteilenToolStripMenuItem
-        '
-        Me.ServerAPVerteilenToolStripMenuItem.Name = "ServerAPVerteilenToolStripMenuItem"
-        resources.ApplyResources(Me.ServerAPVerteilenToolStripMenuItem, "ServerAPVerteilenToolStripMenuItem")
-        '
         'ADM
         '
         Me.AcceptButton = Me.Button1
@@ -2602,32 +2260,8 @@ Partial Class ADM
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents AccountToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AuftragToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents APHinzufügenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents APAbziehenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AccountBannToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AccountEntbannenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GMRechteGegebenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GMRechteEntzogenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PasswortGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WarenlagerItemGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents InformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents APHinzufügenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents APToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AccountBannenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AccountEntbannenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GMRechteGebenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GMRechteEntziehenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PasswortÄndernToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WarenlagerItemÄndernToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RaklamationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents APHinzufügenToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ApAbziehenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AccountBannenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AccountEntbannenToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GMRechteGebenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GMRechteEntziehenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PasswortÄnderungToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WarenlagerItemÄnderungToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CharToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GildeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MaßnahmeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -2657,39 +2291,7 @@ Partial Class ADM
     Friend WithEvents ÜberShaiyaADMToolV3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WartungsmodusEinschaltenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WartungsmodusAusschaltenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NameChangeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NameChanceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NameChanceToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EingeloggteSpielerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WarenlagerItemGelöschtToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WarenlagerItemGelöschtToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WarenlagerItemGelöschtToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LevelGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents KillsBzwToteGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CharWiederbelebungToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatpointsGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SkillpointsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatsGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarBearbeitetToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarItemGelöschtToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ItemWiederherstellungToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LevelGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents KillsBzwToteGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CharWiederbelebungToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatpointsGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SkillpointsGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatsGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarBearbeitetToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarItemGelöschtToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ItemWiederherstellungToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LevelGeändertToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents KillsBzwToteGeändertToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CharWiederbelebungToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatpointsGeändertToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents StatspointsGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarBearbeitetToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarItemGelöschtToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ItemWiederherstellungToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GildennameGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GildenleaderGewechseltToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GRBPunkteGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
