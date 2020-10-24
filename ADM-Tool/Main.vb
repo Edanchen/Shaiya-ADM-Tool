@@ -158,7 +158,7 @@ Public Class Main
     End Sub
 
     Private Sub ÜberShaiyaADMToolToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ÜberShaiyaADMToolToolStripMenuItem.Click
-        Process.Start("https://github.com/Edanchen/ADM-Tool")
+        Process.Start("https://github.com/Edanchen/Shaiya-ADM-Tool")
     End Sub
 
     Private Sub Button7_Click(sender As System.Object, e As System.EventArgs) Handles Button7.Click

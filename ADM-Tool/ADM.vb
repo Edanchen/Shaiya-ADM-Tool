@@ -1281,7 +1281,7 @@
     End Sub
 
     Private Sub ÜberShaiyaADMToolV3ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ÜberShaiyaADMToolV3ToolStripMenuItem.Click
-        Process.Start("https://github.com/Edanchen/ADM-Tool")
+        Process.Start("https://github.com/Edanchen/Shaiya-ADM-Tool")
     End Sub
 
     Private Sub AlleGelöschteCharsEntfernenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlleGelöschteCharsEntfernenToolStripMenuItem.Click
@@ -3239,7 +3239,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub BugMeldenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BugMeldenToolStripMenuItem.Click
-        Process.Start("https://github.com/Edanchen/ADM-Tool/issues")
+        Process.Start("https://github.com/Edanchen/Shaiya-ADM-Tool/issues")
     End Sub
 
     Private Sub ServerAPVerteilenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServerAPVerteilenToolStripMenuItem.Click
