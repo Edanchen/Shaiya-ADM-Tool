@@ -248,6 +248,42 @@
     <Compile Include="Dokumentation\Char\Reklamation\Char_Reklamation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\Gilde_Auftrag.Designer.vb">
+      <DependentUpon>Gilde_Auftrag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Auftrag\Gilde_Auftrag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\Gilde_Information.Designer.vb">
+      <DependentUpon>Gilde_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Informationen\Gilde_Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\Gilde_Reklamation.Designer.vb">
+      <DependentUpon>Gilde_Reklamation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Gilde\Reklamation\Gilde_Reklamation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Maßnahmen_Auftrag.Designer.vb">
+      <DependentUpon>Maßnahmen_Auftrag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Maßnahmen_Auftrag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\Maßnahmen_Information.Designer.vb">
+      <DependentUpon>Maßnahmen_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Informationen\Maßnahmen_Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Maßnahmen_Reklamation.Designer.vb">
+      <DependentUpon>Maßnahmen_Reklamation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Maßnahmen_Reklamation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GildenSeite\GWLLapis.Designer.vb">
       <DependentUpon>GWLLapis.vb</DependentUpon>
     </Compile>
@@ -638,186 +674,6 @@
     <Compile Include="ServerTools\GesamterActionLog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\EHa.Designer.vb">
-      <DependentUpon>EHa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\EHa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\Ggea.Designer.vb">
-      <DependentUpon>Ggea.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\Ggea.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GHga.Designer.vb">
-      <DependentUpon>GHga.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GHga.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GLga.Designer.vb">
-      <DependentUpon>GLga.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GLga.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GNaa.Designer.vb">
-      <DependentUpon>GNaa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GNaa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GNacha.Designer.vb">
-      <DependentUpon>GNacha.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GNacha.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GRBPa.Designer.vb">
-      <DependentUpon>GRBPa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GRBPa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\Gwia.Designer.vb">
-      <DependentUpon>Gwia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\Gwia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GWLbea.Designer.vb">
-      <DependentUpon>GWLbea.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GWLbea.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GWLIga.Designer.vb">
-      <DependentUpon>GWLIga.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Auftrag\GWLIga.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\EHi.Designer.vb">
-      <DependentUpon>EHi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\EHi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\Ggei.Designer.vb">
-      <DependentUpon>Ggei.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\Ggei.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GHgi.Designer.vb">
-      <DependentUpon>GHgi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GHgi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GLgi.Designer.vb">
-      <DependentUpon>GLgi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GLgi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GNachi.Designer.vb">
-      <DependentUpon>GNachi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GNachi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GNai.Designer.vb">
-      <DependentUpon>GNai.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GNai.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GRBPi.Designer.vb">
-      <DependentUpon>GRBPi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GRBPi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\Gwii.Designer.vb">
-      <DependentUpon>Gwii.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\Gwii.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GWLbei.Designer.vb">
-      <DependentUpon>GWLbei.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GWLbei.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GWLIgi.Designer.vb">
-      <DependentUpon>GWLIgi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Informationen\GWLIgi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\EHr.Designer.vb">
-      <DependentUpon>EHr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\EHr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\Gger.Designer.vb">
-      <DependentUpon>Gger.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\Gger.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GHgr.Designer.vb">
-      <DependentUpon>GHgr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GHgr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GLgr.Designer.vb">
-      <DependentUpon>GLgr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GLgr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GNachr.Designer.vb">
-      <DependentUpon>GNachr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GNachr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GNar.Designer.vb">
-      <DependentUpon>GNar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GNar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GRBPr.Designer.vb">
-      <DependentUpon>GRBPr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GRBPr.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\Gwir.Designer.vb">
-      <DependentUpon>Gwir.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\Gwir.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GWLber.Designer.vb">
-      <DependentUpon>GWLber.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GWLber.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GWLIgr.Designer.vb">
-      <DependentUpon>GWLIgr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Gilde\Reklamation\GWLIgr.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ServerTools\GMListe.Designer.vb">
       <DependentUpon>GMListe.vb</DependentUpon>
     </Compile>
@@ -949,60 +805,6 @@
       <DependentUpon>LoginForm1.vb</DependentUpon>
     </Compile>
     <Compile Include="LoginForm1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.Designer.vb">
-      <DependentUpon>7Tagea.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Permaa.Designer.vb">
-      <DependentUpon>Permaa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Permaa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Vora.Designer.vb">
-      <DependentUpon>Vora.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Auftrag\Vora.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Informationen\7Tagei.Designer.vb">
-      <DependentUpon>7Tagei.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Informationen\7Tagei.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Informationen\Permai.Designer.vb">
-      <DependentUpon>Permai.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Informationen\Permai.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Informationen\Vori.Designer.vb">
-      <DependentUpon>Vori.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Informationen\Vori.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Reklamation\7Tager.Designer.vb">
-      <DependentUpon>7Tager.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Reklamation\7Tager.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Permar.Designer.vb">
-      <DependentUpon>Permar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Permar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Vorr.Designer.vb">
-      <DependentUpon>Vorr.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dokumentation\Maßnahmen\Reklamation\Vorr.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GildenSeite\MemberzuLeader.Designer.vb">
@@ -1210,11 +1012,23 @@
     <EmbeddedResource Include="Dokumentation\Char\Reklamation\Char_Reklamation.resx">
       <DependentUpon>Char_Reklamation.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Maßnahmen\Auftrag\7Tagea.resx">
-      <DependentUpon>7Tagea.vb</DependentUpon>
+    <EmbeddedResource Include="Dokumentation\Gilde\Auftrag\Gilde_Auftrag.resx">
+      <DependentUpon>Gilde_Auftrag.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dokumentation\Maßnahmen\Reklamation\7Tager.resx">
-      <DependentUpon>7Tager.vb</DependentUpon>
+    <EmbeddedResource Include="Dokumentation\Gilde\Informationen\Gilde_Information.resx">
+      <DependentUpon>Gilde_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Gilde\Reklamation\Gilde_Reklamation.resx">
+      <DependentUpon>Gilde_Reklamation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Maßnahmen\Auftrag\Maßnahmen_Auftrag.resx">
+      <DependentUpon>Maßnahmen_Auftrag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Maßnahmen\Informationen\Maßnahmen_Information.resx">
+      <DependentUpon>Maßnahmen_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Maßnahmen\Reklamation\Maßnahmen_Reklamation.resx">
+      <DependentUpon>Maßnahmen_Reklamation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GildenSeite\GWLLapis.resx">
       <DependentUpon>GWLLapis.vb</DependentUpon>
@@ -1600,6 +1414,7 @@
   <ItemGroup>
     <Content Include="shaiya_icon_126x107.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

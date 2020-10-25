@@ -6778,9 +6778,6 @@
   <data name="ÜberShaiyaADMToolV3ToolStripMenuItem.Text" xml:space="preserve">
     <value>Über Shaiya ADM-Tool</value>
   </data>
-  <data name="Button56.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="Button56.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
@@ -6830,7 +6827,7 @@
     <value>Char</value>
   </data>
   <data name="GildeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="GildeToolStripMenuItem.Text" xml:space="preserve">
     <value>Gilde</value>
@@ -6887,274 +6884,40 @@
     <value>Reklamation</value>
   </data>
   <data name="AuftragToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="AuftragToolStripMenuItem2.Text" xml:space="preserve">
     <value>Auftrag</value>
   </data>
-  <data name="GildennameGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildennameGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gildenname geändert</value>
-  </data>
-  <data name="GildenleaderGewechseltToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenleaderGewechseltToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gildenleader gewechselt</value>
-  </data>
-  <data name="GRBPunkteGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GRBPunkteGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>GRB Punkte geändert</value>
-  </data>
-  <data name="GildeGelöschtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildeGelöschtToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gilde gelöscht</value>
-  </data>
-  <data name="GildeWiederhergestelltToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildeWiederhergestelltToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gilde wiederhergestellt</value>
-  </data>
-  <data name="GildenhausGeöffnetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenhausGeöffnetToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gildenhaus geöffnet</value>
-  </data>
-  <data name="EtinHinzugefügtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="EtinHinzugefügtToolStripMenuItem.Text" xml:space="preserve">
-    <value>Etin hinzugefügt</value>
-  </data>
-  <data name="GildenNachrichtGeändertToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenNachrichtGeändertToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gilden-Nachricht geändert</value>
-  </data>
-  <data name="GildenWarenlagerBearbeitetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenWarenlagerBearbeitetToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gilden-Warenlager bearbeitet</value>
-  </data>
-  <data name="GildenWarenlagerItemGelöschtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenWarenlagerItemGelöschtToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gilden-Warenlager Item gelöscht</value>
-  </data>
   <data name="InformationToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="InformationToolStripMenuItem2.Text" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="GildennameGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildennameGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gildenname geändert</value>
-  </data>
-  <data name="GildenleaderGewechseltToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenleaderGewechseltToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gildenleader gewechselt</value>
-  </data>
-  <data name="GRBPunkteGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GRBPunkteGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>GRB Punkte geändert</value>
-  </data>
-  <data name="GildeGelöschtToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildeGelöschtToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gilde gelöscht</value>
-  </data>
-  <data name="GildeWiederhergestelltToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildeWiederhergestelltToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gilde wiederhergestellt</value>
-  </data>
-  <data name="GildenhausGeöffnetToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenhausGeöffnetToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gildenhaus geöffnet</value>
-  </data>
-  <data name="EtinHinzugefügtToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="EtinHinzugefügtToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Etin hinzugefügt</value>
-  </data>
-  <data name="GildenNachrichtGeändertToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenNachrichtGeändertToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gilden-Nachricht geändert</value>
-  </data>
-  <data name="GildenWarenlagerBearbeitetToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenWarenlagerBearbeitetToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gilden-Warenlager bearbeitet</value>
-  </data>
-  <data name="GildenWarenlagerItemGelöschtToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenWarenlagerItemGelöschtToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gilden-Warenlager Item gelöscht</value>
-  </data>
   <data name="ReklamationToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ReklamationToolStripMenuItem1.Text" xml:space="preserve">
     <value>Reklamation</value>
   </data>
-  <data name="GildennameGeändertToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildennameGeändertToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gildenname geändert</value>
-  </data>
-  <data name="GildenleaderGewechseltToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenleaderGewechseltToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gildenleader gewechselt</value>
-  </data>
-  <data name="GRBPunkteGeändertToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GRBPunkteGeändertToolStripMenuItem2.Text" xml:space="preserve">
-    <value>GRB-Punkte geändert</value>
-  </data>
-  <data name="GildeGelöschtToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildeGelöschtToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gilde gelöscht</value>
-  </data>
-  <data name="GildeWiederhergestelltToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildeWiederhergestelltToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gilde wiederhergestellt</value>
-  </data>
-  <data name="GildenhausGeöffnetToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenhausGeöffnetToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gildenhaus geöffnet</value>
-  </data>
-  <data name="EtinHinzugefügtToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="EtinHinzugefügtToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Etin hinzugefügt</value>
-  </data>
-  <data name="GildenNachrichtGeändertToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenNachrichtGeändertToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gilden-Nachricht geändert</value>
-  </data>
-  <data name="GildenWarenlagerBearbeitetToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenWarenlagerBearbeitetToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gilden-Warenlager bearbeitet</value>
-  </data>
-  <data name="GildenWarenlagerItemGelöschtToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 22</value>
-  </data>
-  <data name="GildenWarenlagerItemGelöschtToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gilden-Warenlager Item gelöscht</value>
-  </data>
   <data name="AuftragToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="AuftragToolStripMenuItem3.Text" xml:space="preserve">
     <value>Auftrag</value>
   </data>
-  <data name="PermaBannToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="PermaBannToolStripMenuItem.Text" xml:space="preserve">
-    <value>Perma-Bann</value>
-  </data>
-  <data name="TageBannToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="TageBannToolStripMenuItem.Text" xml:space="preserve">
-    <value>7 Tage Bann</value>
-  </data>
-  <data name="VorfallToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="VorfallToolStripMenuItem.Text" xml:space="preserve">
-    <value>Vorfall</value>
-  </data>
   <data name="InformationToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="InformationToolStripMenuItem3.Text" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="PermaBannToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="PermaBannToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Perma-Bann</value>
-  </data>
-  <data name="TageBannToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="TageBannToolStripMenuItem1.Text" xml:space="preserve">
-    <value>7 Tage Bann</value>
-  </data>
-  <data name="VorfallToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="VorfallToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Vorfall</value>
-  </data>
   <data name="ReklamationToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ReklamationToolStripMenuItem2.Text" xml:space="preserve">
     <value>Reklamation</value>
-  </data>
-  <data name="PermaBannToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="PermaBannToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Perma-Bann</value>
-  </data>
-  <data name="TageBannToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="TageBannToolStripMenuItem2.Text" xml:space="preserve">
-    <value>7 Tage Bann</value>
-  </data>
-  <data name="VorfallToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
-  </data>
-  <data name="VorfallToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Vorfall</value>
   </data>
   <data name="RichTextBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -8515,196 +8278,16 @@
   <data name="&gt;&gt;AuftragToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GildennameGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildennameGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildennameGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenleaderGewechseltToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildenleaderGewechseltToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildenleaderGewechseltToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GRBPunkteGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>GRBPunkteGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GRBPunkteGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildeGelöschtToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildeGelöschtToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildeGelöschtToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildeWiederhergestelltToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildeWiederhergestelltToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildeWiederhergestelltToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenhausGeöffnetToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildenhausGeöffnetToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildenhausGeöffnetToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EtinHinzugefügtToolStripMenuItem.Name" xml:space="preserve">
-    <value>EtinHinzugefügtToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;EtinHinzugefügtToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenNachrichtGeändertToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildenNachrichtGeändertToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildenNachrichtGeändertToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerBearbeitetToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildenWarenlagerBearbeitetToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerBearbeitetToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerItemGelöschtToolStripMenuItem.Name" xml:space="preserve">
-    <value>GildenWarenlagerItemGelöschtToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerItemGelöschtToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;InformationToolStripMenuItem2.Name" xml:space="preserve">
     <value>InformationToolStripMenuItem2</value>
   </data>
   <data name="&gt;&gt;InformationToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GildennameGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildennameGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildennameGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenleaderGewechseltToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildenleaderGewechseltToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildenleaderGewechseltToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GRBPunkteGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GRBPunkteGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GRBPunkteGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildeGelöschtToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildeGelöschtToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildeGelöschtToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildeWiederhergestelltToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildeWiederhergestelltToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildeWiederhergestelltToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenhausGeöffnetToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildenhausGeöffnetToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildenhausGeöffnetToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EtinHinzugefügtToolStripMenuItem1.Name" xml:space="preserve">
-    <value>EtinHinzugefügtToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;EtinHinzugefügtToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenNachrichtGeändertToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildenNachrichtGeändertToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildenNachrichtGeändertToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerBearbeitetToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildenWarenlagerBearbeitetToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerBearbeitetToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerItemGelöschtToolStripMenuItem1.Name" xml:space="preserve">
-    <value>GildenWarenlagerItemGelöschtToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerItemGelöschtToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;ReklamationToolStripMenuItem1.Name" xml:space="preserve">
     <value>ReklamationToolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;ReklamationToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildennameGeändertToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildennameGeändertToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildennameGeändertToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenleaderGewechseltToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildenleaderGewechseltToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildenleaderGewechseltToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GRBPunkteGeändertToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GRBPunkteGeändertToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GRBPunkteGeändertToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildeGelöschtToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildeGelöschtToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildeGelöschtToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildeWiederhergestelltToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildeWiederhergestelltToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildeWiederhergestelltToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenhausGeöffnetToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildenhausGeöffnetToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildenhausGeöffnetToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EtinHinzugefügtToolStripMenuItem2.Name" xml:space="preserve">
-    <value>EtinHinzugefügtToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;EtinHinzugefügtToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenNachrichtGeändertToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildenNachrichtGeändertToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildenNachrichtGeändertToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerBearbeitetToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildenWarenlagerBearbeitetToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerBearbeitetToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerItemGelöschtToolStripMenuItem2.Name" xml:space="preserve">
-    <value>GildenWarenlagerItemGelöschtToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;GildenWarenlagerItemGelöschtToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MaßnahmeToolStripMenuItem.Name" xml:space="preserve">
@@ -8719,70 +8302,16 @@
   <data name="&gt;&gt;AuftragToolStripMenuItem3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PermaBannToolStripMenuItem.Name" xml:space="preserve">
-    <value>PermaBannToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PermaBannToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TageBannToolStripMenuItem.Name" xml:space="preserve">
-    <value>TageBannToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;TageBannToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;VorfallToolStripMenuItem.Name" xml:space="preserve">
-    <value>VorfallToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;VorfallToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;InformationToolStripMenuItem3.Name" xml:space="preserve">
     <value>InformationToolStripMenuItem3</value>
   </data>
   <data name="&gt;&gt;InformationToolStripMenuItem3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PermaBannToolStripMenuItem1.Name" xml:space="preserve">
-    <value>PermaBannToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;PermaBannToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TageBannToolStripMenuItem1.Name" xml:space="preserve">
-    <value>TageBannToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;TageBannToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;VorfallToolStripMenuItem1.Name" xml:space="preserve">
-    <value>VorfallToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;VorfallToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;ReklamationToolStripMenuItem2.Name" xml:space="preserve">
     <value>ReklamationToolStripMenuItem2</value>
   </data>
   <data name="&gt;&gt;ReklamationToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PermaBannToolStripMenuItem2.Name" xml:space="preserve">
-    <value>PermaBannToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;PermaBannToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TageBannToolStripMenuItem2.Name" xml:space="preserve">
-    <value>TageBannToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;TageBannToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;VorfallToolStripMenuItem2.Name" xml:space="preserve">
-    <value>VorfallToolStripMenuItem2</value>
-  </data>
-  <data name="&gt;&gt;VorfallToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

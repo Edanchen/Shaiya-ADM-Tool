@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Char_Reklamation
+Partial Class Maßnahmen_Reklamation
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -42,138 +42,138 @@ Partial Class Char_Reklamation
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(339, 40)
+        Me.Label6.Location = New System.Drawing.Point(339, 41)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(79, 13)
-        Me.Label6.TabIndex = 59
+        Me.Label6.TabIndex = 29
         Me.Label6.Text = "Zuweisen an"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(339, 14)
+        Me.Label5.Location = New System.Drawing.Point(339, 15)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(93, 13)
-        Me.Label5.TabIndex = 58
+        Me.Label5.TabIndex = 28
         Me.Label5.Text = "Ticket Ersteller"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(438, 11)
+        Me.TextBox4.Location = New System.Drawing.Point(438, 12)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(173, 20)
-        Me.TextBox4.TabIndex = 57
+        Me.TextBox4.TabIndex = 27
         '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(438, 37)
+        Me.ComboBox2.Location = New System.Drawing.Point(438, 38)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(173, 21)
-        Me.ComboBox2.TabIndex = 56
+        Me.ComboBox2.TabIndex = 26
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(319, 414)
+        Me.Button2.Location = New System.Drawing.Point(319, 415)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(292, 23)
-        Me.Button2.TabIndex = 55
+        Me.Button2.TabIndex = 25
         Me.Button2.Text = "Abbrechen"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 414)
+        Me.Button1.Location = New System.Drawing.Point(12, 415)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(292, 23)
-        Me.Button1.TabIndex = 54
+        Me.Button1.TabIndex = 24
         Me.Button1.Text = "Dokumentation anlegen"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 134)
+        Me.RichTextBox1.Location = New System.Drawing.Point(12, 135)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(599, 245)
-        Me.RichTextBox1.TabIndex = 53
+        Me.RichTextBox1.TabIndex = 23
         Me.RichTextBox1.Text = ""
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 92)
+        Me.Label4.Location = New System.Drawing.Point(9, 93)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(28, 13)
-        Me.Label4.TabIndex = 52
+        Me.Label4.TabIndex = 22
         Me.Label4.Text = "Typ"
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(87, 89)
+        Me.ComboBox1.Location = New System.Drawing.Point(87, 90)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(173, 21)
-        Me.ComboBox1.TabIndex = 51
+        Me.ComboBox1.TabIndex = 21
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(9, 40)
+        Me.Label3.Location = New System.Drawing.Point(9, 41)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 13)
-        Me.Label3.TabIndex = 50
+        Me.Label3.TabIndex = 20
         Me.Label3.Text = "Thema"
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(87, 11)
+        Me.TextBox3.Location = New System.Drawing.Point(87, 12)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(173, 20)
-        Me.TextBox3.TabIndex = 49
+        Me.TextBox3.TabIndex = 19
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 14)
+        Me.Label2.Location = New System.Drawing.Point(9, 15)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 13)
-        Me.Label2.TabIndex = 48
-        Me.Label2.Text = "Charname"
+        Me.Label2.Size = New System.Drawing.Size(46, 13)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "UserID"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 66)
+        Me.Label1.Location = New System.Drawing.Point(9, 67)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(23, 13)
-        Me.Label1.TabIndex = 47
+        Me.Label1.TabIndex = 17
         Me.Label1.Text = "Art"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(87, 63)
+        Me.TextBox2.Location = New System.Drawing.Point(87, 64)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(173, 20)
-        Me.TextBox2.TabIndex = 46
+        Me.TextBox2.TabIndex = 16
         Me.TextBox2.Text = "Reklamation"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(87, 37)
+        Me.TextBox1.Location = New System.Drawing.Point(87, 38)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(173, 20)
-        Me.TextBox1.TabIndex = 45
-        Me.TextBox1.Text = "Char"
+        Me.TextBox1.TabIndex = 15
+        Me.TextBox1.Text = "Maßnahmen"
         '
-        'Char_Reklamation
+        'Maßnahmen_Reklamation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(623, 450)
+        Me.ClientSize = New System.Drawing.Size(619, 450)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox4)
@@ -190,8 +190,8 @@ Partial Class Char_Reklamation
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Name = "Char_Reklamation"
-        Me.Text = "Reklamation Char Reklamation"
+        Me.Name = "Maßnahmen_Reklamation"
+        Me.Text = "Dokumentation Maßnahmen Reklamation"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -257,51 +257,12 @@ Partial Class ADM
         Me.ReklamationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GildeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuftragToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildennameGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenleaderGewechseltToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GRBPunkteGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildeGelöschtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildeWiederhergestelltToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenhausGeöffnetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EtinHinzugefügtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenNachrichtGeändertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenWarenlagerBearbeitetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenWarenlagerItemGelöschtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildennameGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenleaderGewechseltToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GRBPunkteGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildeGelöschtToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildeWiederhergestelltToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenhausGeöffnetToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EtinHinzugefügtToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenNachrichtGeändertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenWarenlagerBearbeitetToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenWarenlagerItemGelöschtToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReklamationToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildennameGeändertToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenleaderGewechseltToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GRBPunkteGeändertToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildeGelöschtToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildeWiederhergestelltToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenhausGeöffnetToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EtinHinzugefügtToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenNachrichtGeändertToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenWarenlagerBearbeitetToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GildenWarenlagerItemGelöschtToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MaßnahmeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuftragToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PermaBannToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TageBannToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VorfallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PermaBannToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TageBannToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VorfallToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReklamationToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PermaBannToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TageBannToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VorfallToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button65 = New System.Windows.Forms.Button()
@@ -1787,171 +1748,18 @@ Partial Class ADM
         '
         'AuftragToolStripMenuItem2
         '
-        Me.AuftragToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GildennameGeändertToolStripMenuItem, Me.GildenleaderGewechseltToolStripMenuItem, Me.GRBPunkteGeändertToolStripMenuItem, Me.GildeGelöschtToolStripMenuItem, Me.GildeWiederhergestelltToolStripMenuItem, Me.GildenhausGeöffnetToolStripMenuItem, Me.EtinHinzugefügtToolStripMenuItem, Me.GildenNachrichtGeändertToolStripMenuItem, Me.GildenWarenlagerBearbeitetToolStripMenuItem, Me.GildenWarenlagerItemGelöschtToolStripMenuItem})
         Me.AuftragToolStripMenuItem2.Name = "AuftragToolStripMenuItem2"
         resources.ApplyResources(Me.AuftragToolStripMenuItem2, "AuftragToolStripMenuItem2")
         '
-        'GildennameGeändertToolStripMenuItem
-        '
-        Me.GildennameGeändertToolStripMenuItem.Name = "GildennameGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.GildennameGeändertToolStripMenuItem, "GildennameGeändertToolStripMenuItem")
-        '
-        'GildenleaderGewechseltToolStripMenuItem
-        '
-        Me.GildenleaderGewechseltToolStripMenuItem.Name = "GildenleaderGewechseltToolStripMenuItem"
-        resources.ApplyResources(Me.GildenleaderGewechseltToolStripMenuItem, "GildenleaderGewechseltToolStripMenuItem")
-        '
-        'GRBPunkteGeändertToolStripMenuItem
-        '
-        Me.GRBPunkteGeändertToolStripMenuItem.Name = "GRBPunkteGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.GRBPunkteGeändertToolStripMenuItem, "GRBPunkteGeändertToolStripMenuItem")
-        '
-        'GildeGelöschtToolStripMenuItem
-        '
-        Me.GildeGelöschtToolStripMenuItem.Name = "GildeGelöschtToolStripMenuItem"
-        resources.ApplyResources(Me.GildeGelöschtToolStripMenuItem, "GildeGelöschtToolStripMenuItem")
-        '
-        'GildeWiederhergestelltToolStripMenuItem
-        '
-        Me.GildeWiederhergestelltToolStripMenuItem.Name = "GildeWiederhergestelltToolStripMenuItem"
-        resources.ApplyResources(Me.GildeWiederhergestelltToolStripMenuItem, "GildeWiederhergestelltToolStripMenuItem")
-        '
-        'GildenhausGeöffnetToolStripMenuItem
-        '
-        Me.GildenhausGeöffnetToolStripMenuItem.Name = "GildenhausGeöffnetToolStripMenuItem"
-        resources.ApplyResources(Me.GildenhausGeöffnetToolStripMenuItem, "GildenhausGeöffnetToolStripMenuItem")
-        '
-        'EtinHinzugefügtToolStripMenuItem
-        '
-        Me.EtinHinzugefügtToolStripMenuItem.Name = "EtinHinzugefügtToolStripMenuItem"
-        resources.ApplyResources(Me.EtinHinzugefügtToolStripMenuItem, "EtinHinzugefügtToolStripMenuItem")
-        '
-        'GildenNachrichtGeändertToolStripMenuItem
-        '
-        Me.GildenNachrichtGeändertToolStripMenuItem.Name = "GildenNachrichtGeändertToolStripMenuItem"
-        resources.ApplyResources(Me.GildenNachrichtGeändertToolStripMenuItem, "GildenNachrichtGeändertToolStripMenuItem")
-        '
-        'GildenWarenlagerBearbeitetToolStripMenuItem
-        '
-        Me.GildenWarenlagerBearbeitetToolStripMenuItem.Name = "GildenWarenlagerBearbeitetToolStripMenuItem"
-        resources.ApplyResources(Me.GildenWarenlagerBearbeitetToolStripMenuItem, "GildenWarenlagerBearbeitetToolStripMenuItem")
-        '
-        'GildenWarenlagerItemGelöschtToolStripMenuItem
-        '
-        Me.GildenWarenlagerItemGelöschtToolStripMenuItem.Name = "GildenWarenlagerItemGelöschtToolStripMenuItem"
-        resources.ApplyResources(Me.GildenWarenlagerItemGelöschtToolStripMenuItem, "GildenWarenlagerItemGelöschtToolStripMenuItem")
-        '
         'InformationToolStripMenuItem2
         '
-        Me.InformationToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GildennameGeändertToolStripMenuItem1, Me.GildenleaderGewechseltToolStripMenuItem1, Me.GRBPunkteGeändertToolStripMenuItem1, Me.GildeGelöschtToolStripMenuItem1, Me.GildeWiederhergestelltToolStripMenuItem1, Me.GildenhausGeöffnetToolStripMenuItem1, Me.EtinHinzugefügtToolStripMenuItem1, Me.GildenNachrichtGeändertToolStripMenuItem1, Me.GildenWarenlagerBearbeitetToolStripMenuItem1, Me.GildenWarenlagerItemGelöschtToolStripMenuItem1})
         Me.InformationToolStripMenuItem2.Name = "InformationToolStripMenuItem2"
         resources.ApplyResources(Me.InformationToolStripMenuItem2, "InformationToolStripMenuItem2")
         '
-        'GildennameGeändertToolStripMenuItem1
-        '
-        Me.GildennameGeändertToolStripMenuItem1.Name = "GildennameGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.GildennameGeändertToolStripMenuItem1, "GildennameGeändertToolStripMenuItem1")
-        '
-        'GildenleaderGewechseltToolStripMenuItem1
-        '
-        Me.GildenleaderGewechseltToolStripMenuItem1.Name = "GildenleaderGewechseltToolStripMenuItem1"
-        resources.ApplyResources(Me.GildenleaderGewechseltToolStripMenuItem1, "GildenleaderGewechseltToolStripMenuItem1")
-        '
-        'GRBPunkteGeändertToolStripMenuItem1
-        '
-        Me.GRBPunkteGeändertToolStripMenuItem1.Name = "GRBPunkteGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.GRBPunkteGeändertToolStripMenuItem1, "GRBPunkteGeändertToolStripMenuItem1")
-        '
-        'GildeGelöschtToolStripMenuItem1
-        '
-        Me.GildeGelöschtToolStripMenuItem1.Name = "GildeGelöschtToolStripMenuItem1"
-        resources.ApplyResources(Me.GildeGelöschtToolStripMenuItem1, "GildeGelöschtToolStripMenuItem1")
-        '
-        'GildeWiederhergestelltToolStripMenuItem1
-        '
-        Me.GildeWiederhergestelltToolStripMenuItem1.Name = "GildeWiederhergestelltToolStripMenuItem1"
-        resources.ApplyResources(Me.GildeWiederhergestelltToolStripMenuItem1, "GildeWiederhergestelltToolStripMenuItem1")
-        '
-        'GildenhausGeöffnetToolStripMenuItem1
-        '
-        Me.GildenhausGeöffnetToolStripMenuItem1.Name = "GildenhausGeöffnetToolStripMenuItem1"
-        resources.ApplyResources(Me.GildenhausGeöffnetToolStripMenuItem1, "GildenhausGeöffnetToolStripMenuItem1")
-        '
-        'EtinHinzugefügtToolStripMenuItem1
-        '
-        Me.EtinHinzugefügtToolStripMenuItem1.Name = "EtinHinzugefügtToolStripMenuItem1"
-        resources.ApplyResources(Me.EtinHinzugefügtToolStripMenuItem1, "EtinHinzugefügtToolStripMenuItem1")
-        '
-        'GildenNachrichtGeändertToolStripMenuItem1
-        '
-        Me.GildenNachrichtGeändertToolStripMenuItem1.Name = "GildenNachrichtGeändertToolStripMenuItem1"
-        resources.ApplyResources(Me.GildenNachrichtGeändertToolStripMenuItem1, "GildenNachrichtGeändertToolStripMenuItem1")
-        '
-        'GildenWarenlagerBearbeitetToolStripMenuItem1
-        '
-        Me.GildenWarenlagerBearbeitetToolStripMenuItem1.Name = "GildenWarenlagerBearbeitetToolStripMenuItem1"
-        resources.ApplyResources(Me.GildenWarenlagerBearbeitetToolStripMenuItem1, "GildenWarenlagerBearbeitetToolStripMenuItem1")
-        '
-        'GildenWarenlagerItemGelöschtToolStripMenuItem1
-        '
-        Me.GildenWarenlagerItemGelöschtToolStripMenuItem1.Name = "GildenWarenlagerItemGelöschtToolStripMenuItem1"
-        resources.ApplyResources(Me.GildenWarenlagerItemGelöschtToolStripMenuItem1, "GildenWarenlagerItemGelöschtToolStripMenuItem1")
-        '
         'ReklamationToolStripMenuItem1
         '
-        Me.ReklamationToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GildennameGeändertToolStripMenuItem2, Me.GildenleaderGewechseltToolStripMenuItem2, Me.GRBPunkteGeändertToolStripMenuItem2, Me.GildeGelöschtToolStripMenuItem2, Me.GildeWiederhergestelltToolStripMenuItem2, Me.GildenhausGeöffnetToolStripMenuItem2, Me.EtinHinzugefügtToolStripMenuItem2, Me.GildenNachrichtGeändertToolStripMenuItem2, Me.GildenWarenlagerBearbeitetToolStripMenuItem2, Me.GildenWarenlagerItemGelöschtToolStripMenuItem2})
         Me.ReklamationToolStripMenuItem1.Name = "ReklamationToolStripMenuItem1"
         resources.ApplyResources(Me.ReklamationToolStripMenuItem1, "ReklamationToolStripMenuItem1")
-        '
-        'GildennameGeändertToolStripMenuItem2
-        '
-        Me.GildennameGeändertToolStripMenuItem2.Name = "GildennameGeändertToolStripMenuItem2"
-        resources.ApplyResources(Me.GildennameGeändertToolStripMenuItem2, "GildennameGeändertToolStripMenuItem2")
-        '
-        'GildenleaderGewechseltToolStripMenuItem2
-        '
-        Me.GildenleaderGewechseltToolStripMenuItem2.Name = "GildenleaderGewechseltToolStripMenuItem2"
-        resources.ApplyResources(Me.GildenleaderGewechseltToolStripMenuItem2, "GildenleaderGewechseltToolStripMenuItem2")
-        '
-        'GRBPunkteGeändertToolStripMenuItem2
-        '
-        Me.GRBPunkteGeändertToolStripMenuItem2.Name = "GRBPunkteGeändertToolStripMenuItem2"
-        resources.ApplyResources(Me.GRBPunkteGeändertToolStripMenuItem2, "GRBPunkteGeändertToolStripMenuItem2")
-        '
-        'GildeGelöschtToolStripMenuItem2
-        '
-        Me.GildeGelöschtToolStripMenuItem2.Name = "GildeGelöschtToolStripMenuItem2"
-        resources.ApplyResources(Me.GildeGelöschtToolStripMenuItem2, "GildeGelöschtToolStripMenuItem2")
-        '
-        'GildeWiederhergestelltToolStripMenuItem2
-        '
-        Me.GildeWiederhergestelltToolStripMenuItem2.Name = "GildeWiederhergestelltToolStripMenuItem2"
-        resources.ApplyResources(Me.GildeWiederhergestelltToolStripMenuItem2, "GildeWiederhergestelltToolStripMenuItem2")
-        '
-        'GildenhausGeöffnetToolStripMenuItem2
-        '
-        Me.GildenhausGeöffnetToolStripMenuItem2.Name = "GildenhausGeöffnetToolStripMenuItem2"
-        resources.ApplyResources(Me.GildenhausGeöffnetToolStripMenuItem2, "GildenhausGeöffnetToolStripMenuItem2")
-        '
-        'EtinHinzugefügtToolStripMenuItem2
-        '
-        Me.EtinHinzugefügtToolStripMenuItem2.Name = "EtinHinzugefügtToolStripMenuItem2"
-        resources.ApplyResources(Me.EtinHinzugefügtToolStripMenuItem2, "EtinHinzugefügtToolStripMenuItem2")
-        '
-        'GildenNachrichtGeändertToolStripMenuItem2
-        '
-        Me.GildenNachrichtGeändertToolStripMenuItem2.Name = "GildenNachrichtGeändertToolStripMenuItem2"
-        resources.ApplyResources(Me.GildenNachrichtGeändertToolStripMenuItem2, "GildenNachrichtGeändertToolStripMenuItem2")
-        '
-        'GildenWarenlagerBearbeitetToolStripMenuItem2
-        '
-        Me.GildenWarenlagerBearbeitetToolStripMenuItem2.Name = "GildenWarenlagerBearbeitetToolStripMenuItem2"
-        resources.ApplyResources(Me.GildenWarenlagerBearbeitetToolStripMenuItem2, "GildenWarenlagerBearbeitetToolStripMenuItem2")
-        '
-        'GildenWarenlagerItemGelöschtToolStripMenuItem2
-        '
-        Me.GildenWarenlagerItemGelöschtToolStripMenuItem2.Name = "GildenWarenlagerItemGelöschtToolStripMenuItem2"
-        resources.ApplyResources(Me.GildenWarenlagerItemGelöschtToolStripMenuItem2, "GildenWarenlagerItemGelöschtToolStripMenuItem2")
         '
         'MaßnahmeToolStripMenuItem
         '
@@ -1961,66 +1769,18 @@ Partial Class ADM
         '
         'AuftragToolStripMenuItem3
         '
-        Me.AuftragToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PermaBannToolStripMenuItem, Me.TageBannToolStripMenuItem, Me.VorfallToolStripMenuItem})
         Me.AuftragToolStripMenuItem3.Name = "AuftragToolStripMenuItem3"
         resources.ApplyResources(Me.AuftragToolStripMenuItem3, "AuftragToolStripMenuItem3")
         '
-        'PermaBannToolStripMenuItem
-        '
-        Me.PermaBannToolStripMenuItem.Name = "PermaBannToolStripMenuItem"
-        resources.ApplyResources(Me.PermaBannToolStripMenuItem, "PermaBannToolStripMenuItem")
-        '
-        'TageBannToolStripMenuItem
-        '
-        Me.TageBannToolStripMenuItem.Name = "TageBannToolStripMenuItem"
-        resources.ApplyResources(Me.TageBannToolStripMenuItem, "TageBannToolStripMenuItem")
-        '
-        'VorfallToolStripMenuItem
-        '
-        Me.VorfallToolStripMenuItem.Name = "VorfallToolStripMenuItem"
-        resources.ApplyResources(Me.VorfallToolStripMenuItem, "VorfallToolStripMenuItem")
-        '
         'InformationToolStripMenuItem3
         '
-        Me.InformationToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PermaBannToolStripMenuItem1, Me.TageBannToolStripMenuItem1, Me.VorfallToolStripMenuItem1})
         Me.InformationToolStripMenuItem3.Name = "InformationToolStripMenuItem3"
         resources.ApplyResources(Me.InformationToolStripMenuItem3, "InformationToolStripMenuItem3")
         '
-        'PermaBannToolStripMenuItem1
-        '
-        Me.PermaBannToolStripMenuItem1.Name = "PermaBannToolStripMenuItem1"
-        resources.ApplyResources(Me.PermaBannToolStripMenuItem1, "PermaBannToolStripMenuItem1")
-        '
-        'TageBannToolStripMenuItem1
-        '
-        Me.TageBannToolStripMenuItem1.Name = "TageBannToolStripMenuItem1"
-        resources.ApplyResources(Me.TageBannToolStripMenuItem1, "TageBannToolStripMenuItem1")
-        '
-        'VorfallToolStripMenuItem1
-        '
-        Me.VorfallToolStripMenuItem1.Name = "VorfallToolStripMenuItem1"
-        resources.ApplyResources(Me.VorfallToolStripMenuItem1, "VorfallToolStripMenuItem1")
-        '
         'ReklamationToolStripMenuItem2
         '
-        Me.ReklamationToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PermaBannToolStripMenuItem2, Me.TageBannToolStripMenuItem2, Me.VorfallToolStripMenuItem2})
         Me.ReklamationToolStripMenuItem2.Name = "ReklamationToolStripMenuItem2"
         resources.ApplyResources(Me.ReklamationToolStripMenuItem2, "ReklamationToolStripMenuItem2")
-        '
-        'PermaBannToolStripMenuItem2
-        '
-        Me.PermaBannToolStripMenuItem2.Name = "PermaBannToolStripMenuItem2"
-        resources.ApplyResources(Me.PermaBannToolStripMenuItem2, "PermaBannToolStripMenuItem2")
-        '
-        'TageBannToolStripMenuItem2
-        '
-        Me.TageBannToolStripMenuItem2.Name = "TageBannToolStripMenuItem2"
-        resources.ApplyResources(Me.TageBannToolStripMenuItem2, "TageBannToolStripMenuItem2")
-        '
-        'VorfallToolStripMenuItem2
-        '
-        Me.VorfallToolStripMenuItem2.Name = "VorfallToolStripMenuItem2"
-        resources.ApplyResources(Me.VorfallToolStripMenuItem2, "VorfallToolStripMenuItem2")
         '
         'RichTextBox1
         '
@@ -2292,45 +2052,6 @@ Partial Class ADM
     Friend WithEvents WartungsmodusEinschaltenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WartungsmodusAusschaltenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EingeloggteSpielerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildennameGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenleaderGewechseltToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GRBPunkteGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildeGelöschtToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildeWiederhergestelltToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenhausGeöffnetToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EtinHinzugefügtToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenNachrichtGeändertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenWarenlagerBearbeitetToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenWarenlagerItemGelöschtToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildennameGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenleaderGewechseltToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GRBPunkteGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildeGelöschtToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildeWiederhergestelltToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenhausGeöffnetToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EtinHinzugefügtToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenNachrichtGeändertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenWarenlagerBearbeitetToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenWarenlagerItemGelöschtToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildennameGeändertToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenleaderGewechseltToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GRBPunkteGeändertToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildeGelöschtToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildeWiederhergestelltToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenhausGeöffnetToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EtinHinzugefügtToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenNachrichtGeändertToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenWarenlagerBearbeitetToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GildenWarenlagerItemGelöschtToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PermaBannToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TageBannToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VorfallToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PermaBannToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TageBannToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VorfallToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PermaBannToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TageBannToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VorfallToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button68 As System.Windows.Forms.Button
     Friend WithEvents Button72 As System.Windows.Forms.Button
     Friend WithEvents ListBox4 As System.Windows.Forms.ListBox

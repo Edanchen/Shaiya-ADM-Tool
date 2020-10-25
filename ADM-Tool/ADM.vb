@@ -2898,7 +2898,7 @@ ORDER BY TotalStat DESC;", con)
             End If
         End Try
         Char_Auftrag.Show()
-        Char_Auftrag.TextBox3.Text = TextBox18.Text
+        Char_Auftrag.TextBox3.Text = TextBox25.Text
         Char_Auftrag.TextBox4.Text = Main.TextBox1.Text
     End Sub
 
@@ -2952,7 +2952,7 @@ ORDER BY TotalStat DESC;", con)
             End If
         End Try
         Char_Information.Show()
-        Char_Information.TextBox3.Text = TextBox18.Text
+        Char_Information.TextBox3.Text = TextBox25.Text
         Char_Information.TextBox4.Text = Main.TextBox1.Text
     End Sub
 
@@ -3006,7 +3006,169 @@ ORDER BY TotalStat DESC;", con)
             End If
         End Try
         Char_Reklamation.Show()
-        Char_Reklamation.TextBox3.Text = TextBox18.Text
+        Char_Reklamation.TextBox3.Text = TextBox25.Text
         Char_Reklamation.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub AuftragToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles AuftragToolStripMenuItem2.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Gilde_Auftrag.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Gilde' AND Art='Auftrag'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Gilde_Auftrag.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Gilde_Auftrag.Show()
+        Gilde_Auftrag.TextBox3.Text = TextBox6.Text
+        Gilde_Auftrag.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub InformationToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles InformationToolStripMenuItem2.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Gilde_Information.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Gilde' AND Art='Information'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Gilde_Information.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Gilde_Information.Show()
+        Gilde_Information.TextBox3.Text = TextBox6.Text
+        Gilde_Information.TextBox4.Text = Main.TextBox1.Text
+    End Sub
+
+    Private Sub ReklamationToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ReklamationToolStripMenuItem1.Click
+        Dim con As New Data.SqlClient.SqlConnection
+        Dim cmd As New Data.SqlClient.SqlCommand
+        Dim reader As SqlDataReader
+
+        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        cmd.Connection = con
+        cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
+
+        Try
+            con.Open()
+            reader = cmd.ExecuteReader()
+            Do While reader.Read()
+                Gilde_Reklamation.ComboBox2.Items.Add(reader("Benutzer"))
+            Loop
+
+            reader.Close()
+            con.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Gilde' AND Art='Reklamation'", con1)
+        Dim reader1 As SqlDataReader
+
+        Try
+            con1.Open()
+            reader1 = cmd1.ExecuteReader()
+            Do While reader1.Read()
+                Gilde_Reklamation.ComboBox1.Items.Add(reader1("Typ"))
+            Loop
+
+            reader1.Close()
+            con1.Close()
+        Catch ex As Exception
+            If MessageBox.Show("Account erfolgreich geladen...") Then
+                Dim mainForm As New ADM
+
+            Else
+                MessageBox.Show("Account konnten nicht geladen weden...")
+
+            End If
+        End Try
+        Gilde_Reklamation.Show()
+        Gilde_Reklamation.TextBox3.Text = TextBox6.Text
+        Gilde_Reklamation.TextBox4.Text = Main.TextBox1.Text
     End Sub
 End Class
