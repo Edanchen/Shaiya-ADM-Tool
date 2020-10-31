@@ -43,6 +43,7 @@ Partial Class CharRank
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.CharName, Me.Str, Me.Dex, Me.Rec, Me.Int, Me.Wis, Me.Luc, Me.TotalStat, Me.Defense, Me.MagicResist, Me.Absorb, Me.AttackMin, Me.AttackMax})
+        Me.ListView1.FullRowSelect = True
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(0, 0)
         Me.ListView1.Name = "ListView1"

@@ -483,6 +483,7 @@ Partial Class ADM
         'ListView3
         '
         Me.ListView3.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader12, Me.ColumnHeader13})
+        Me.ListView3.FullRowSelect = True
         Me.ListView3.HideSelection = False
         resources.ApplyResources(Me.ListView3, "ListView3")
         Me.ListView3.Name = "ListView3"
@@ -788,6 +789,7 @@ Partial Class ADM
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2})
+        Me.ListView1.FullRowSelect = True
         Me.ListView1.HideSelection = False
         resources.ApplyResources(Me.ListView1, "ListView1")
         Me.ListView1.Name = "ListView1"
@@ -1098,6 +1100,7 @@ Partial Class ADM
         'ListView4
         '
         Me.ListView4.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader14, Me.ColumnHeader15})
+        Me.ListView4.FullRowSelect = True
         Me.ListView4.HideSelection = False
         resources.ApplyResources(Me.ListView4, "ListView4")
         Me.ListView4.Name = "ListView4"
@@ -1467,6 +1470,7 @@ Partial Class ADM
         'ListView2
         '
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11})
+        Me.ListView2.FullRowSelect = True
         Me.ListView2.HideSelection = False
         resources.ApplyResources(Me.ListView2, "ListView2")
         Me.ListView2.Name = "ListView2"
