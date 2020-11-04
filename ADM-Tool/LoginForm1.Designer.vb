@@ -38,7 +38,13 @@ Partial Class LoginForm1
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EinstellungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServerEinstellungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LogoPictureBox
@@ -78,6 +84,34 @@ Partial Class LoginForm1
         resources.ApplyResources(Me.Cancel, "Cancel")
         Me.Cancel.Name = "Cancel"
         '
+        'MenuStrip1
+        '
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DateiToolStripMenuItem, Me.EinstellungToolStripMenuItem})
+        Me.MenuStrip1.Name = "MenuStrip1"
+        '
+        'DateiToolStripMenuItem
+        '
+        Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BeendenToolStripMenuItem})
+        Me.DateiToolStripMenuItem.Name = "DateiToolStripMenuItem"
+        resources.ApplyResources(Me.DateiToolStripMenuItem, "DateiToolStripMenuItem")
+        '
+        'BeendenToolStripMenuItem
+        '
+        Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
+        resources.ApplyResources(Me.BeendenToolStripMenuItem, "BeendenToolStripMenuItem")
+        '
+        'EinstellungToolStripMenuItem
+        '
+        Me.EinstellungToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ServerEinstellungToolStripMenuItem})
+        Me.EinstellungToolStripMenuItem.Name = "EinstellungToolStripMenuItem"
+        resources.ApplyResources(Me.EinstellungToolStripMenuItem, "EinstellungToolStripMenuItem")
+        '
+        'ServerEinstellungToolStripMenuItem
+        '
+        resources.ApplyResources(Me.ServerEinstellungToolStripMenuItem, "ServerEinstellungToolStripMenuItem")
+        Me.ServerEinstellungToolStripMenuItem.Name = "ServerEinstellungToolStripMenuItem"
+        '
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
@@ -91,15 +125,24 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents DateiToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BeendenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EinstellungToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ServerEinstellungToolStripMenuItem As ToolStripMenuItem
 End Class

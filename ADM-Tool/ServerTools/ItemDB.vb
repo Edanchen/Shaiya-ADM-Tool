@@ -8,7 +8,7 @@ Public Class ItemDB
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT [ItemID],[ItemName],[Type],[TypeID],[Reqlevel],[Country],[Attackfighter],[Defensefighter],[Patrolrogue],[Shootrogue],[Attackmage],[Defensemage],[Grow],[ReqStr],[ReqDex],[ReqRec],[ReqInt],[ReqWis],[Reqluc],[ReqVg],[ReqOg],[ReqIg],[Range],[AttackTime],[Attrib],[Special],[Slot],[Quality],[Effect1],[Effect2],[Effect3],[Effect4],[ConstHP],[ConstSP],[ConstMP],[ConstStr],[ConstDex],[ConstRec],[ConstInt],[ConstWis],[ConstLuc],[Speed],[Exp],[Buy],[Sell],[Grade],[Drop],[Server],[Count] FROM PS_GameDefs.dbo.Items Where ItemID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
         DBItembearbeiten.Show()

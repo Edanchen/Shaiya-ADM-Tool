@@ -1,6 +1,6 @@
 ﻿Public Class ServerAPgeben
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Point= Point + '" & TextBox1.Text & "'", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()

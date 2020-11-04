@@ -3,7 +3,7 @@
 
 Public Class Globalreset
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("DECLARE @Stat_NM tinyint, @Stat_HM tinyint, @Stat_UM tinyint, @Stat_EM tinyint;
 DECLARE @Skill_NM tinyint, @Skill_HM tinyint, @Skill_UM tinyint, @Skill_EM tinyint;
 

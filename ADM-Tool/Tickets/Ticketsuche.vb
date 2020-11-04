@@ -7,7 +7,7 @@ Public Class Ticketsuche
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where TicketID = '" & TextBox1.Text & "'", con1)
         Dim reader1 As SqlDataReader
 
@@ -40,7 +40,7 @@ Public Class Ticketsuche
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader2 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd2.Connection = con2
         cmd2.CommandText = "select Art FROM ADM_Tool.dbo.Ticketart"
         Try
@@ -67,7 +67,7 @@ Public Class Ticketsuche
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd1.Connection = con1
         cmd1.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
         Try
@@ -93,7 +93,7 @@ Public Class Ticketsuche
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT TicketID, Account, Art, Char, Text, Datum, Bearbeiter, Status FROM ADM_Tool.dbo.tickets Where TicketID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
         ticketbeabeiten_vb.Show()

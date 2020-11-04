@@ -717,7 +717,7 @@
 </value>
   </data>
   <data name="LogoPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>3, 26</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LogoPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -743,7 +743,7 @@
     <value>6</value>
   </data>
   <data name="UsernameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 9</value>
+    <value>132, 26</value>
   </data>
   <data name="UsernameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -773,7 +773,7 @@
     <value>5</value>
   </data>
   <data name="PasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 48</value>
+    <value>132, 65</value>
   </data>
   <data name="PasswordLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -803,7 +803,7 @@
     <value>4</value>
   </data>
   <data name="UsernameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 26</value>
+    <value>132, 43</value>
   </data>
   <data name="UsernameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -827,7 +827,7 @@
     <value>3</value>
   </data>
   <data name="PasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 65</value>
+    <value>132, 82</value>
   </data>
   <data name="PasswordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -854,7 +854,7 @@
     <value>2</value>
   </data>
   <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 89</value>
+    <value>132, 122</value>
   </data>
   <data name="OK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -881,7 +881,7 @@
     <value>1</value>
   </data>
   <data name="Cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 89</value>
+    <value>215, 122</value>
   </data>
   <data name="Cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -907,6 +907,63 @@
   <data name="&gt;&gt;Cancel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="MenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="DateiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="DateiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Datei</value>
+  </data>
+  <data name="ServerEinstellungToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="ServerEinstellungToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="ServerEinstellungToolStripMenuItem.Text" xml:space="preserve">
+    <value>Server-Einstellung</value>
+  </data>
+  <data name="EinstellungToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="EinstellungToolStripMenuItem.Text" xml:space="preserve">
+    <value>Einstellung</value>
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 24</value>
+  </data>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BeendenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="BeendenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -914,7 +971,7 @@
     <value>7, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>298, 125</value>
+    <value>323, 152</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -1860,6 +1917,30 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>ADM-Tool Login</value>
+  </data>
+  <data name="&gt;&gt;DateiToolStripMenuItem.Name" xml:space="preserve">
+    <value>DateiToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DateiToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BeendenToolStripMenuItem.Name" xml:space="preserve">
+    <value>BeendenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BeendenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EinstellungToolStripMenuItem.Name" xml:space="preserve">
+    <value>EinstellungToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;EinstellungToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ServerEinstellungToolStripMenuItem.Name" xml:space="preserve">
+    <value>ServerEinstellungToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ServerEinstellungToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>LoginForm1</value>

@@ -14,7 +14,7 @@ Public Class LoginForm1
     ' z.B. den Benutzernamen, den Anzeigenamen usw.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & UsernameTextBox.Text & "' AND Passwort = '" & PasswordTextBox.Text & "' AND Rechte > '15' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Login ([UserID],[Password],[IP],[Date]) VALUES ('" & UsernameTextBox.Text & "','" & PasswordTextBox.Text & "','127.0.0.1',DATEADD(year, +0, GETDATE()) )", con)
 
@@ -40,5 +40,11 @@ Public Class LoginForm1
         Me.Close()
     End Sub
 
+    Private Sub BeendenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BeendenToolStripMenuItem.Click
+        Application.Exit()
+    End Sub
 
+    Private Sub ServerEinstellungToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServerEinstellungToolStripMenuItem.Click
+        Config.Show()
+    End Sub
 End Class

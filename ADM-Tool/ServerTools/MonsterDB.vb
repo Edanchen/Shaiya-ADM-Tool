@@ -9,7 +9,7 @@ Public Class MonsterDB
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT [MobID], [MobName],[Level],[Exp],[AI],[Money1],[Money2],[QuestItemID],[HP],[SP],[MP],[Dex],[Wis],[Luc],[Day],[Size],[Attrib],[Defense],[Magic],[ResistState1],[ResistState2],[ResistState3],[ResistState4],[ResistState5],[ResistState6], [ResistState7],[ResistState8],[ResistState9],[ResistState10],[ResistState11],[ResistState12],[ResistState13],[ResistState14],[ResistState15],[ResistSkill1],[ResistSkill2],[ResistSkill3],[ResistSkill4],[ResistSkill5],[ResistSkill6],[NormalTime],[NormalStep],[ChaseTime],[ChaseStep],[ChaseRange],[AttackType1],[AttackTime1],[Attackrange1],[Attack1],[Attackplus1],[Attackattrib1],[Attackspecial1],[Attackok1],[Attacktype2],[Attacktime2],[Attackrange2],[Attack2],[Attackplus2],[Attackattrib2],[Attackspecial2],[Attackok2],[Attacktype3],[Attacktime3],[Attackrange3],[Attack3],[Attackplus3],[Attackattrib3],[Attackspecial3],[Attackok3] FROM PS_GameDefs.dbo.Mobs Where MobID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
         DBMonsterbearbeiten.Show()
@@ -172,7 +172,7 @@ Public Class MonsterDB
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT m.MobID, m.MobName, d.MobID, d.Grade, d.DropRate, d.ItemOrder FROM PS_GameDefs.dbo.Mobs m INNER JOIN PS_GameDefs.dbo.MobItems d ON m.MobID=d.MobID Where m.MobID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
 

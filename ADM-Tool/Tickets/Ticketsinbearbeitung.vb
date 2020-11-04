@@ -7,7 +7,7 @@ Public Class Ticketsinbearbeitung
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader2 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd2.Connection = con2
         cmd2.CommandText = "select Art FROM ADM_Tool.dbo.Ticketart"
         Try
@@ -34,7 +34,7 @@ Public Class Ticketsinbearbeitung
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd1.Connection = con1
         cmd1.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
         Try
@@ -60,7 +60,7 @@ Public Class Ticketsinbearbeitung
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT TicketID, Account, Art, Char, Text, Datum, Bearbeiter, Status FROM ADM_Tool.dbo.tickets Where TicketID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
         ticketbeabeiten_vb.Show()

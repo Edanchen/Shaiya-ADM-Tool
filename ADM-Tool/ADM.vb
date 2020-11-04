@@ -6,7 +6,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select I.ItemName, b.UserUID, I.ItemID, b.ItemID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID INNER JOIN PS_GameData.dbo.UserStoredItems b ON b.UserUID=um.UserUID INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID Where c.CharName = '" & TextBox1.Text & "' OR um.UserID = '" & TextBox2.Text & "'"
 
@@ -84,7 +84,7 @@
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader3 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd2.Connection = con2
         cmd2.CommandText = "select c.UserID, c.UserUID, c.Del, c.Level, c.CharName, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where c.CharName = '" & TextBox1.Text & "' OR um.UserID = '" & TextBox2.Text & "'"
         Try
@@ -111,7 +111,7 @@
         Dim cmd5 As New Data.SqlClient.SqlCommand
         Dim reader5 As SqlDataReader
 
-        con5.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con5.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd5.Connection = con5
         cmd5.CommandText = "select um.UserUID, a.UserUID, b.GuildID, a.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID INNER JOIN PS_UserData.dbo.Users_Master um ON a.UserUID=um.UserUID Where a.CharName = '" & TextBox1.Text & "' OR um.UserID = '" & TextBox2.Text & "'"
 
@@ -144,7 +144,7 @@
         Dim cmd6 As New Data.SqlClient.SqlCommand
         Dim reader6 As SqlDataReader
 
-        con6.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con6.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd6.Connection = con6
         cmd6.CommandText = "select UserUID, UserID, PW, UserIP, Point, Status, AdminLevel from PS_UserData.dbo.Users_Master WHERE UserID = '" & TextBox2.Text & "'"
 
@@ -244,7 +244,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GuildName FROM PS_GameData.dbo.Guilds", con)
         Dim reader As SqlDataReader
         Try
@@ -273,7 +273,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select b.GuildID, b.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName, g.MasterUserID, g.MasterName, g.MasterCharID, g.Country, g.TotalCount, g.GuildPoint, g.Del, d.UseHouse, d.Etin, d.Rank, d.Remark from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildDetails d ON g.GuildID=d.GuildID INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID Where g.GuildName = '" & ListBox1.Text & "'"
 
@@ -334,7 +334,7 @@
     End Sub
 
     Private Sub Button55_Click(sender As System.Object, e As System.EventArgs) Handles Button55.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select b.ItemUID, I.ItemName from PS_GameData.dbo.UserStoredItems b INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID Where b.UserUID = '" & TextBox17.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -362,7 +362,7 @@
     End Sub
 
     Private Sub Button53_Click(sender As System.Object, e As System.EventArgs) Handles Button53.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT [GV],[UserID],[Date],[Text],[Status],[Zugewiesenan],[Thema],[Art],[Type],[Erstelltdurch] FROM ADM_Tool.dbo.Vorgaenge Where UserID = '" & TextBox18.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -401,7 +401,7 @@
     End Sub
 
     Private Sub Button62_Click(sender As System.Object, e As System.EventArgs) Handles Button62.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select z.ItemID, x.ItemID, x.ItemUID, z.ItemName, y.GuildID, x.GuildID, y.GuildName, y.MasterUserID, y.MasterName, y.Country, y.TotalCount, y.GuildPoint, y.Del from PS_GameData.dbo.Guilds y INNER JOIN PS_GameData.dbo.GuildStoredItems x ON x.GuildID=y.GuildID INNER JOIN PS_GameDefs.dbo.Items z ON x.ItemID=z.ItemID  Where y.GuildID = '" & TextBox5.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -429,7 +429,7 @@
     End Sub
 
     Private Sub Button63_Click(sender As System.Object, e As System.EventArgs) Handles Button63.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select b.ItemUID, I.ItemName from PS_GameData.dbo.CharItems b INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID Where b.CharID = '" & TextBox24.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -466,7 +466,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select b.GuildID, b.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName, g.MasterUserID, g.MasterName, g.Country, g.TotalCount, g.GuildPoint, g.Del, d.UseHouse, d.Etin, d.Rank, d.Remark from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildDetails d ON g.GuildID=d.GuildID INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID Where g.GuildID = '" & TextBox5.Text & "' AND b.GuildLevel='2' AND b.Del='0'"
 
@@ -503,7 +503,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select b.GuildID, b.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName, g.MasterUserID, g.MasterName, g.Country, g.TotalCount, g.GuildPoint, g.Del, d.UseHouse, d.Etin, d.Rank, d.Remark from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildDetails d ON g.GuildID=d.GuildID INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID Where g.GuildID = '" & TextBox5.Text & "' AND b.Del='0'"
 
@@ -566,7 +566,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select I.ItemName, b.UserUID, I.ItemID, b.ItemID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID INNER JOIN PS_GameData.dbo.UserStoredItems b ON b.UserUID=um.UserUID INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID Where c.CharName = '" & ListBox2.Text & "'"
 
@@ -644,7 +644,7 @@
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader3 As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select c.UserID, c.UserUID, c.Del, c.Level, c.CharName, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where c.CharName = '" & ListBox2.Text & "'"
         Try
@@ -671,7 +671,7 @@
     End Sub
 
     Private Sub Button7_Click(sender As System.Object, e As System.EventArgs) Handles Button7.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT c.GuildID, c.Count,c.ItemID,c.Type,c.TypeID,c.Gem1,c.Gem2,c.Gem3,c.Gem4,c.Gem5,c.Gem6, I.ItemName, I.ItemID, c.ItemID, c.Count,c.ItemID,c.Type,c.TypeID,c.Gem1,c.Gem2,c.Gem3,c.Gem4,c.Gem5,Gem6,SUBSTRING(c.Craftname, 1, 2) AS 'Str', SUBSTRING(c.Craftname, 3, 2) AS 'Dex',SUBSTRING(c.Craftname, 5, 2) AS 'Rec', SUBSTRING(c.Craftname, 7, 2) AS 'Int',SUBSTRING(c.Craftname, 9, 2) AS 'Wis',SUBSTRING(c.Craftname, 11, 2) AS 'Luc', SUBSTRING(c.Craftname, 13, 2) AS 'HP',SUBSTRING(c.Craftname, 15, 2) AS 'MP',SUBSTRING(c.Craftname, 17, 2) AS 'SP', SUBSTRING(c.Craftname, 19, 2) AS 'Enchant', c.ItemUID,I.ItemName,I.ReqWis,I.Type  FROM PS_GameData.dbo.GuildStoredItems c INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=c.ItemID WHERE c.GuildID='" & TextBox5.Text & "' AND c.ItemUID='" & ListView3.SelectedItems(0).SubItems(0).Text & "'", con)
         Dim reader As SqlDataReader
         Try
@@ -791,7 +791,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where c.UserUID = '" & TextBox17.Text & "'"
         Try
@@ -821,7 +821,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select I.ItemName, b.CharID, I.ItemID, b.ItemID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID INNER JOIN PS_GameData.dbo.CharItems b ON b.CharID=c.CharID INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID  Where c.CharName = '" & ListBox6.Text & "'"
 
@@ -882,7 +882,7 @@
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd1.Connection = con1
         cmd1.CommandText = "select um.UserUID, a.UserUID, b.GuildID, a.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID INNER JOIN PS_UserData.dbo.Users_Master um ON a.UserUID=um.UserUID Where a.CharName = '" & ListBox6.Text & "'"
 
@@ -916,7 +916,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select UserID FROM PS_UserData.dbo.Users_Master Where UserIP = '" & TextBox21.Text & "'"
         Try
@@ -943,7 +943,7 @@
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd1.Connection = con1
         cmd1.CommandText = "select DISTINCT um.UserIP, a.Text1, a.UserUID, um.UserUID FROM PS_UserData.dbo.Users_Master um INNER JOIN PS_GameLog.dbo.ActionLog a ON um.UserID=a.UserID Where ActionType='107' AND a.UserUID = '" & TextBox17.Text & "'"
         Try
@@ -974,7 +974,7 @@
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader3 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd2.Connection = con2
         cmd2.CommandText = "select c.UserID, c.UserUID, c.Del, c.Level, c.CharName, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where c.CharName = '" & TextBox1.Text & "' OR um.UserID = '" & ListBox7.Text & "'"
         Try
@@ -1002,7 +1002,7 @@
         Dim cmd6 As New Data.SqlClient.SqlCommand
         Dim reader6 As SqlDataReader
 
-        con6.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con6.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd6.Connection = con6
         cmd6.CommandText = "select UserUID, UserID, PW, UserIP, Point, Status, AdminLevel from PS_UserData.dbo.Users_Master WHERE UserID = '" & ListBox7.Text & "'"
 
@@ -1053,7 +1053,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select DISTINCT um.UserIP, a.Text1, a.UserUID, um.UserUID, um.UserID FROM PS_UserData.dbo.Users_Master um INNER JOIN PS_GameLog.dbo.ActionLog a ON um.UserID=a.UserID Where ActionType='107' AND a.UserUID = '" & TextBox17.Text & "'"
         Try
@@ -1083,7 +1083,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select DISTINCT UserID FROM PS_GameLog.dbo.ActionLOG Where ActionType='107' AND Text1 = '" & ListBox8.Text & "'"
         Try
@@ -1109,7 +1109,7 @@
     End Sub
 
     Private Sub Button8_Click(sender As System.Object, e As System.EventArgs) Handles Button8.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT c.UserUID, c.Count,c.ItemID,c.Type,c.TypeID,c.Gem1,c.Gem2,c.Gem3,c.Gem4,c.Gem5,c.Gem6, I.ItemName, I.ItemID, c.ItemID, c.Count,c.ItemID,c.Type,c.TypeID,c.Gem1,c.Gem2,c.Gem3,c.Gem4,c.Gem5,Gem6,SUBSTRING(c.Craftname, 1, 2) AS 'Str', SUBSTRING(c.Craftname, 3, 2) AS 'Dex',SUBSTRING(c.Craftname, 5, 2) AS 'Rec', SUBSTRING(c.Craftname, 7, 2) AS 'Int',SUBSTRING(c.Craftname, 9, 2) AS 'Wis',SUBSTRING(c.Craftname, 11, 2) AS 'Luc', SUBSTRING(c.Craftname, 13, 2) AS 'HP',SUBSTRING(c.Craftname, 15, 2) AS 'MP',SUBSTRING(c.Craftname, 17, 2) AS 'SP', SUBSTRING(c.Craftname, 19, 2) AS 'Enchant', c.ItemUID,I.ItemName,I.ReqWis,I.Type  FROM PS_GameData.dbo.UserStoredItems c INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=c.ItemID WHERE c.ItemUID='" & ListView1.SelectedItems(0).SubItems(0).Text & "'", con)
         Dim reader As SqlDataReader
         Try
@@ -1185,7 +1185,7 @@
     End Sub
 
     Private Sub AccountsZurLöschungToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AccountsZurLöschungToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select UserUID, UserID, Pw, Status, UserIP From PS_UserData.dbo.Users_Master Where Status='-4'", con)
         Dim reader As SqlDataReader
 
@@ -1216,7 +1216,7 @@
     End Sub
 
     Private Sub GebannteAccountsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GebannteAccountsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select UserUID, UserID, Pw, Status, UserIP From PS_UserData.dbo.Users_Master Where Status='-5'", con)
         Dim reader As SqlDataReader
 
@@ -1247,7 +1247,7 @@
     End Sub
 
     Private Sub AlleGMAccountsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlleGMAccountsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select UserUID, UserID, Pw, Admin, AdminLevel, Status, UserType, UserIP From PS_UserData.dbo.Users_Master Where Admin='True'", con)
         Dim reader As SqlDataReader
 
@@ -1289,7 +1289,7 @@
     End Sub
 
     Private Sub EingeloggteSpielerToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles EingeloggteSpielerToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select CharName, LoginStatus From PS_GameData.dbo.Chars Where LoginStatus='1'", con)
         Dim reader As SqlDataReader
 
@@ -1319,7 +1319,7 @@
     End Sub
 
     Private Sub ActionLogEinsehenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ActionLogEinsehenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog", con)
         Dim reader As SqlDataReader
 
@@ -1354,7 +1354,7 @@
     End Sub
 
     Private Sub AlleAuktionenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlleAuktionenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  m.MarketID, m.CharID, m.MinMoney, m.DirectMoney, m.MarketType, m.GuaranteeMoney, m.TenderCharID, m.TenderCharName, m.TenderMoney, m.EndDate, m.Del, c.CharName From PS_GameData.dbo.Market m INNER Join PS_GameData.dbo.Chars c ON m.CharID=c.CharID", con)
         Dim reader As SqlDataReader
 
@@ -1392,7 +1392,7 @@
     End Sub
 
     Private Sub StatPaddersToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles StatPaddersToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT UserID, UserUID, CharName, Level, K1, K2 From PS_GameData.dbo.Chars WHERE K1 <= 20 AND K2 >= 20", con)
         Dim reader As SqlDataReader
 
@@ -1425,7 +1425,7 @@
     End Sub
 
     Private Sub ChatLogToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ChatLogToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT c.UserUID, c.CharID, c.ChatType, c.ChatData, c.MapID, c.ChatTime, a.CharName From PS_ChatLog.dbo.ChatLog AS c INNER JOIN PS_GameData.dbo.Chars a ON c.CharID=a.CharID", con)
         Dim reader As SqlDataReader
 
@@ -1458,7 +1458,7 @@
     End Sub
 
     Private Sub ImGameMallToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ImGameMallToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT ProductName, ProductCode, BuyCost, ItemID1, ItemCount1, ItemID2, ItemCount2, ItemID3, ItemCount3, ItemID4, ItemCount4, ItemID5, ItemCount5, ItemID6, ItemCount6, ItemID7, ItemCount7, ItemID8, ItemCount8, ItemID9, ItemCount9, ItemID10, ItemCount10 From PS_GameDefs.dbo.ProductList", con)
         Dim reader As SqlDataReader
 
@@ -1588,7 +1588,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select b.GuildID, b.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName, g.MasterUserID, g.MasterName, g.MasterCharID, g.Country, g.TotalCount, g.GuildPoint, g.Del, d.UseHouse, d.Etin, d.Rank, d.Remark from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildDetails d ON g.GuildID=d.GuildID INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID Where g.GuildName = '" & TextBox39.Text & "'"
 
@@ -1648,7 +1648,7 @@
     End Sub
 
     Private Sub Button9_Click(sender As System.Object, e As System.EventArgs) Handles Button9.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT c.Count,c.ItemID,c.Type,c.TypeID,c.Gem1,c.Gem2,c.Gem3,c.Gem4,c.Gem5,c.Gem6, I.ItemName, c.CharID, I.ItemID, c.ItemID, c.Count,c.ItemID,c.Type,c.TypeID,c.Gem1,c.Gem2,c.Gem3,c.Gem4,c.Gem5,Gem6,SUBSTRING(c.Craftname, 1, 2) AS 'Str', SUBSTRING(c.Craftname, 3, 2) AS 'Dex',SUBSTRING(c.Craftname, 5, 2) AS 'Rec', SUBSTRING(c.Craftname, 7, 2) AS 'Int',SUBSTRING(c.Craftname, 9, 2) AS 'Wis',SUBSTRING(c.Craftname, 11, 2) AS 'Luc', SUBSTRING(c.Craftname, 13, 2) AS 'HP',SUBSTRING(c.Craftname, 15, 2) AS 'MP',SUBSTRING(c.Craftname, 17, 2) AS 'SP', SUBSTRING(c.Craftname, 19, 2) AS 'Enchant', c.ItemUID,I.ItemName,I.ReqWis,I.Type  FROM PS_GameData.dbo.CharItems c INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=c.ItemID WHERE c.CharID='" & TextBox24.Text & "' AND c.ItemUID='" & ListView4.SelectedItems(0).SubItems(0).Text & "'", con)
 
         Dim reader As SqlDataReader
@@ -1722,7 +1722,7 @@
     End Sub
 
     Private Sub Button17_Click(sender As System.Object, e As System.EventArgs) Handles Button17.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where CharName = '" & TextBox25.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -1757,7 +1757,7 @@
     End Sub
 
     Private Sub Button18_Click(sender As System.Object, e As System.EventArgs) Handles Button18.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where CharName = '" & TextBox25.Text & "' AND ActionType = '112'", con)
         Dim reader As SqlDataReader
 
@@ -1792,7 +1792,7 @@
     End Sub
 
     Private Sub Button59_Click(sender As System.Object, e As System.EventArgs) Handles Button59.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where CharName = '" & TextBox25.Text & "' AND ActionType = '103'", con)
         Dim reader As SqlDataReader
 
@@ -1827,7 +1827,7 @@
     End Sub
 
     Private Sub Button60_Click(sender As System.Object, e As System.EventArgs) Handles Button60.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where CharName = '" & TextBox25.Text & "' AND ActionType = '104'", con)
         Dim reader As SqlDataReader
 
@@ -1866,7 +1866,7 @@
     End Sub
 
     Private Sub Button46_Click(sender As System.Object, e As System.EventArgs) Handles Button46.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  p.UserUID, p.CharID, p.UsePoint, p.ProductCode, p.UseDate, c.CharName From PS_GameData.dbo.PointLog AS p INNER JOIN PS_GameData.dbo.Chars AS c ON p.CharID=c.CharID Where p.CharID = '" & TextBox24.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -1900,7 +1900,7 @@
     End Sub
 
     Private Sub Button47_Click(sender As System.Object, e As System.EventArgs) Handles Button47.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  p.UserUID, p.CharID, p.ItemID, p.ItemUID, p.Quality, p.ItemCount, p.BuyDate, p.ReceiveDate, c.CharName, i.ItemName From PS_GameData.dbo.ProductLog AS p INNER JOIN PS_GameData.dbo.Chars AS c ON p.CharID=c.CharID INNER JOIN PS_GameDefs.dbo.Items AS i ON p.ItemID=i.ItemID Where p.UserUID = '" & TextBox17.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -1937,7 +1937,7 @@
     End Sub
 
     Private Sub Button48_Click(sender As System.Object, e As System.EventArgs) Handles Button48.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  p.UserUID, p.Slot, p.ItemID, p.ItemCount, p.BuyDate, i.ItemName From PS_Billing.dbo.Users_Product AS p INNER JOIN PS_GameDefs.dbo.Items AS i ON p.ItemID=i.ItemID Where UserUID = '" & TextBox17.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -1972,7 +1972,7 @@
     End Sub
 
     Private Sub Button49_Click(sender As System.Object, e As System.EventArgs) Handles Button49.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  MarketID, CharID, MinMoney, DirectMoney, MarketType, GuaranteeMoney, TenderCharID, TenderCharName, TenderMoney, EndDate, Del From PS_GameData.dbo.Market Where CharID = '" & TextBox24.Text & "'", con)
         Dim reader As SqlDataReader
 
@@ -2059,7 +2059,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select b.GuildID, b.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName, g.MasterUserID, g.MasterName, g.MasterCharID, g.Country, g.TotalCount, g.GuildPoint, g.Del, d.UseHouse, d.Etin, d.Rank, d.Remark from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildDetails d ON g.GuildID=d.GuildID INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID Where g.GuildID = '" & TextBox5.Text & "'"
 
@@ -2098,7 +2098,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select UserID From PS_UserData.dbo.Users_Master"
         Try
@@ -2129,7 +2129,7 @@
         Dim cmd6 As New Data.SqlClient.SqlCommand
         Dim reader6 As SqlDataReader
 
-        con6.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con6.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd6.Connection = con6
         cmd6.CommandText = "Select UserUID, UserID, PW, UserIP, Point, Status, AdminLevel From PS_UserData.dbo.Users_Master WHERE UserID = '" & ListBox3.Text & "'"
 
@@ -2177,7 +2177,7 @@
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader3 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd2.Connection = con2
         cmd2.CommandText = "select c.UserID, c.UserUID, c.Del, c.Level, c.CharName, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where um.UserID = '" & ListBox3.Text & "'"
         Try
@@ -2208,7 +2208,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select CharName From PS_GameData.dbo.Chars"
         Try
@@ -2239,7 +2239,7 @@
         Dim cmd6 As New Data.SqlClient.SqlCommand
         Dim reader6 As SqlDataReader
 
-        con6.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con6.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd6.Connection = con6
         cmd6.CommandText = "select c.UserID, c.UserUID, c.Del, c.Level, c.CharName, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where c.CharName = '" & ListBox4.Text & "'"
 
@@ -2288,7 +2288,7 @@
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "select I.ItemName, b.CharID, I.ItemID, b.ItemID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID INNER JOIN PS_GameData.dbo.CharItems b ON b.CharID=c.CharID INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID  Where c.CharName = '" & ListBox4.Text & "'"
 
@@ -2349,7 +2349,7 @@
         Dim cmd5 As New Data.SqlClient.SqlCommand
         Dim reader5 As SqlDataReader
 
-        con5.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con5.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd5.Connection = con5
         cmd5.CommandText = "select um.UserUID, a.UserUID, b.GuildID, a.CharID, b.CharID, a.CharName, g.GuildID, g.GuildName from PS_GameData.dbo.Guilds g INNER JOIN PS_GameData.dbo.GuildChars b ON g.GuildID=b.GuildID INNER JOIN PS_GameData.dbo.Chars a ON b.CharID=a.CharID INNER JOIN PS_UserData.dbo.Users_Master um ON a.UserUID=um.UserUID Where a.CharName = '" & ListBox4.Text & "'"
 
@@ -2387,7 +2387,7 @@
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader2 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd2.Connection = con2
         cmd2.CommandText = "select Art FROM ADM_Tool.dbo.Ticketart"
         Try
@@ -2414,7 +2414,7 @@
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd1.Connection = con1
         cmd1.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
         Try
@@ -2452,7 +2452,7 @@
     End Sub
 
     Private Sub CharakterStatistikToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharakterStatistikToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TOP 200
 	c.CharName,
 	c.Str + characterItems.ConstStr + lapisSum.ConstStr AS [Str],
@@ -2579,7 +2579,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub AllePvPKillsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AllePvPKillsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where ActionType = '103'", con)
         Dim reader As SqlDataReader
 
@@ -2614,7 +2614,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub AllePvPToteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AllePvPToteToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where ActionType = '104'", con)
         Dim reader As SqlDataReader
 
@@ -2657,7 +2657,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub BossKillsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BossKillsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT[Text1], [Text3], [ActionTime] FROM PS_GameLog.dbo.ActionLog WHERE [ActionType]='173' AND [Text2]='death'order by ActionTime desc", con)
         Dim reader As SqlDataReader
 
@@ -2691,7 +2691,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -2713,7 +2713,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Account' AND Art='Auftrag'", con1)
         Dim reader1 As SqlDataReader
 
@@ -2745,7 +2745,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -2767,7 +2767,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Account' AND Art='Information'", con1)
         Dim reader1 As SqlDataReader
 
@@ -2799,7 +2799,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -2821,7 +2821,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Account' AND Art='Reklamation'", con1)
         Dim reader1 As SqlDataReader
 
@@ -2853,7 +2853,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -2875,7 +2875,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Char' AND Art='Auftrag'", con1)
         Dim reader1 As SqlDataReader
 
@@ -2907,7 +2907,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -2929,7 +2929,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Char' AND Art='Information'", con1)
         Dim reader1 As SqlDataReader
 
@@ -2961,7 +2961,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -2983,7 +2983,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Char' AND Art='Reklamation'", con1)
         Dim reader1 As SqlDataReader
 
@@ -3015,7 +3015,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -3037,7 +3037,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Gilde' AND Art='Auftrag'", con1)
         Dim reader1 As SqlDataReader
 
@@ -3069,7 +3069,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -3091,7 +3091,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Gilde' AND Art='Information'", con1)
         Dim reader1 As SqlDataReader
 
@@ -3123,7 +3123,7 @@ ORDER BY TotalStat DESC;", con)
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = ("select Benutzer FROM ADM_Tool.dbo.Account")
 
@@ -3145,7 +3145,7 @@ ORDER BY TotalStat DESC;", con)
 
             End If
         End Try
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select Typ FROM ADM_Tool.dbo.Vorgangart Where Thema='Gilde' AND Art='Reklamation'", con1)
         Dim reader1 As SqlDataReader
 

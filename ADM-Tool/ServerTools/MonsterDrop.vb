@@ -11,7 +11,7 @@ Public Class MonsterDrop
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT m.MobID, m.MobName, d.MobID, d.Grade, d.DropRate, d.ItemOrder FROM PS_GameDefs.dbo.Mobs m INNER JOIN PS_GameDefs.dbo.MobItems d ON m.MobID=d.MobID Where m.MobID = '" & TextBox1.Text & "'"
 
@@ -46,7 +46,7 @@ Public Class MonsterDrop
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd.Connection = con
         cmd.CommandText = "SELECT ItemOrder, Grade, DropRate FROM PS_GameDefs.dbo.MobItems Where MobID = '" & TextBox1.Text & "' AND ItemOrder = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
         MopDropändern.Show()

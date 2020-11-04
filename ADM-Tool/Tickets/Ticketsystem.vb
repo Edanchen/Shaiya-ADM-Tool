@@ -11,7 +11,7 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where Status = 'Offen'", con1)
         Dim reader1 As SqlDataReader
         offenetickets.Show()
@@ -38,7 +38,7 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where Status = 'In Bearbeitung'", con1)
         Dim reader1 As SqlDataReader
         Ticketsinbearbeitung.Show()
@@ -65,7 +65,7 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where Status = 'Geschlossen'", con1)
         Dim reader1 As SqlDataReader
         Ticketsgeschlossen.Show()

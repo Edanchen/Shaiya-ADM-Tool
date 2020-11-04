@@ -8,7 +8,7 @@ Public Class AlleAuktionen
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  m.MarketID, m.CharID, m.MinMoney, m.DirectMoney, m.MarketType, m.GuaranteeMoney, m.TenderCharID, m.TenderCharName, m.TenderMoney, m.EndDate, m.Del, c.CharName From PS_GameData.dbo.Market m INNER Join PS_GameData.dbo.Chars c ON m.CharID=c.CharID", con)
         Dim reader As SqlDataReader
 

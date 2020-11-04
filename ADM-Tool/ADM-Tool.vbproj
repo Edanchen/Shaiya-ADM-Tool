@@ -212,6 +212,12 @@
     <Compile Include="CharSeite\LapisAuswaehlen5.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Config.Designer.vb">
+      <DependentUpon>Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dokumentation\Account\Auftrag\Account_Auftrag.Designer.vb">
       <DependentUpon>Account_Auftrag.vb</DependentUpon>
     </Compile>
@@ -994,6 +1000,9 @@
     <EmbeddedResource Include="CharSeite\LapisAuswaehlen5.resx">
       <DependentUpon>LapisAuswaehlen5.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dokumentation\Account\Auftrag\Account_Auftrag.resx">
       <DependentUpon>Account_Auftrag.vb</DependentUpon>
     </EmbeddedResource>
@@ -1375,6 +1384,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ADM-Tool_TemporaryKey.pfx" />
+    <None Include="app.config" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

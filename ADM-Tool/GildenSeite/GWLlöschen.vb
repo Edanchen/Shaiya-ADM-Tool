@@ -4,7 +4,7 @@
 Public Class GWLlöschen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Delete FROM PS_GameData.dbo.GuildStoredItems WHERE ItemUID='" & ADM.ListView3.SelectedItems(0).SubItems(0).Text & "' AND GuildID='" & ADM.TextBox5.Text & "'", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
@@ -18,7 +18,7 @@ Public Class GWLlöschen
             MessageBox.Show("Item erfolgreich gelöscht.")
             Me.Close()
         End If
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select z.ItemID, x.ItemID, x.ItemUID, z.ItemName, y.GuildID, x.GuildID, y.GuildName, y.MasterUserID, y.MasterName, y.Country, y.TotalCount, y.GuildPoint, y.Del from PS_GameData.dbo.Guilds y INNER JOIN PS_GameData.dbo.GuildStoredItems x ON x.GuildID=y.GuildID INNER JOIN PS_GameDefs.dbo.Items z ON x.ItemID=z.ItemID  Where y.GuildID = '" & ADM.TextBox5.Text & "'", con)
         Dim reader1 As SqlDataReader
 

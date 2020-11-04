@@ -4,7 +4,7 @@
 Public Class Main
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -22,7 +22,7 @@ Public Class Main
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','MonsterDB',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -39,7 +39,7 @@ Public Class Main
         End If
         sdr.Close()
 
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT MobID, MobName FROM PS_GameDefs.dbo.Mobs", con)
         Dim reader As SqlDataReader
 
@@ -64,7 +64,7 @@ Public Class Main
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Passwort aendern',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
@@ -75,7 +75,7 @@ Public Class Main
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte>'15' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','GV Bearbeitung',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -87,7 +87,7 @@ Public Class Main
     End Sub
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ADM Tools Logs',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -105,7 +105,7 @@ Public Class Main
     End Sub
 
     Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles Button6.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ItemDB',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -122,7 +122,7 @@ Public Class Main
         End If
         sdr.Close()
 
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT ItemID, ItemName FROM PS_GameDefs.dbo.Items", con)
         Dim reader As SqlDataReader
 
@@ -174,7 +174,7 @@ Public Class Main
     End Sub
 
     Private Sub Button8_Click(sender As System.Object, e As System.EventArgs) Handles Button8.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -190,7 +190,7 @@ Public Class Main
     End Sub
 
     Private Sub AccountsZurLöschungToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AccountsZurLöschungToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select UserUID, UserID, Pw, Status, UserIP From PS_UserData.dbo.Users_Master Where Status='-4'", con)
         Dim reader As SqlDataReader
 
@@ -221,7 +221,7 @@ Public Class Main
     End Sub
 
     Private Sub GebannteAccountsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GebannteAccountsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select UserUID, UserID, Pw, Status, UserIP From PS_UserData.dbo.Users_Master Where Status='-5'", con)
         Dim reader As SqlDataReader
 
@@ -252,7 +252,7 @@ Public Class Main
     End Sub
 
     Private Sub AlleGMAccountsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlleGMAccountsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select UserUID, UserID, Pw, Admin, AdminLevel, Status, UserType, UserIP From PS_UserData.dbo.Users_Master Where Admin='True'", con)
         Dim reader As SqlDataReader
 
@@ -290,7 +290,7 @@ Public Class Main
     End Sub
 
     Private Sub EingeloggteSpielerToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles EingeloggteSpielerToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select CharName, LoginStatus From PS_GameData.dbo.Chars Where LoginStatus='1'", con)
         Dim reader As SqlDataReader
 
@@ -320,7 +320,7 @@ Public Class Main
     End Sub
 
     Private Sub ActionLogEinsehenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ActionLogEinsehenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Select CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog", con)
         Dim reader As SqlDataReader
 
@@ -355,7 +355,7 @@ Public Class Main
     End Sub
 
     Private Sub AlleAuktionenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlleAuktionenToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  m.MarketID, m.CharID, m.MinMoney, m.DirectMoney, m.MarketType, m.GuaranteeMoney, m.TenderCharID, m.TenderCharName, m.TenderMoney, m.EndDate, m.Del, c.CharName From PS_GameData.dbo.Market m INNER Join PS_GameData.dbo.Chars c ON m.CharID=c.CharID", con)
         Dim reader As SqlDataReader
 
@@ -393,7 +393,7 @@ Public Class Main
     End Sub
 
     Private Sub StatPaddersToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles StatPaddersToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT UserID, UserUID, CharName, Level, K1, K2 From PS_GameData.dbo.Chars WHERE K1 <= 20 AND K2 >= 20", con)
         Dim reader As SqlDataReader
 
@@ -426,7 +426,7 @@ Public Class Main
     End Sub
 
     Private Sub ChatLogToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ChatLogToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT c.UserUID, c.CharID, c.ChatType, c.ChatData, c.MapID, c.ChatTime, a.CharName From PS_ChatLog.dbo.ChatLog AS c INNER JOIN PS_GameData.dbo.Chars a ON c.CharID=a.CharID", con)
         Dim reader As SqlDataReader
 
@@ -459,7 +459,7 @@ Public Class Main
     End Sub
 
     Private Sub ImGameMallToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ImGameMallToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT ProductName, ProductCode, BuyCost, ItemID1, ItemCount1, ItemID2, ItemCount2, ItemID3, ItemCount3, ItemID4, ItemCount4, ItemID5, ItemCount5, ItemID6, ItemCount6, ItemID7, ItemCount7, ItemID8, ItemCount8, ItemID9, ItemCount9, ItemID10, ItemCount10 From PS_GameDefs.dbo.ProductList", con)
         Dim reader As SqlDataReader
 
@@ -517,7 +517,7 @@ Public Class Main
     End Sub
 
     Private Sub Button9_Click(sender As System.Object, e As System.EventArgs) Handles Button9.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Account Registierung',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -537,7 +537,7 @@ Public Class Main
     End Sub
 
     Private Sub Tickets_Click(sender As Object, e As EventArgs) Handles Tickets.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
                                                                              "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Account Registierung',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
@@ -574,7 +574,7 @@ Public Class Main
     End Sub
 
     Private Sub CharakterStatistikToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharakterStatistikToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TOP 200
 	c.CharName,
 	c.Str + characterItems.ConstStr + lapisSum.ConstStr AS [Str],
@@ -700,7 +700,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub AllePvPKillsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AllePvPKillsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where ActionType = '103'", con)
         Dim reader As SqlDataReader
 
@@ -735,7 +735,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub AllePvPToteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AllePvPToteToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where ActionType = '104'", con)
         Dim reader As SqlDataReader
 
@@ -770,7 +770,7 @@ ORDER BY TotalStat DESC;", con)
     End Sub
 
     Private Sub BossKillsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BossKillsToolStripMenuItem.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT[Text1], [Text3], [ActionTime] FROM PS_GameLog.dbo.ActionLog WHERE [ActionType]='173' AND [Text2]='death'order by ActionTime desc", con)
         Dim reader As SqlDataReader
 

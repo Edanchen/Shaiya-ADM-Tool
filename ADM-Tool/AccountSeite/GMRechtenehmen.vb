@@ -4,7 +4,7 @@
 Public Class GMRechtenehmen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI")
+        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Admin='0' WHERE UserID='" & ADM.TextBox18.Text & "'" &
                                                                              "UPDATE PS_UserData.dbo.Users_Master SET AdminLevel='0' WHERE UserID='" & ADM.TextBox18.Text & "'" &
                                                                              "UPDATE PS_UserData.dbo.Users_Master SET Status='0' WHERE UserID='" & ADM.TextBox18.Text & "'" &
@@ -26,7 +26,7 @@ Public Class GMRechtenehmen
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_UserData;Integrated Security = SSPI"
+        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
         cmd1.Connection = con1
         cmd1.CommandText = "select UserUID, Status, AdminLevel from PS_UserData.dbo.Users_Master Where UserUID= '" & ADM.TextBox17.Text & "'"
         Try
