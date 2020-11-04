@@ -43,6 +43,8 @@ Partial Class LoginForm1
         Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EinstellungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServerEinstellungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -112,12 +114,25 @@ Partial Class LoginForm1
         resources.ApplyResources(Me.ServerEinstellungToolStripMenuItem, "ServerEinstellungToolStripMenuItem")
         Me.ServerEinstellungToolStripMenuItem.Name = "ServerEinstellungToolStripMenuItem"
         '
+        'TextBox1
+        '
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Name = "Label1"
+        '
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -145,4 +160,6 @@ Partial Class LoginForm1
     Friend WithEvents BeendenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EinstellungToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ServerEinstellungToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
 End Class
