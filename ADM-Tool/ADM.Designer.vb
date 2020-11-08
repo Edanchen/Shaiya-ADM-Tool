@@ -1676,8 +1676,8 @@ Partial Class ADM
         '
         'HilfeZumToolToolStripMenuItem
         '
-        resources.ApplyResources(Me.HilfeZumToolToolStripMenuItem, "HilfeZumToolToolStripMenuItem")
         Me.HilfeZumToolToolStripMenuItem.Name = "HilfeZumToolToolStripMenuItem"
+        resources.ApplyResources(Me.HilfeZumToolToolStripMenuItem, "HilfeZumToolToolStripMenuItem")
         '
         'BugMeldenToolStripMenuItem
         '

@@ -4639,14 +4639,11 @@
   <data name="StatistikToolStripMenuItem.Text" xml:space="preserve">
     <value>Statistik</value>
   </data>
-  <data name="HilfeZumToolToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="HilfeZumToolToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>199, 22</value>
   </data>
   <data name="HilfeZumToolToolStripMenuItem.Text" xml:space="preserve">
-    <value>Hilfe zum Tool</value>
+    <value>Discord</value>
   </data>
   <data name="BugMeldenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>199, 22</value>
