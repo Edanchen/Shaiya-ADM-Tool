@@ -2442,6 +2442,7 @@
 
     Private Sub HilfeZumToolToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HilfeZumToolToolStripMenuItem.Click
         Process.Start("https://discord.gg/VqdzURPN")
+
     End Sub
 
 
