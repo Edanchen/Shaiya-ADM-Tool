@@ -26,3 +26,7 @@ The ADM tool has all the necessary functions so that editing in the database is 
 
 A GM web interface is still being planned and implemented so that both systems can work with each other.
 
+# Discord
+
+https://discord.gg/tvAjuj8h
+
