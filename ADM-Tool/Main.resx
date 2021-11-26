@@ -670,7 +670,7 @@
     <value>176, 17</value>
   </data>
   <data name="ToolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Copyright by Edan 2017 - 2020</value>
+    <value>Copyright by Edan 2017 - 2022</value>
   </data>
   <data name="StatusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 250</value>
