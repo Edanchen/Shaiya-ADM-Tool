@@ -69,6 +69,7 @@ Partial Class Main
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.ContextMenuStrip2.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -325,10 +326,17 @@ Partial Class Main
         Me.Button11.Name = "Button11"
         Me.Button11.UseVisualStyleBackColor = True
         '
+        'Button12
+        '
+        resources.ApplyResources(Me.Button12, "Button12")
+        Me.Button12.Name = "Button12"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
         'Main
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.StatusStrip1)
@@ -401,4 +409,5 @@ Partial Class Main
     Friend WithEvents BossKillsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CharakterStatistikToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents Button12 As Button
 End Class

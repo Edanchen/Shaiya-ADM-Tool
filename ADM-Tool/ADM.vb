@@ -2275,13 +2275,7 @@
             reader6.Close()
             con6.Close()
         Catch ex As Exception
-            If MessageBox.Show("Char erfolgreich geladen.") Then
-                Dim mainForm As New ADM
 
-            Else
-                MessageBox.Show("Benutzername erfolgreich geändert")
-
-            End If
         End Try
 
         Dim con As New Data.SqlClient.SqlConnection

@@ -293,6 +293,24 @@
     <Compile Include="Dokumentation\Maßnahmen\Reklamation\Maßnahmen_Reklamation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dokumentation\Typen\Doku_Typen.Designer.vb">
+      <DependentUpon>Doku_Typen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Typen\Doku_Typen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Typen\Doku_Typ_Anlegen.Designer.vb">
+      <DependentUpon>Doku_Typ_Anlegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Typen\Doku_Typ_Anlegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumentation\Typen\Doku_Typ_anzeigen.Designer.vb">
+      <DependentUpon>Doku_Typ_anzeigen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumentation\Typen\Doku_Typ_anzeigen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GildenSeite\GWLLapis.Designer.vb">
       <DependentUpon>GWLLapis.vb</DependentUpon>
     </Compile>
@@ -1042,6 +1060,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dokumentation\Maßnahmen\Reklamation\Maßnahmen_Reklamation.resx">
       <DependentUpon>Maßnahmen_Reklamation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Typen\Doku_Typen.resx">
+      <DependentUpon>Doku_Typen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Typen\Doku_Typ_Anlegen.resx">
+      <DependentUpon>Doku_Typ_Anlegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumentation\Typen\Doku_Typ_anzeigen.resx">
+      <DependentUpon>Doku_Typ_anzeigen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GildenSeite\GWLLapis.resx">
       <DependentUpon>GWLLapis.vb</DependentUpon>
