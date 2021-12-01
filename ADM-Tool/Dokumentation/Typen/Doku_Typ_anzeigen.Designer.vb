@@ -23,13 +23,13 @@ Partial Class Doku_Typ_anzeigen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'ListView1
@@ -44,6 +44,10 @@ Partial Class Doku_Typ_anzeigen
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "ID"
         '
         'ColumnHeader1
         '
@@ -72,7 +76,6 @@ Partial Class Doku_Typ_anzeigen
         '
         'Button2
         '
-        Me.Button2.Enabled = False
         Me.Button2.Location = New System.Drawing.Point(12, 426)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(426, 23)
@@ -88,10 +91,6 @@ Partial Class Doku_Typ_anzeigen
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Schließen"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "ID"
         '
         'Doku_Typ_anzeigen
         '
