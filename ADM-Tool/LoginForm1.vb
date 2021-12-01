@@ -38,7 +38,7 @@ Public Class LoginForm1
 
             ' If the record can be queried, Pass verification and open another form.  
             If (sdr.Read() = True) Then
-                MessageBox.Show("Herzlich Willkommen, du hast dich erfolgreich eingeloggt.")
+                MessageBox.Show("Herzlich Willkommen " & UsernameTextBox.Text & ", du hast dich erfolgreich eingeloggt.")
                 Dim mainForm As New Main
                 Main.Show()
                 Me.Hide()

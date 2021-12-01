@@ -18,7 +18,7 @@ Public Class Accountreg
             Dim mainForm As New ADM
             Me.Hide()
         Else
-            MessageBox.Show("Account erfolgreich angelegt.")
+            MessageBox.Show("Account " & TextBox1.Text & " erfolgreich angelegt.")
             Me.Close()
         End If
     End Sub
