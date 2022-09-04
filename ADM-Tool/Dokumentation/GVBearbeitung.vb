@@ -5,7 +5,7 @@ Public Class GVBearbeitung
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, Erstelltdurch, UserID, Date, Zugewiesenan, Thema, Art, Type, Status, Letzterbearbeiter From ADM_Tool.dbo.Vorgaenge WHERE Status= 'Zugewiesen' AND Zugewiesenan = '" & Main.TextBox1.Text & "'", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, Erstelltdurch, UserID, Date, Zugewiesenan, Thema, Art, Type, Status, Letzterbearbeiter From ADM_Tool.dbo.Vorgaenge WHERE Status= 'Zugewiesen' AND Zugewiesenan = '" & Main.Label2.Text & "'", con)
         Dim reader As SqlDataReader
 
         Try
@@ -42,7 +42,7 @@ Public Class GVBearbeitung
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, Erstelltdurch, UserID, Date, Zugewiesenan, Thema, Art, Type, Status, Letzterbearbeiter From ADM_Tool.dbo.Vorgaenge WHERE Status= 'In Bearbeitung' AND Zugewiesenan = '" & Main.TextBox1.Text & "'", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, Erstelltdurch, UserID, Date, Zugewiesenan, Thema, Art, Type, Status, Letzterbearbeiter From ADM_Tool.dbo.Vorgaenge WHERE Status= 'In Bearbeitung' AND Zugewiesenan = '" & Main.Label2.Text & "'", con)
         Dim reader As SqlDataReader
 
         Try
@@ -79,7 +79,7 @@ Public Class GVBearbeitung
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, Erstelltdurch, UserID, Date, Zugewiesenan, Thema, Art, Type, Status, Letzterbearbeiter From ADM_Tool.dbo.Vorgaenge WHERE Status= 'Zurueckgewiesen' AND Zugewiesenan = '" & Main.TextBox1.Text & "'", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, Erstelltdurch, UserID, Date, Zugewiesenan, Thema, Art, Type, Status, Letzterbearbeiter From ADM_Tool.dbo.Vorgaenge WHERE Status= 'Zurueckgewiesen' AND Zugewiesenan = '" & Main.Label2.Text & "'", con)
         Dim reader As SqlDataReader
 
         Try
@@ -120,8 +120,8 @@ Public Class GVBearbeitung
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Main.TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Main.TextBox1.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Main.Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Main.Label2.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  

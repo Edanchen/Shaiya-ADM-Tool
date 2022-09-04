@@ -2732,7 +2732,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Account_Auftrag.Show()
         Account_Auftrag.TextBox3.Text = TextBox18.Text
-        Account_Auftrag.TextBox4.Text = Main.TextBox1.Text
+        Account_Auftrag.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub InformationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InformationToolStripMenuItem.Click
@@ -2786,7 +2786,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Account_Information.Show()
         Account_Information.TextBox3.Text = TextBox18.Text
-        Account_Information.TextBox4.Text = Main.TextBox1.Text
+        Account_Information.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub RaklamationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RaklamationToolStripMenuItem.Click
@@ -2840,7 +2840,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Account_Reklamation.Show()
         Account_Reklamation.TextBox3.Text = TextBox18.Text
-        Account_Reklamation.TextBox4.Text = Main.TextBox1.Text
+        Account_Reklamation.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub AuftragToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AuftragToolStripMenuItem1.Click
@@ -2894,7 +2894,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Char_Auftrag.Show()
         Char_Auftrag.TextBox3.Text = TextBox25.Text
-        Char_Auftrag.TextBox4.Text = Main.TextBox1.Text
+        Char_Auftrag.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub InformationToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles InformationToolStripMenuItem1.Click
@@ -2948,7 +2948,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Char_Information.Show()
         Char_Information.TextBox3.Text = TextBox25.Text
-        Char_Information.TextBox4.Text = Main.TextBox1.Text
+        Char_Information.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub ReklamationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReklamationToolStripMenuItem.Click
@@ -3002,7 +3002,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Char_Reklamation.Show()
         Char_Reklamation.TextBox3.Text = TextBox25.Text
-        Char_Reklamation.TextBox4.Text = Main.TextBox1.Text
+        Char_Reklamation.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub AuftragToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles AuftragToolStripMenuItem2.Click
@@ -3056,7 +3056,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Gilde_Auftrag.Show()
         Gilde_Auftrag.TextBox3.Text = TextBox6.Text
-        Gilde_Auftrag.TextBox4.Text = Main.TextBox1.Text
+        Gilde_Auftrag.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub InformationToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles InformationToolStripMenuItem2.Click
@@ -3110,7 +3110,7 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Gilde_Information.Show()
         Gilde_Information.TextBox3.Text = TextBox6.Text
-        Gilde_Information.TextBox4.Text = Main.TextBox1.Text
+        Gilde_Information.TextBox4.Text = Main.Label2.Text
     End Sub
 
     Private Sub ReklamationToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ReklamationToolStripMenuItem1.Click
@@ -3164,6 +3164,6 @@ ORDER BY TotalStat DESC;", con)
         End Try
         Gilde_Reklamation.Show()
         Gilde_Reklamation.TextBox3.Text = TextBox6.Text
-        Gilde_Reklamation.TextBox4.Text = Main.TextBox1.Text
+        Gilde_Reklamation.TextBox4.Text = Main.Label2.Text
     End Sub
 End Class

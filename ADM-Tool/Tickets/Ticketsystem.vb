@@ -93,8 +93,8 @@ Public Class Ticketsystem
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Main.TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Main.TextBox1.Text & "','Ticket Thema Anlegen',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Main.Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Main.Label2.Text & "','Ticket Thema Anlegen',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  

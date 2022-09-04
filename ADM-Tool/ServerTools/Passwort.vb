@@ -5,7 +5,7 @@ Public Class Passwort
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE ADM_Tool.dbo.Account set Passwort = '" & TextBox2.Text & "' WHERE Benutzer = '" & Main.TextBox1.Text & "' AND Passwort = '" & TextBox1.Text & "'", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE ADM_Tool.dbo.Account set Passwort = '" & TextBox2.Text & "' WHERE Benutzer = '" & Main.Label2.Text & "' AND Passwort = '" & TextBox1.Text & "'", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  

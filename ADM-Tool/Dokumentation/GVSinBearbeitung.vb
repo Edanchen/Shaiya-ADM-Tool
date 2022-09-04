@@ -6,7 +6,7 @@ Public Class GVSinBearbeitung
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_GameData;Integrated Security = SSPI")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, UserID, Text, Status, Type, Zugewiesenan FROM ADM_Tool.dbo.Vorgaenge WHERE GV='" & ListView1.SelectedItems(0).SubItems(0).Text & "'" &
-                                                                             "INSERT INTO ADM_Tool.dbo.GV_Aufruf ([Bearbeiter],[GV],[Date]) VALUES ('" & Main.TextBox1.Text & "','" & ListView1.SelectedItems(0).SubItems(0).Text & "',DATEADD(year, +10, GETDATE()) )", con)
+                                                                             "INSERT INTO ADM_Tool.dbo.GV_Aufruf ([Bearbeiter],[GV],[Date]) VALUES ('" & Main.Label2.Text & "','" & ListView1.SelectedItems(0).SubItems(0).Text & "',DATEADD(year, +10, GETDATE()) )", con)
         Dim reader As SqlDataReader
         Try
             GVbearbeiten.Show()

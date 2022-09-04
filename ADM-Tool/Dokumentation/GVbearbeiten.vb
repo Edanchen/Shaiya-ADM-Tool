@@ -10,7 +10,7 @@ Public Class GVbearbeiten
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs)
         Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_GameData;Integrated Security = SSPI")
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, UserID, Text, Status, Type, Zugewiesenan FROM ADM_Tool.dbo.Vorgaenge WHERE GV='" & TextBox2.Text & "'" &
-                                                                             "INSERT INTO ADM_Tool.dbo.GV_Aufruf ([Bearbeiter],[GV],[Date]) VALUES ('" & Main.TextBox1.Text & "','" & TextBox2.Text & "',DATEADD(year, +10, GETDATE()) )", con)
+                                                                             "INSERT INTO ADM_Tool.dbo.GV_Aufruf ([Bearbeiter],[GV],[Date]) VALUES ('" & Main.Label2.Text & "','" & TextBox2.Text & "',DATEADD(year, +10, GETDATE()) )", con)
         Dim reader As SqlDataReader
         Try
             con.Open()
@@ -69,7 +69,7 @@ Public Class GVbearbeiten
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_GameData;Integrated Security = SSPI")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE ADM_Tool.dbo.Vorgaenge SET Text='" & RichTextBox1.Text & "', Status='" & ComboBox1.Text & "', Zugewiesenan='" & ComboBox2.Text & "', Letzterbearbeiter='" & Main.TextBox1.Text & "' Where GV='" & TextBox2.Text & "'", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE ADM_Tool.dbo.Vorgaenge SET Text='" & RichTextBox1.Text & "', Status='" & ComboBox1.Text & "', Zugewiesenan='" & ComboBox2.Text & "', Letzterbearbeiter='" & Main.Label2.Text & "' Where GV='" & TextBox2.Text & "'", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  

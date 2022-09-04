@@ -46,7 +46,7 @@ Public Class LoginForm1
                 MessageBox.Show("Benutzername oder Password Falsch oder die fehlenden Berechtigungen!")
                 con.Close()
             End If
-            Main.TextBox1.Text = UsernameTextBox.Text
+            Main.Label2.Text = UsernameTextBox.Text
 
         Catch ex As SqlException
 

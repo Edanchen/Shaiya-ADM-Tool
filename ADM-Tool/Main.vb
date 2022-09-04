@@ -5,8 +5,8 @@ Public Class Main
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -23,8 +23,8 @@ Public Class Main
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','MonsterDB',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','MonsterDB',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -65,7 +65,7 @@ Public Class Main
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Passwort aendern',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','Passwort aendern',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -76,8 +76,8 @@ Public Class Main
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte>'15' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','GV Bearbeitung',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte>'15' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','GV Bearbeitung',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -88,8 +88,8 @@ Public Class Main
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ADM Tools Logs',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','ADM Tools Logs',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -106,8 +106,8 @@ Public Class Main
 
     Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles Button6.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ItemDB',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','ItemDB',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -175,8 +175,8 @@ Public Class Main
 
     Private Sub Button8_Click(sender As System.Object, e As System.EventArgs) Handles Button8.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','ADM-Tool',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -518,8 +518,8 @@ Public Class Main
 
     Private Sub Button9_Click(sender As System.Object, e As System.EventArgs) Handles Button9.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Account Registierung',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','Account Registierung',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -538,8 +538,8 @@ Public Class Main
 
     Private Sub Tickets_Click(sender As Object, e As EventArgs) Handles Tickets.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Account Registierung',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','Account Registierung',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
@@ -806,8 +806,8 @@ ORDER BY TotalStat DESC;", con)
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
         Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & TextBox1.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & TextBox1.Text & "','Doku-Typen',DATEADD(year, +0, GETDATE()) )", con)
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Label2.Text & "' AND Rechte='16' " &
+                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Label2.Text & "','Doku-Typen',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
         Dim sdr As SqlDataReader = cmd.ExecuteReader()
         ' If the record can be queried, Pass verification and open another form.  
