@@ -5,6 +5,11 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Neuer Release-Tag, zum Beispiel v1.11"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -32,11 +37,17 @@ jobs:
       - name: Release paketieren
         id: package
         shell: pwsh
+        env:
+          MANUAL_RELEASE_TAG: ${{ inputs.release_tag }}
         run: |
           if ($env:GITHUB_REF_TYPE -eq "tag") {
             $version = $env:GITHUB_REF_NAME
           } else {
-            $version = "manual-$($env:GITHUB_SHA.Substring(0, 7))"
+            $version = $env:MANUAL_RELEASE_TAG
+          }
+
+          if ($version -notmatch '^v[0-9]+(?:\.[0-9]+){1,2}$') {
+            throw "Der Release-Tag muss dem Format v1.11 oder v1.11.0 entsprechen."
           }
 
           $package = "release/Shaiya-ADM-Tool-$version"
@@ -53,25 +64,36 @@ jobs:
 
           "archive=$archive" >> $env:GITHUB_OUTPUT
           "checksum=$checksum" >> $env:GITHUB_OUTPUT
+          "release_tag=$version" >> $env:GITHUB_OUTPUT
 
       - name: Build-Artefakt hochladen
         uses: actions/upload-artifact@v4
         with:
-          name: Shaiya-ADM-Tool-${{ github.ref_name }}
+          name: Shaiya-ADM-Tool-${{ steps.package.outputs.release_tag }}
           path: |
             ${{ steps.package.outputs.archive }}
             ${{ steps.package.outputs.checksum }}
           if-no-files-found: error
 
       - name: GitHub Release erstellen
-        if: github.ref_type == 'tag'
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
-        run: >-
-          gh release create "$env:GITHUB_REF_NAME"
-          "${{ steps.package.outputs.archive }}"
-          "${{ steps.package.outputs.checksum }}"
-          --verify-tag
-          --generate-notes
-          --title "Shaiya ADM Tool $env:GITHUB_REF_NAME"
+        run: |
+          $tag = "${{ steps.package.outputs.release_tag }}"
+          $arguments = @(
+            "release", "create", $tag,
+            "${{ steps.package.outputs.archive }}",
+            "${{ steps.package.outputs.checksum }}",
+            "--generate-notes",
+            "--title", "Shaiya ADM Tool $tag"
+          )
+
+          if ($env:GITHUB_REF_TYPE -eq "tag") {
+            $arguments += "--verify-tag"
+          } else {
+            $arguments += @("--target", $env:GITHUB_SHA)
+          }
+
+          & gh @arguments
+          if ($LASTEXITCODE -ne 0) { throw "Das GitHub Release konnte nicht erstellt werden." }
