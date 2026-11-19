@@ -1,0 +1,77 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-2022
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: MSBuild einrichten
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Release bauen
+        run: >-
+          msbuild ADM-Tool.sln
+          /m
+          /t:Rebuild
+          /p:Configuration=Release
+          /p:Platform=x86
+          /p:GenerateManifests=false
+
+      - name: Release paketieren
+        id: package
+        shell: pwsh
+        run: |
+          if ($env:GITHUB_REF_TYPE -eq "tag") {
+            $version = $env:GITHUB_REF_NAME
+          } else {
+            $version = "manual-$($env:GITHUB_SHA.Substring(0, 7))"
+          }
+
+          $package = "release/Shaiya-ADM-Tool-$version"
+          $archive = "$package.zip"
+          New-Item -ItemType Directory -Path "$package/SQL" -Force | Out-Null
+          Copy-Item "ADM-Tool/bin/Release/*" $package -Recurse
+          Copy-Item "SQL/*" "$package/SQL" -Recurse
+          Copy-Item README.md, LICENSE $package
+          Compress-Archive -Path "$package/*" -DestinationPath $archive
+
+          $checksum = "$archive.sha256"
+          $hash = (Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$hash  $(Split-Path $archive -Leaf)" | Set-Content $checksum -NoNewline
+
+          "archive=$archive" >> $env:GITHUB_OUTPUT
+          "checksum=$checksum" >> $env:GITHUB_OUTPUT
+
+      - name: Build-Artefakt hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: Shaiya-ADM-Tool-${{ github.ref_name }}
+          path: |
+            ${{ steps.package.outputs.archive }}
+            ${{ steps.package.outputs.checksum }}
+          if-no-files-found: error
+
+      - name: GitHub Release erstellen
+        if: github.ref_type == 'tag'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "$env:GITHUB_REF_NAME"
+          "${{ steps.package.outputs.archive }}"
+          "${{ steps.package.outputs.checksum }}"
+          --verify-tag
+          --generate-notes
+          --title "Shaiya ADM Tool $env:GITHUB_REF_NAME"
