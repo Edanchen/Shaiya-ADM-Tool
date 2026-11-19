@@ -4,28 +4,22 @@
 Public Class GWLlöschen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Delete FROM PS_GameData.dbo.GuildStoredItems WHERE ItemUID='" & ADM.ListView3.SelectedItems(0).SubItems(0).Text & "' AND GuildID='" & ADM.TextBox5.Text & "'", con)
+        If ADM.ListView3.SelectedItems.Count = 0 Then Return
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Delete FROM PS_GameData.dbo.GuildStoredItems WHERE ItemUID='" & SqlEscape(ADM.ListView3.SelectedItems(0).SubItems(0).Text) & "' AND GuildID='" & SqlEscape(ADM.TextBox5.Text) & "'", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-            con.Close()
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-        Else
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
             MessageBox.Show("Item erfolgreich gelöscht.")
             Me.Close()
-        End If
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select z.ItemID, x.ItemID, x.ItemUID, z.ItemName, y.GuildID, x.GuildID, y.GuildName, y.MasterUserID, y.MasterName, y.Country, y.TotalCount, y.GuildPoint, y.Del from PS_GameData.dbo.Guilds y INNER JOIN PS_GameData.dbo.GuildStoredItems x ON x.GuildID=y.GuildID INNER JOIN PS_GameDefs.dbo.Items z ON x.ItemID=z.ItemID  Where y.GuildID = '" & ADM.TextBox5.Text & "'", con)
+        Dim con1 As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select z.ItemID, x.ItemID, x.ItemUID, z.ItemName, y.GuildID, x.GuildID, y.GuildName, y.MasterUserID, y.MasterName, y.Country, y.TotalCount, y.GuildPoint, y.Del from PS_GameData.dbo.Guilds y INNER JOIN PS_GameData.dbo.GuildStoredItems x ON x.GuildID=y.GuildID INNER JOIN PS_GameDefs.dbo.Items z ON x.ItemID=z.ItemID  Where y.GuildID = '" & SqlEscape(ADM.TextBox5.Text) & "'", con)
         Dim reader1 As SqlDataReader
 
         Try
             ADM.ListView3.Items.Clear()
             con1.Open()
-            reader1 = cmd1.ExecuteReader()
+            reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
 
             Do While reader1.Read()
                 With ADM.ListView3
@@ -41,7 +35,7 @@ Public Class GWLlöschen
             reader1.Close()
             con1.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 

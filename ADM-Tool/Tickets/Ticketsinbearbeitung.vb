@@ -3,16 +3,17 @@
 
 Public Class Ticketsinbearbeitung
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If ListView1.SelectedItems.Count = 0 Then Return
         Dim con2 As New Data.SqlClient.SqlConnection
         Dim cmd2 As New Data.SqlClient.SqlCommand
         Dim reader2 As SqlDataReader
 
-        con2.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con2.ConnectionString = CurrentConnectionString()
         cmd2.Connection = con2
         cmd2.CommandText = "select Art FROM ADM_Tool.dbo.Ticketart"
         Try
             con2.Open()
-            reader2 = cmd2.ExecuteReader()
+            reader2 = cmd2.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader2.Read()
                 ticketbeabeiten_vb.ComboBox3.Items.Add(reader2("Art")
                 )
@@ -21,25 +22,19 @@ Public Class Ticketsinbearbeitung
             reader2.Close()
             con2.Close()
         Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
+            ShowError(ex)
         End Try
 
         Dim con1 As New Data.SqlClient.SqlConnection
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con1.ConnectionString = CurrentConnectionString()
         cmd1.Connection = con1
         cmd1.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
         Try
             con1.Open()
-            reader1 = cmd1.ExecuteReader()
+            reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader1.Read()
                 ticketbeabeiten_vb.ComboBox2.Items.Add(reader1("Benutzer")
                 )
@@ -48,25 +43,19 @@ Public Class Ticketsinbearbeitung
             reader1.Close()
             con1.Close()
         Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
+            ShowError(ex)
         End Try
         Dim con As New Data.SqlClient.SqlConnection
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con.ConnectionString = CurrentConnectionString()
         cmd.Connection = con
-        cmd.CommandText = "SELECT TicketID, Account, Art, Char, Text, Datum, Bearbeiter, Status FROM ADM_Tool.dbo.tickets Where TicketID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
+        cmd.CommandText = "SELECT TicketID, Account, Art, Char, Text, Datum, Bearbeiter, Status FROM ADM_Tool.dbo.tickets Where TicketID = '" & SqlEscape(ListView1.SelectedItems(0).SubItems(0).Text) & "'"
         ticketbeabeiten_vb.Show()
         Try
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 ticketbeabeiten_vb.TextBox1.Text = (reader("TicketID")
                     )
@@ -91,6 +80,7 @@ Public Class Ticketsinbearbeitung
             con.Close()
 
         Catch ex As Exception
+            ShowError(ex)
         End Try
     End Sub
 

@@ -4,17 +4,18 @@
 Public Class ItemDB
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        If ListView1.SelectedItems.Count = 0 Then Return
         Dim con As New Data.SqlClient.SqlConnection
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con.ConnectionString = CurrentConnectionString()
         cmd.Connection = con
-        cmd.CommandText = "SELECT [ItemID],[ItemName],[Type],[TypeID],[Reqlevel],[Country],[Attackfighter],[Defensefighter],[Patrolrogue],[Shootrogue],[Attackmage],[Defensemage],[Grow],[ReqStr],[ReqDex],[ReqRec],[ReqInt],[ReqWis],[Reqluc],[ReqVg],[ReqOg],[ReqIg],[Range],[AttackTime],[Attrib],[Special],[Slot],[Quality],[Effect1],[Effect2],[Effect3],[Effect4],[ConstHP],[ConstSP],[ConstMP],[ConstStr],[ConstDex],[ConstRec],[ConstInt],[ConstWis],[ConstLuc],[Speed],[Exp],[Buy],[Sell],[Grade],[Drop],[Server],[Count] FROM PS_GameDefs.dbo.Items Where ItemID = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
+        cmd.CommandText = "SELECT [ItemID],[ItemName],[Type],[TypeID],[Reqlevel],[Country],[Attackfighter],[Defensefighter],[Patrolrogue],[Shootrogue],[Attackmage],[Defensemage],[Grow],[ReqStr],[ReqDex],[ReqRec],[ReqInt],[ReqWis],[Reqluc],[ReqVg],[ReqOg],[ReqIg],[Range],[AttackTime],[Attrib],[Special],[Slot],[Quality],[Effect1],[Effect2],[Effect3],[Effect4],[ConstHP],[ConstSP],[ConstMP],[ConstStr],[ConstDex],[ConstRec],[ConstInt],[ConstWis],[ConstLuc],[Speed],[Exp],[Buy],[Sell],[Grade],[Drop],[Server],[Count] FROM PS_GameDefs.dbo.Items Where ItemID = '" & SqlEscape(ListView1.SelectedItems(0).SubItems(0).Text) & "'"
         DBItembearbeiten.Show()
         Try
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 DBItembearbeiten.TextBox1.Text = (reader("ItemID")
                     )
@@ -120,7 +121,7 @@ Public Class ItemDB
             con.Close()
 
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 

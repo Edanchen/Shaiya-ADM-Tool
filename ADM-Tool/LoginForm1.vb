@@ -15,44 +15,23 @@ Public Class LoginForm1
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         Try
-            Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-            Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & UsernameTextBox.Text & "' AND Passwort = '" & PasswordTextBox.Text & "' AND Rechte > '15' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Login ([UserID],[Password],[IP],[Date]) VALUES ('" & UsernameTextBox.Text & "','" & PasswordTextBox.Text & "','127.0.0.1',DATEADD(year, +0, GETDATE()) )", con)
-
-
-            If con.State <> ConnectionState.Open Then
+            If AuthenticateAdmin(UsernameTextBox.Text, PasswordTextBox.Text, 15) Then
                 TextBox1.Text = "Verbindung steht."
                 TextBox1.ForeColor = Color.Black
                 TextBox1.BackColor = Color.Green
-            Else
-
-            End If
-
-
-
-            con.Open()
-
-
-
-            Dim sdr As SqlDataReader = cmd.ExecuteReader()
-
-            ' If the record can be queried, Pass verification and open another form.  
-            If (sdr.Read() = True) Then
                 MessageBox.Show("Herzlich Willkommen " & UsernameTextBox.Text & ", du hast dich erfolgreich eingeloggt.")
-                Dim mainForm As New Main
                 Main.Show()
                 Me.Hide()
             Else
                 MessageBox.Show("Benutzername oder Password Falsch oder die fehlenden Berechtigungen!")
-                con.Close()
             End If
             Main.Label2.Text = UsernameTextBox.Text
 
         Catch ex As SqlException
-
             TextBox1.Text = "Fehler bei der Verbindung"
             TextBox1.ForeColor = Color.Black
             TextBox1.BackColor = Color.Red
+            ShowError(ex)
         End Try
 
     End Sub

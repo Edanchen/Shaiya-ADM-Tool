@@ -16,14 +16,14 @@ Public Class ADMLogs
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT Date, UserID, Tool FROM ADM_Tool.dbo.Tool", con)
         Dim reader As SqlDataReader
 
 
         con.Open()
 
-        reader = cmd.ExecuteReader()
+        reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
         Do While reader.Read()
             With ListView1

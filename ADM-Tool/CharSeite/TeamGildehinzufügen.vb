@@ -4,19 +4,17 @@
 Public Class TeamGildehinzufügen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("INSERT INTO PS_GameData.dbo.GuildChars ([GuildID],[CharID],[GuildLevel],[Del],[JoinDate],[LeaveDate]) VALUES ('1'," & ADM.TextBox24.Text & ",'9','0',DATEADD(year, +10, GETDATE()),'')", con)
-        con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-        Else
+        Try
+            Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+            Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("INSERT INTO PS_GameData.dbo.GuildChars ([GuildID],[CharID],[GuildLevel],[Del],[JoinDate],[LeaveDate]) VALUES ('1'," & SqlNumber(CStr(ADM.TextBox24.Text), "CharID") & ",'9','0',GETDATE(),'')", con)
+            con.Open()
+            cmd.ExecuteNonQuery()
+            cmd.Connection.Close()
             MessageBox.Show("Char erfolgreich in die Team Gilde hinzugefügt.")
             Me.Close()
-        End If
+        Catch ex As Exception
+            ShowError(ex)
+        End Try
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click

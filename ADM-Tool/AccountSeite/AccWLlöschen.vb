@@ -4,23 +4,15 @@
 Public Class AccWLlöschen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Delete FROM PS_GameData.dbo.UserStoredItems WHERE ItemUID='" & ADM.ListView1.SelectedItems(0).SubItems(0).Text & "' AND UserUID='" & ADM.TextBox17.Text & "'", con)
+        If ADM.ListView1.SelectedItems.Count = 0 Then Return
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("Delete FROM PS_GameData.dbo.UserStoredItems WHERE ItemUID='" & SqlEscape(ADM.ListView1.SelectedItems(0).SubItems(0).Text) & "' AND UserUID='" & SqlEscape(ADM.TextBox17.Text) & "'", con)
         con.Open()
         ADM.ListView1.Items.Clear()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-            con.Close()
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-            ADM.ListView1.Items.Clear()
-        Else
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
             MessageBox.Show("Item erfolgreich gelöscht.")
             Me.Close()
-        End If
-        
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click

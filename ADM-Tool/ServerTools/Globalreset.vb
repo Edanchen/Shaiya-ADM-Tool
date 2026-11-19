@@ -3,7 +3,7 @@
 
 Public Class Globalreset
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("DECLARE @Stat_NM tinyint, @Stat_HM tinyint, @Stat_UM tinyint, @Stat_EM tinyint;
 DECLARE @Skill_NM tinyint, @Skill_HM tinyint, @Skill_UM tinyint, @Skill_EM tinyint;
 
@@ -108,17 +108,10 @@ WHERE [Level]>1 AND Del=0 AND Grow>0
 /* Let's not forget to clear the skills! */
 DELETE FROM PS_GameData.dbo.CharSkills", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If MessageBox.Show("Accountdaten erfolgreich geladen.") Then
-            Dim mainForm As New ADM
-
-        Else
-            MessageBox.Show("Benutzername erfolgreich geändert")
-
-        End If
+        cmd.ExecuteNonQuery()
+        con.Close()
+        MessageBox.Show("Globaler Reset erfolgreich durchgeführt.")
         Me.Close()
-        sdr.Close()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

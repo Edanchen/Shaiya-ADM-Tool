@@ -4,20 +4,16 @@
 Public Class Accentbannen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Status='0' WHERE UserUID='" & GebannteAcc.ListView1.SelectedItems(0).SubItems(0).Text & "'", con)
+        If GebannteAcc.ListView1.SelectedItems.Count = 0 Then Return
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Status='0' WHERE UserUID='" & SqlEscape(GebannteAcc.ListView1.SelectedItems(0).SubItems(0).Text) & "'", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
         ' If the record can be queried, Pass verification and open another form.  
         GebannteAcc.ListView1.Items.Clear()
-        If (sdr.Read() = True) Then
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-        Else
-            MessageBox.Show("Account erfolgreich gebannt.")
-            Me.Close()
-        End If
+        MessageBox.Show("Account erfolgreich gebannt.")
+        Me.Close()
         con.Close()
     End Sub
 

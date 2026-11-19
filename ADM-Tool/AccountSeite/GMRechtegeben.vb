@@ -4,35 +4,27 @@
 Public Class GMRechtegeben
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Admin='1' WHERE UserUID='" & ADM.TextBox17.Text & "'" &
-                                                                             "UPDATE PS_UserData.dbo.Users_Master SET AdminLevel='255' WHERE UserUID='" & ADM.TextBox17.Text & "'" &
-                                                                             "UPDATE PS_UserData.dbo.Users_Master SET Status='" & ComboBox1.Text & "' WHERE UserUID='" & ADM.TextBox17.Text & "'" &
-                                                                             "UPDATE PS_UserData.dbo.Users_Master SET UserType='A' WHERE UserUID='" & ADM.TextBox17.Text & "'", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Admin='1' WHERE UserUID='" & SqlEscape(ADM.TextBox17.Text) & "'" &
+                                                                             "; UPDATE PS_UserData.dbo.Users_Master SET AdminLevel='255' WHERE UserUID='" & SqlEscape(ADM.TextBox17.Text) & "'" &
+                                                                             "; UPDATE PS_UserData.dbo.Users_Master SET Status='" & SqlEscape(ComboBox1.Text) & "' WHERE UserUID='" & SqlEscape(ADM.TextBox17.Text) & "'" &
+                                                                             "; UPDATE PS_UserData.dbo.Users_Master SET UserType='A' WHERE UserUID='" & SqlEscape(ADM.TextBox17.Text) & "'", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-
-            Dim mainForm As New ADM
-
-        Else
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
             Me.Close()
-
-        End If
-        sdr.Close()
         con.Close()
 
         Dim con1 As New Data.SqlClient.SqlConnection
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con1.ConnectionString = CurrentConnectionString()
         cmd1.Connection = con1
-        cmd1.CommandText = "select UserUID, Status, AdminLevel from PS_UserData.dbo.Users_Master Where UserUID= '" & ADM.TextBox17.Text & "'"
+        cmd1.CommandText = "select UserUID, Status, AdminLevel from PS_UserData.dbo.Users_Master Where UserUID= '" & SqlEscape(ADM.TextBox17.Text) & "'"
         Try
             con1.Open()
-            reader = cmd1.ExecuteReader()
+            reader = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 ADM.TextBox22.Text = (reader("Status")
                 )
@@ -44,13 +36,7 @@ Public Class GMRechtegeben
             reader.Close()
             con1.Close()
         Catch ex As Exception
-            If MessageBox.Show("Benutzername erfolgreich geändert") Then
-                Dim mainForm As New ADM
-                Me.Hide()
-            Else
-                MessageBox.Show("Gilde erfolgreich geladen")
-                Me.Close()
-            End If
+            ShowError(ex)
         End Try
 
 

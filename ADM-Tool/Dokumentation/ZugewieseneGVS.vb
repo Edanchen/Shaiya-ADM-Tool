@@ -4,14 +4,15 @@
 Public Class ZugewieseneGVS
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=PS_GameData;Integrated Security = SSPI")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, UserID, Text, Status, Type, Zugewiesenan FROM ADM_Tool.dbo.Vorgaenge WHERE GV='" & ListView1.SelectedItems(0).SubItems(0).Text & "'" &
-                                                                             "INSERT INTO ADM_Tool.dbo.GV_Aufruf ([Bearbeiter],[GV],[Date]) VALUES ('" & Main.Label2.Text & "','" & ListView1.SelectedItems(0).SubItems(0).Text & "',DATEADD(year, +10, GETDATE()) )", con)
+        If ListView1.SelectedItems.Count = 0 Then Return
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT GV, UserID, Text, Status, Type, Zugewiesenan FROM ADM_Tool.dbo.Vorgaenge WHERE GV='" & SqlEscape(ListView1.SelectedItems(0).SubItems(0).Text) & "'" &
+                                                                             "; INSERT INTO ADM_Tool.dbo.GV_Aufruf ([Bearbeiter],[GV],[Date]) VALUES ('" & SqlEscape(Main.Label2.Text) & "','" & SqlEscape(ListView1.SelectedItems(0).SubItems(0).Text) & "',GETDATE() )", con)
         Dim reader As SqlDataReader
         Try
             GVbearbeiten.Show()
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 GVbearbeiten.TextBox1.Text = (reader("UserID")
                 )
@@ -30,24 +31,18 @@ Public Class ZugewieseneGVS
             con.Close()
 
         Catch ex As Exception
-            If MessageBox.Show("Benutzername erfolgreich geändert") Then
-                Dim mainForm As New Main
-
-            Else
-                MessageBox.Show("Benutzername erfolgreich geändert")
-
-            End If
+            ShowError(ex)
         End Try
         Dim con1 As New Data.SqlClient.SqlConnection
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=127.0.0.1,1433;Initial Catalog=PS_GameData;Integrated Security = SSPI"
+        con1.ConnectionString = CurrentConnectionString()
         cmd1.Connection = con1
         cmd1.CommandText = "select Benutzer FROM ADM_Tool.dbo.Account"
         Try
             con1.Open()
-            reader1 = cmd1.ExecuteReader()
+            reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader1.Read()
                 GVbearbeiten.ComboBox2.Items.Add(reader1("Benutzer")
                 )
@@ -56,13 +51,7 @@ Public Class ZugewieseneGVS
             reader1.Close()
             con.Close()
         Catch ex As Exception
-            If MessageBox.Show("Account erfolgreich geladen...") Then
-                Dim mainForm As New Main
-
-            Else
-                MessageBox.Show("Account konnten nicht geladen weden...")
-
-            End If
+            ShowError(ex)
         End Try
         GVbearbeiten.Show()
     End Sub

@@ -8,14 +8,14 @@ Public Class AlleAuktionen
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  m.MarketID, m.CharID, m.MinMoney, m.DirectMoney, m.MarketType, m.GuaranteeMoney, m.TenderCharID, m.TenderCharName, m.TenderMoney, m.EndDate, m.Del, c.CharName From PS_GameData.dbo.Market m INNER Join PS_GameData.dbo.Chars c ON m.CharID=c.CharID", con)
         Dim reader As SqlDataReader
 
         Try
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             ListView1.Items.Clear()
             Do While reader.Read()
 
@@ -41,7 +41,7 @@ Public Class AlleAuktionen
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 

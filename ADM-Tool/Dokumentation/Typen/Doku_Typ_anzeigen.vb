@@ -4,6 +4,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If ListView1.SelectedItems.Count = 0 Then Return
         Doku_Typ_loeschen.Show()
         Doku_Typ_loeschen.TextBox1.Text = ListView1.SelectedItems(0).SubItems(1).Text
         Doku_Typ_loeschen.TextBox2.Text = ListView1.SelectedItems(0).SubItems(2).Text

@@ -4,19 +4,13 @@
 Public Class GWLbearbeiten
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_GameData.dbo.GuildStoredItems SET Craftname='" & TextBox20.Text & "', Count='" & TextBox21.Text & "' WHERE GuildID='" & TextBox1.Text & "' AND ItemUID='" & TextBox3.Text & "'", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_GameData.dbo.GuildStoredItems SET Craftname='" & SqlEscape(TextBox20.Text) & "', Count='" & SqlEscape(TextBox21.Text) & "' WHERE GuildID='" & SqlEscape(TextBox1.Text) & "' AND ItemUID='" & SqlEscape(TextBox3.Text) & "'", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-        Else
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
             MessageBox.Show("Item erfolgreich geändert.")
             Me.Close()
-        End If
         TextBox20.Text = TextBox10.Text + TextBox11.Text + TextBox12.Text + TextBox13.Text + TextBox14.Text + TextBox15.Text + TextBox16.Text + TextBox17.Text + TextBox18.Text + TextBox19.Text
     End Sub
 
@@ -29,7 +23,7 @@ Public Class GWLbearbeiten
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select * from PS_GameDefs.dbo.Items Where Type ='30'", con)
         Dim reader As SqlDataReader
 
@@ -37,7 +31,7 @@ Public Class GWLbearbeiten
             GWLLapis.Show()
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With GWLLapis.ListView1
                     .Items.Add(reader("TypeID"))
@@ -52,14 +46,14 @@ Public Class GWLbearbeiten
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         GWLLapis.TextBox1.Text = TextBox2.Text
         GWLLapis.TextBox2.Text = TextBox3.Text
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select * from PS_GameDefs.dbo.Items Where Type ='30'", con)
         Dim reader As SqlDataReader
 
@@ -67,7 +61,7 @@ Public Class GWLbearbeiten
             GWLLapis1.Show()
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With GWLLapis1.ListView1
                     .Items.Add(reader("TypeID"))
@@ -82,14 +76,14 @@ Public Class GWLbearbeiten
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         GWLLapis1.TextBox1.Text = TextBox2.Text
         GWLLapis1.TextBox2.Text = TextBox3.Text
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select * from PS_GameDefs.dbo.Items Where Type ='30'", con)
         Dim reader As SqlDataReader
 
@@ -97,7 +91,7 @@ Public Class GWLbearbeiten
             GWLLapis2.Show()
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With GWLLapis2.ListView1
                     .Items.Add(reader("TypeID"))
@@ -112,14 +106,14 @@ Public Class GWLbearbeiten
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         GWLLapis2.TextBox1.Text = TextBox2.Text
         GWLLapis2.TextBox2.Text = TextBox3.Text
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select * from PS_GameDefs.dbo.Items Where Type ='30'", con)
         Dim reader As SqlDataReader
 
@@ -127,7 +121,7 @@ Public Class GWLbearbeiten
             GWLLapis3.Show()
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With GWLLapis3.ListView1
                     .Items.Add(reader("TypeID"))
@@ -142,14 +136,14 @@ Public Class GWLbearbeiten
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         GWLLapis3.TextBox1.Text = TextBox2.Text
         GWLLapis3.TextBox2.Text = TextBox3.Text
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select * from PS_GameDefs.dbo.Items Where Type ='30'", con)
         Dim reader As SqlDataReader
 
@@ -157,7 +151,7 @@ Public Class GWLbearbeiten
             GWLLapis4.Show()
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With GWLLapis4.ListView1
                     .Items.Add(reader("TypeID"))
@@ -172,14 +166,14 @@ Public Class GWLbearbeiten
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         GWLLapis4.TextBox1.Text = TextBox2.Text
         GWLLapis4.TextBox2.Text = TextBox3.Text
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select * from PS_GameDefs.dbo.Items Where Type ='30'", con)
         Dim reader As SqlDataReader
 
@@ -187,7 +181,7 @@ Public Class GWLbearbeiten
             GWLLapis5.Show()
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With GWLLapis5.ListView1
                     .Items.Add(reader("TypeID"))
@@ -202,7 +196,7 @@ Public Class GWLbearbeiten
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         GWLLapis5.TextBox1.Text = TextBox2.Text
         GWLLapis5.TextBox2.Text = TextBox3.Text

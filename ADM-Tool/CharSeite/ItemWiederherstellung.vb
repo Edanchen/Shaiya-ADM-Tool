@@ -4,14 +4,14 @@
 Public Class ItemWiederherstellung
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where CharName = '" & ADM.TextBox25.Text & "' AND ActionType = '112'", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, CharName, ActionTime, Value1, Value2, Text1, Text2 From PS_GameLog.dbo.ActionLog Where CharName = '" & SqlEscape(ADM.TextBox25.Text) & "' AND ActionType = '112'", con)
         Dim reader As SqlDataReader
 
         Try
             KaputteItemsActionLog.Show()
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
             Do While reader.Read()
 
@@ -34,7 +34,7 @@ Public Class ItemWiederherstellung
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 
@@ -48,14 +48,14 @@ Public Class ItemWiederherstellung
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, ItemID, ItemUID, Type, TypeID, Bag, Slot From PS_GameData.dbo.CharItems Where CharID = '" & ADM.TextBox24.Text & "'", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT  CharID, ItemID, ItemUID, Type, TypeID, Bag, Slot From PS_GameData.dbo.CharItems Where CharID = '" & SqlEscape(ADM.TextBox24.Text) & "'", con)
         Dim reader As SqlDataReader
 
         Try
             Inventar.Show()
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
             Do While reader.Read()
 
@@ -79,7 +79,7 @@ Public Class ItemWiederherstellung
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 End Class

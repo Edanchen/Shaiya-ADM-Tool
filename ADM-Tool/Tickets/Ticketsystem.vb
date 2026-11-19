@@ -11,13 +11,13 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con1 As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where Status = 'Offen'", con1)
         Dim reader1 As SqlDataReader
         offenetickets.Show()
 
         con1.Open()
-        reader1 = cmd1.ExecuteReader()
+        reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
 
         Do While reader1.Read()
             With offenetickets.ListView1
@@ -38,13 +38,13 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con1 As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where Status = 'In Bearbeitung'", con1)
         Dim reader1 As SqlDataReader
         Ticketsinbearbeitung.Show()
 
         con1.Open()
-        reader1 = cmd1.ExecuteReader()
+        reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
 
         Do While reader1.Read()
             With Ticketsinbearbeitung.ListView1
@@ -65,13 +65,13 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim con1 As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con1 As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd1 As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT TicketID, Art, Account, Char, Datum, Bearbeiter FROM ADM_Tool.dbo.tickets Where Status = 'Geschlossen'", con1)
         Dim reader1 As SqlDataReader
         Ticketsgeschlossen.Show()
 
         con1.Open()
-        reader1 = cmd1.ExecuteReader()
+        reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
 
         Do While reader1.Read()
             With Ticketsgeschlossen.ListView1
@@ -92,11 +92,11 @@ Public Class Ticketsystem
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & Main.Label2.Text & "' AND Rechte='16' " &
-                                                                             "INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & Main.Label2.Text & "','Ticket Thema Anlegen',DATEADD(year, +0, GETDATE()) )", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("SELECT * FROM ADM_Tool.dbo.Account WHERE Benutzer = '" & SqlEscape(Main.Label2.Text) & "' AND Rechte='16' " &
+                                                                             "; INSERT INTO ADM_Tool.dbo.Tool ([UserID],[Tool],[Date]) VALUES ('" & SqlEscape(Main.Label2.Text) & "','Ticket Thema Anlegen',DATEADD(year, +0, GETDATE()) )", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
+        Dim sdr As SqlDataReader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
         ' If the record can be queried, Pass verification and open another form.  
         If (sdr.Read() = True) Then
 

@@ -11,14 +11,14 @@ Public Class MonsterDrop
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con.ConnectionString = CurrentConnectionString()
         cmd.Connection = con
-        cmd.CommandText = "SELECT m.MobID, m.MobName, d.MobID, d.Grade, d.DropRate, d.ItemOrder FROM PS_GameDefs.dbo.Mobs m INNER JOIN PS_GameDefs.dbo.MobItems d ON m.MobID=d.MobID Where m.MobID = '" & TextBox1.Text & "'"
+        cmd.CommandText = "SELECT m.MobID, m.MobName, d.MobID, d.Grade, d.DropRate, d.ItemOrder FROM PS_GameDefs.dbo.Mobs m INNER JOIN PS_GameDefs.dbo.MobItems d ON m.MobID=d.MobID Where m.MobID = '" & SqlEscape(TextBox1.Text) & "'"
 
         ListView1.Items.Clear()
         Try
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 With ListView1
                     .Items.Add(reader("ItemOrder"))
@@ -33,7 +33,7 @@ Public Class MonsterDrop
             con.Close()
 
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 
@@ -42,17 +42,18 @@ Public Class MonsterDrop
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        If ListView1.SelectedItems.Count = 0 Then Return
         Dim con As New Data.SqlClient.SqlConnection
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con.ConnectionString = CurrentConnectionString()
         cmd.Connection = con
-        cmd.CommandText = "SELECT ItemOrder, Grade, DropRate FROM PS_GameDefs.dbo.MobItems Where MobID = '" & TextBox1.Text & "' AND ItemOrder = '" & ListView1.SelectedItems(0).SubItems(0).Text & "'"
+        cmd.CommandText = "SELECT ItemOrder, Grade, DropRate FROM PS_GameDefs.dbo.MobItems Where MobID = '" & SqlEscape(TextBox1.Text) & "' AND ItemOrder = '" & SqlEscape(ListView1.SelectedItems(0).SubItems(0).Text) & "'"
         MopDropändern.Show()
         Try
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader.Read()
                 MopDropändern.TextBox2.Text = (reader("ItemOrder")
                     )
@@ -68,7 +69,7 @@ Public Class MonsterDrop
             con.Close()
 
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
         MopDropändern.TextBox1.Text = TextBox1.Text
     End Sub

@@ -8,14 +8,14 @@ Public Class CozuLeader
         Dim cmd As New Data.SqlClient.SqlCommand
         Dim reader As SqlDataReader
 
-        con.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con.ConnectionString = CurrentConnectionString()
         cmd.Connection = con
-        cmd.CommandText = "select I.ItemName, b.UserUID, I.ItemID, b.ItemID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID INNER JOIN PS_GameData.dbo.UserStoredItems b ON b.UserUID=um.UserUID INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID Where c.CharName = '" & ListBox1.Text & "'"
+        cmd.CommandText = "select I.ItemName, b.UserUID, I.ItemID, b.ItemID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID INNER JOIN PS_GameData.dbo.UserStoredItems b ON b.UserUID=um.UserUID INNER JOIN PS_GameDefs.dbo.Items I ON I.ItemID=b.ItemID Where c.CharName = '" & SqlEscape(ListBox1.Text) & "'"
 
         Try
 
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
             Do While reader.Read()
                 TextBox1.Text = (reader("CharID")
@@ -31,13 +31,7 @@ Public Class CozuLeader
             reader.Close()
             con.Close()
         Catch ex As Exception
-            If MessageBox.Show("Benutzername erfolgreich geändert") Then
-                Dim mainForm As New ADM
-
-            Else
-                MessageBox.Show("Benutzername erfolgreich geändert")
-
-            End If
+            ShowError(ex)
         End Try
 
         TextBox5.Text = ADM.TextBox7.Text
@@ -46,36 +40,29 @@ Public Class CozuLeader
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_GameData.dbo.Guilds SET MasterUserID='" & TextBox2.Text & "', MasterCharID= '" & TextBox1.Text & "', MasterName= '" & TextBox3.Text & "' WHERE GuildID='" & ADM.TextBox5.Text & "'" &
-                                                                             "UPDATE PS_GameData.dbo.GuildChars SET GuildLevel= '2' Where CharID='" & TextBox6.Text & "' AND GuildID= '" & ADM.TextBox5.Text & "' AND Del='0'" &
-                                                                             "UPDATE Ps_GameData.dbo.GuildChars SET GuildLevel= '1' Where CharID='" & TextBox1.Text & "' AND GuildID= '" & ADM.TextBox5.Text & "' AND Del='0'", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_GameData.dbo.Guilds SET MasterUserID='" & SqlEscape(TextBox2.Text) & "', MasterCharID= '" & SqlEscape(TextBox1.Text) & "', MasterName= '" & SqlEscape(TextBox3.Text) & "' WHERE GuildID='" & SqlEscape(ADM.TextBox5.Text) & "'" &
+                                                                             "; UPDATE PS_GameData.dbo.GuildChars SET GuildLevel= '2' Where CharID='" & SqlEscape(TextBox6.Text) & "' AND GuildID= '" & SqlEscape(ADM.TextBox5.Text) & "' AND Del='0'" &
+                                                                             "; UPDATE Ps_GameData.dbo.GuildChars SET GuildLevel= '1' Where CharID='" & SqlEscape(TextBox1.Text) & "' AND GuildID= '" & SqlEscape(ADM.TextBox5.Text) & "' AND Del='0'", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-            con.Close()
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-        Else
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
             MessageBox.Show("Gilden-Leader erfolgreich geändert. Diese Änderung wird erst mit dem nächsten Serverneustart güldig.")
             Me.Close()
-        End If
         Dim con1 As New Data.SqlClient.SqlConnection
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con1.ConnectionString = CurrentConnectionString()
         cmd1.Connection = con1
-        cmd1.CommandText = "select MasterUserID, MasterName, MasterCharID, Del from PS_GameData.dbo.Guilds Where GuildID = '" & ADM.TextBox5.Text & "' AND Del='0'"
+        cmd1.CommandText = "select MasterUserID, MasterName, MasterCharID, Del from PS_GameData.dbo.Guilds Where GuildID = '" & SqlEscape(ADM.TextBox5.Text) & "' AND Del='0'"
 
 
         Try
 
 
             con1.Open()
-            reader1 = cmd1.ExecuteReader()
+            reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
 
             Do While reader1.Read()
 
@@ -91,13 +78,7 @@ Public Class CozuLeader
             reader1.Close()
             con1.Close()
         Catch ex As Exception
-            If MessageBox.Show("Benutzername erfolgreich geändert") Then
-                Dim Form1 As New ADM
-
-            Else
-                MessageBox.Show("Gilde erfolgreich geladen")
-
-            End If
+            ShowError(ex)
         End Try
     End Sub
 

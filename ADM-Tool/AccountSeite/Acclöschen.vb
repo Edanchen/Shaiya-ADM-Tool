@@ -4,30 +4,24 @@
 Public Class Acclöschen
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
-        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Status='-4' WHERE UserID='" & ADM.TextBox18.Text & "'", con)
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
+        Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("UPDATE PS_UserData.dbo.Users_Master SET Status='-4' WHERE UserID='" & SqlEscape(ADM.TextBox18.Text) & "'", con)
         con.Open()
-        Dim sdr As SqlDataReader = cmd.ExecuteReader()
-        ' If the record can be queried, Pass verification and open another form.  
-        If (sdr.Read() = True) Then
-            MessageBox.Show("Benutzername erfolgreich geändert")
-            Dim mainForm As New ADM
-            Me.Hide()
-        Else
+        cmd.ExecuteNonQuery()
+        cmd.Connection.Close()
             MessageBox.Show("Account erfolgreich auf die Löschliste gesetzt.")
             Me.Close()
-        End If
         con.Close()
         Dim con1 As New Data.SqlClient.SqlConnection
         Dim cmd1 As New Data.SqlClient.SqlCommand
         Dim reader1 As SqlDataReader
 
-        con1.ConnectionString = "Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'"
+        con1.ConnectionString = CurrentConnectionString()
         cmd1.Connection = con1
-        cmd1.CommandText = "select um.UserUID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where um.UserUID= '" & ADM.TextBox17.Text & "'"
+        cmd1.CommandText = "select um.UserUID, c.UserID, c.UserUID, c.Del, c.Level, c.StatPoint, c.SkillPoint, c.Str, c.Dex, c.Rec, c.Int, c.Luc, c.Wis, c.K1, c.K2, c.CharID, c.CharName, c.LoginStatus, um.PW, um.UserIP, um.Point, um.Status, um.AdminLevel from PS_GameData.dbo.Chars c INNER JOIN PS_UserData.dbo.Users_Master um ON c.UserUID=um.UserUID Where um.UserUID= '" & SqlEscape(ADM.TextBox17.Text) & "'"
         Try
             con1.Open()
-            reader1 = cmd1.ExecuteReader()
+            reader1 = cmd1.ExecuteReader(CommandBehavior.CloseConnection)
             Do While reader1.Read()
                 ADM.TextBox22.Text = (reader1("Status")
                 )
@@ -37,13 +31,7 @@ Public Class Acclöschen
             reader1.Close()
             con1.Close()
         Catch ex As Exception
-            If MessageBox.Show("Benutzername erfolgreich geändert") Then
-                Dim mainForm As New ADM
-                Me.Hide()
-            Else
-                MessageBox.Show("Gilde erfolgreich geladen")
-                Me.Close()
-            End If
+            ShowError(ex)
         End Try
     End Sub
 

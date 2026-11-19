@@ -9,14 +9,14 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim con As New Data.SqlClient.SqlConnection("Data Source=" & My.Settings.Server & "," & My.Settings.Port & ";Initial Catalog=PS_UserData;user id='" & My.Settings.Benutzer & "'; password='" & My.Settings.Passwort & "'")
+        Dim con As Data.SqlClient.SqlConnection = CreateConnection()
         Dim cmd As Data.SqlClient.SqlCommand = New Data.SqlClient.SqlCommand("select ID,Thema,Art,Typ from ADM_Tool.dbo.Vorgangart", con)
         Dim reader As SqlDataReader
 
         Try
             Doku_Typ_anzeigen.Show()
             con.Open()
-            reader = cmd.ExecuteReader()
+            reader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             Doku_Typ_anzeigen.ListView1.Items.Clear()
             Do While reader.Read()
                 With Doku_Typ_anzeigen.ListView1
@@ -34,7 +34,7 @@
             reader.Close()
             con.Close()
         Catch ex As Exception
-
+            ShowError(ex)
         End Try
     End Sub
 End Class
